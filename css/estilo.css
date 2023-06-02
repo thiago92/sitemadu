@@ -1,0 +1,293 @@
+/*Body da página*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #FFFFFF;
+    overflow-x:hidden;
+}
+
+/*--------------------------------------- 
+Inicio do header 
+---------------------------------------------------*/
+
+.headerTopo{
+    background: #313131;
+    color: #FFFFFF;
+    padding: 0px;
+    /* display: flex;
+    align-items: center; Alinha ao centro verticalmente */
+    /* justify-content: center; Alinha ao centro horizontalmente */
+}
+
+.headerTopo h2 {
+    display:inline-flex;
+    font-size: 12px;
+    /* font-weight: 400; */
+    /* margin-left: 0px; */
+    font-weight: bold;
+}
+
+.headerTopo ul {
+    list-style: none;
+    margin: 0;
+}
+
+.headerTopo ul li {
+    display:inline-flex;
+    list-style: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding-right: 20px;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+.headerTopo ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    line-height: 20px !important;
+}
+.headerTopo ul li a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.headerTopo ul li i {
+    font-size: 150%;
+    padding-right: 5px;
+}
+
+/* ------------------------------------
+Fim do header
+------------------------------------------ */
+
+/* ------------------------------------------------------
+Inicio do nav
+--------------------------------------- */
+
+.navTopo {
+    margin: 20px;
+}
+
+.navTopo form input{
+    border-radius: 15px 0 0 15px !important;
+    background: #EEEEEE !important;
+    border: none;
+    margin: 0;
+    padding: 10px 0px 10px 15px;
+    margin-left: 40px;
+}
+
+.navTopo form input:focus {
+    box-shadow: none
+}
+
+.navTopo button {
+    background: #970000 !important;
+    margin: 0;
+    border-radius: 0 15px 15px 0 !important;
+    border: none;
+}
+
+.navTopo button i {
+    color: white;
+}
+
+.navTopo ul li {
+    text-decoration: none;
+    list-style: none;
+    display:inline-flex;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.navTopo ul li a {
+    text-decoration: none;
+    list-style: none;
+    display:inline-flex;
+    vertical-align: middle;
+    color: black;
+}
+
+.navTopo ul li a:hover {
+    text-decoration: none;
+    list-style: none;
+}
+
+.navTopo ul li a i {
+    font-size: 125%;
+    padding: 0 7px 0 7px;
+}
+
+
+
+/*------------------------------------------- 
+Fim do nav
+---------------------------------------------------*/
+
+/* ------------------------------------------
+Início do NavMenu
+------------------------------------------ */
+
+.navMenu {
+    background: #F7F7F7 !important;
+    padding: 13px;
+}
+
+.navMenu ul {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navMenu ul li{
+    border-bottom: 3px solid #f7f7f7;
+
+}
+
+.navMenu ul li a {
+    color: black;  
+    margin: 0 10px 0 12px;
+}
+
+.navMenu ul li:hover,
+.ativo {
+    color: #0F0F0F !important;
+    border-bottom: 3px solid #A30000;
+}
+
+.navMenu button {
+    padding: 5px 25px 5px 25px;
+}
+
+.navMenu button a{
+    text-decoration: none;
+    list-style: none;
+    color: white !important;
+    margin: 0 5px 0 5px;
+    font-size: 13px;
+}
+
+.navMenu button:hover {
+    background: black;
+}
+
+.navMenu button i {
+    font-size: 80%;
+}
+
+.navMenu ul li ul {
+    margin-top: 3px;
+    padding: 0;
+}
+
+
+.navMenu ul li ul li {
+    padding: 10px 15px 10px 15px;
+    border: none;
+}
+
+.navMenu ul li ul:hover {
+    padding: 0;
+}
+
+.navMenu ul li ul li:hover {
+    padding: 10px 15px 10px 15px;
+    border: none;
+}   
+
+.navMenu ul li ul li a {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navMenu ul li ul li a:hover {
+    padding: 0;
+    background: white;
+    color: #a73333;
+    border: none;
+}
+
+    
+/* -----------------------------------------
+Fim do NavMenu
+-------------------------------------------- */
+
+/* -----------------------
+Início do carrosel
+-------------------------- */
+
+.carousel {
+    margin: 0px 0 25px 0;
+}
+
+.carousel i {
+    font-size: 400%;
+    color: #ffffff;
+}
+
+.textoCarrosel {
+    text-align: left;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+
+/* --------------------------------
+Fim do carrosel
+-------------------------------- */
+
+/* -----------------------------------
+Início ->Confira as possibilidades da MAD.U para o seu segmento:
+-------------------------------------------------- */
+.segmento {
+    margin: 25px 0 25px 0;
+    text-align: center;
+}
+
+.segmento .segmentoLink {
+    background: #F7F7F7;
+    margin: 0;
+    padding: 25px;
+}
+
+.segmento a {
+    text-decoration: none;
+    list-style: none;
+    color: #A30000;
+}
+
+.segmento a h3 {
+    font-weight: 700;
+}
+
+.segmento h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.segmento h3 {
+    font-size: 20px;
+}
+
+.zoomImg {
+    transition: transform 0.3s ease;
+    width: 70%;
+    margin-bottom: 10px;
+  }
+  
+.zoomImg:hover {
+    transform: scale(1.1);
+  }
+/* -----------------------------------
+Fim ->Confira as possibilidades da MAD.U para o seu segmento:
+-------------------------------------------------- */
+
