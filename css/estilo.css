@@ -287,7 +287,20 @@ Início ->Confira as possibilidades da MAD.U para o seu segmento:
 .zoomImg:hover {
     transform: scale(1.1);
   }
+
 /* -----------------------------------
 Fim ->Confira as possibilidades da MAD.U para o seu segmento:
 -------------------------------------------------- */
+
+/* ----------------------------------------------
+Início -> Produtos em destaque
+--------------------------------------------- */
+
+.produtosDestaque {
+    text-align: center;
+}
+
+/* ------------------------------------------
+Fim -> Produtod em destaque
+--------------------------------------------------- */
 
