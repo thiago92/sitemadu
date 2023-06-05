@@ -300,7 +300,198 @@ Início -> Produtos em destaque
     text-align: center;
 }
 
+.produtosDestaque h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.produtosDestaque .col-md-3 {
+    margin-bottom: 40px;
+}
+
+.produtosDestaque .bordaProdutos {
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 5px;
+    padding-bottom: 10px;
+    padding-top: 2px;
+}
+
+.produtosDestaque .bordaProdutosMais {
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 5px;
+    padding-bottom: 30px;
+    padding-top: 2px;
+}
+
+.produtosDestaque .espacoCategorias {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.produtosDestaque img {
+    padding-bottom: 30px;
+}
+
+.produtosDestaque a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.produtosDestaque h3 {
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+
+.produtosDestaque h4 {
+    font-size: 16px;
+    color: gray;
+    font-weight: 600;
+}
+
+.produtosDestaque span {
+    font-size: 12px;
+    padding: 4px 10px 4px 10px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+.produtosDestaque span:hover {
+    background-color: black;
+    color: white;
+}
+
 /* ------------------------------------------
-Fim -> Produtod em destaque
+Fim -> Produtos em destaque
 --------------------------------------------------- */
+
+/* ------------------------------------------
+Início -> Categorias
+--------------------------------------------------- */
+
+.secaoCategorias {
+    background: #F7F7F7;
+    text-align: center;
+}
+
+.secaoCategorias h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.secaoCategorias a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.secaoCategorias img {
+    border-radius: 50%;
+    border: solid 3px rgb(214, 214, 214);
+}
+
+.secaoCategorias h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1f1f1f;
+    margin-top: 10px;
+}
+
+/* ------------------------------------------
+Fim -> Categorias
+--------------------------------------------------- */
+
+/* ------------------------------------
+Início -> Mais vedidos
+------------------------------------ */
+
+.maisVendidos {
+    text-align: center;
+    padding: 25px;
+}
+
+.maisVendidos h2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.maisVendidos .carousel-inner {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 40px;
+}
+
+.maisVendidos .botao {
+    color: #7a7a7a;
+}
+
+.maisVendidos h3 {
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+}
+
+.maisVendidos h4 {
+    font-size: 18px;
+    color: #3a3a3a;
+    font-weight: 600;
+}
+
+.maisVendidos .btn {
+    background: #202020;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.maisVendidos .btn:hover {
+    background: #AA0000;
+}
+
+/* -------------------------------------
+Fim -> Mais vendidos
+------------------------------------ */
+
+/* -----------------------------------------
+Início -> Inovaçao, qualidade e tecnologia
+----------------------------------------- */
+
+.inovacao {
+    text-align: center;
+}
+
+.inovacao .inovacaoBorda {
+    border: solid 1px rgb(214, 214, 214);
+    border-radius: 5px;
+    padding-top: 10px;
+}
+
+.inovacao a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.inovacao h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    padding: 5px;
+}
+
+.inovacao p {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    line-height: 1;
+    padding: 0;
+}
+
+
+
+/* -----------------------------------------
+Fim -> Inovaçao, qualidade e tecnologia
+----------------------------------------- */
 
