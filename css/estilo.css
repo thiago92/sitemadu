@@ -461,6 +461,7 @@ Início -> Inovaçao, qualidade e tecnologia
 
 .inovacao {
     text-align: center;
+    padding-bottom: 25px;
 }
 
 .inovacao .inovacaoBorda {
@@ -489,9 +490,36 @@ Início -> Inovaçao, qualidade e tecnologia
     padding: 0;
 }
 
-
-
 /* -----------------------------------------
 Fim -> Inovaçao, qualidade e tecnologia
 ----------------------------------------- */
+
+/* -----------------------------
+Início -> Made for you
+-------------------------------- */
+.madeForYou {
+    background: #F7F7F7;
+    text-align: left;
+    padding: 25px;
+}
+
+.madeForYou h2 {
+    font-size: 43px;
+    font-weight: 600;
+    color: #A30000;
+}
+
+.madeForYou p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.madeForYou iframe {
+    border-radius: 20px !important;
+}
+  
+
+/* -------------------------------
+Fim -> Made for you
+---------------------------------- */
 
