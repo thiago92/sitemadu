@@ -674,3 +674,44 @@ Início -> Footer
 Fim -> Footer
 -------------------------------- */
 
+/* -------------------------------
+Início -> Responsividade do site
+--------------------------------- */
+
+@media (max-width: 575.98px) {
+    /* ------------------------------
+    header
+    ----------------------------- */
+
+    header {
+        display: none;
+    }
+
+    /*-----------------------
+     Início -> navTopo
+     ------------------- */
+
+     .navTopo {
+        padding: 10px 20px 0 5px;
+        margin: 0;
+     }
+
+     .navTopo .col-md-2 {
+        width: 40%;
+        padding: 0;
+        margin: 0;
+     }
+
+     .navTopo .col-md-5 {
+        width: 60%;
+        padding: 0;
+        margin: 0;
+     }
+
+}
+
+
+/* -------------------------------
+Início -> Responsividade do site
+--------------------------------- */
+
