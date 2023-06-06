@@ -410,7 +410,7 @@ Início -> Mais vedidos
 
 .maisVendidos {
     text-align: center;
-    padding: 25px;
+    padding: 80px 0 25px 0;
 }
 
 .maisVendidos h2 {
@@ -500,7 +500,7 @@ Início -> Made for you
 .madeForYou {
     background: #F7F7F7;
     text-align: left;
-    padding: 25px;
+    padding: 80px 0 25px 0;
 }
 
 .madeForYou h2 {
@@ -522,4 +522,155 @@ Início -> Made for you
 /* -------------------------------
 Fim -> Made for you
 ---------------------------------- */
+
+/* ---------------------------
+Início -> Formulário
+-------------------------------- */
+
+.form {
+    background: #D9D8D7;
+    padding: 50px 0 50px 0;
+    text-align: center;
+}
+
+.form h2 {
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form input {
+    border-radius: 20px;
+}
+
+.form .btn {
+    background: black;
+    color: white;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+/* ---------------------------
+Fim -> Formulário
+-------------------------------- */
+
+/* ----------------------------------
+Início -> Footer
+------------------------------------ */
+
+.primeiraDivFooter {
+    background: #393939;
+    color: white;
+    padding-top: 25px;
+}
+
+.primeiraDivFooter .col-md-4 p {
+    font-size: 14px;
+    text-align: left;
+    margin-left: 0px;
+}
+
+.primeiraDivFooter .col-md-4 h2 {
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.primeiraDivFooter a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.primeiraDivFooter ul {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.primeiraDivFooter ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 0 0 5px 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.primeiraDivFooter i {
+    font-size: 85%;
+    padding-right: 10px;
+}
+
+.segundaDivFooter {
+    background: #2C2C2C;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.segundaDivFooter {
+    display: flex;
+    justify-content: center;
+}
+
+.segundaDivFooter span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.segundaDivFooter .siteSeguro {
+    padding: 0;
+    margin: 0;
+}
+
+.segundaDivFooter .siteSeguro i {
+    padding: 0 5px 0 0;
+    margin: 0;
+    font-size: 200%;
+    text-align: right;
+    float: right;
+}
+
+.segundaDivFooter .siteSeguro h3 {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 7px 0 0;
+    margin: 0;
+    text-align: left;
+}
+
+.segundaDivFooter .siteSeguro h4 {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.segundaDivFooter .redesSociais ul {
+    padding: 0px;
+    text-align: right;
+}
+
+.segundaDivFooter .redesSociais ul li {
+    text-decoration: none;
+    list-style: none;
+    display:inline-flex;
+    padding-left: 20px;
+    padding-right: 0px;
+    text-align: right;
+    padding-bottom: 0;
+}
+
+.segundaDivFooter .redesSociais ul li i {
+    font-size: 120%;
+    text-align: right;
+    padding: 0;
+}
+
+
+
+/* ------------------------------------
+Fim -> Footer
+-------------------------------- */
 
