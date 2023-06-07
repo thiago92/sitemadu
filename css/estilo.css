@@ -61,7 +61,7 @@ Fim do header
 ------------------------------------------ */
 
 /* ------------------------------------------------------
-Inicio do nav
+Inicio -> nav
 --------------------------------------- */
 
 .navTopo {
@@ -124,7 +124,7 @@ Inicio do nav
 
 
 /*------------------------------------------- 
-Fim do nav
+Fim -> navTopo
 ---------------------------------------------------*/
 
 /* ------------------------------------------
@@ -214,8 +214,98 @@ Início do NavMenu
 
     
 /* -----------------------------------------
-Fim do NavMenu
+Fim -> NavMenu
 -------------------------------------------- */
+
+/* --------------------------
+Início -> navResponsive 
+------------------------------*/
+
+.navResponsive {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin: 0;
+}
+
+.navResponsive nav {
+    padding: 0;
+    margin: 0;
+}
+
+.navResponsive form input{
+    border-radius: 15px 0 0 15px !important;
+    background: #EEEEEE !important;
+    border: none;
+    margin: 0;
+    padding: 10px 0px 10px 15px;
+}
+
+.navResponsive form input:focus {
+    box-shadow: none
+}
+
+.navResponsive form button {
+    background: #970000 !important;
+    margin: 0;
+    border-radius: 0 15px 15px 0 !important;
+    border: none;
+}
+
+.navResponsive .btn i {
+    color: white;
+}
+
+.navResponsive .fundo {
+    background: #f7f7f7;;
+}
+
+.navResponsive .navbar-brand ul li{
+    list-style: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    display:inline-flex;
+}
+
+.navResponsive .navbar-brand .minhaConta {
+    padding-left: 80px;
+}
+
+.navResponsive ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navResponsive .navbar-brand ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.navResponsive .navbar-brand ul li i{
+    padding-left: 5px;
+    font-size: 125%;
+}
+
+.navResponsive .botao {
+    background: #e0e0e0;
+    border: none;
+    margin: 0;
+}
+
+.navResponsive .botao:focus {
+    box-shadow: none;
+    background: #A30000;
+}
+
+.navResponsive button i {
+    color: black;
+}
+
+
+/* --------------------------
+Fim -> navResponsive 
+------------------------------*/
 
 /* -----------------------
 Início do carrosel
@@ -683,31 +773,134 @@ Início -> Responsividade do site
     header
     ----------------------------- */
 
-    header {
-        display: none;
-    }
-
     /*-----------------------
-     Início -> navTopo
+     Nav
      ------------------- */
 
-     .navTopo {
-        padding: 10px 20px 0 5px;
+     /* -------------------
+     Carrosel
+     ----------------- */
+    .carousel {
         margin: 0;
-     }
+    }
+    
+    .carousel i {
+        font-size: 100%;
+        color: #ffffff;
+        visibility: hidden;
+    }
 
-     .navTopo .col-md-2 {
+    .carousel button {
+        visibility: hidden;
+    }
+    
+    .carousel .textoCarrosel {
+        padding: 0;
+        width: 80%;
+        text-align: left;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 1;
+        font-size: 16px;
+    }
+
+    /* ------------------------
+    Segmento
+    ------------------------ */
+
+    .segmento h2 {
+        font-size: 16px;
+    }
+
+    .segmento .col-4 {
+        padding: 5px;
+        margin: 0px;
+    }
+
+    .segmento .col-4 h3 {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .segmento .segmentoLink {
+        padding: 0;
+        margin: 0;
+    }
+
+    .segmento img {
         width: 40%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    /* ------------------------
+    Produtos em destque
+    ------------------------- */
+
+    .produtosDestaque h2 {
+        font-size: 16px;
+    }
+
+    .produtosDestaque h3 {
+        font-size: 16px;
+    }
+
+    .produtosDestaque h4 {
+        font-size: 16px;
+    }
+
+    .produtosDestaque span {
+        margin: 0;
+    }
+
+    .produtosDestaque .bordaProdutos {
+        height: 100%;
+    }
+
+    /* -----------------------------
+    Categorias
+    ----------------------------- */
+
+    .secaoCategorias h2 {
+        font-size: 16px;
+    }
+
+    .secaoCategorias h3 {
+        font-size: 14px;
+    }
+
+    /* -----------------------------
+    Mais vendidos
+    --------------------------------- */
+    .maisVendidos .container {
         padding: 0;
         margin: 0;
-     }
+        width: 100%;
+    }
 
-     .navTopo .col-md-5 {
-        width: 60%;
-        padding: 0;
-        margin: 0;
-     }
+    .maisVendidos .container {
+        width: 100%;
+    }
 
+    .maisVendidos .col-6 h3 {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .maisVendidos .col-6 h4 {
+        font-size: 18px;
+    }
+
+    .maisVendidos span {
+        font-size: 14px;
+    }
+
+    
 }
 
 

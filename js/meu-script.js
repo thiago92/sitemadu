@@ -9,3 +9,7 @@ function showDropdown() {
 function hideDropdown() {
     dropdownMenu.classList.remove('show');
 }
+
+
+// Função para exibição do navResponsivo
+
