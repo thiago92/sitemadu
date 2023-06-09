@@ -405,13 +405,7 @@ Início -> Produtos em destaque
     border-radius: 5px;
     padding-bottom: 10px;
     padding-top: 2px;
-}
-
-.produtosDestaque .bordaProdutosMais {
-    border: 1px solid rgb(214, 214, 214);
-    border-radius: 5px;
-    padding-bottom: 30px;
-    padding-top: 2px;
+    height: 100%;
 }
 
 .produtosDestaque .espacoCategorias {
@@ -558,6 +552,7 @@ Início -> Inovaçao, qualidade e tecnologia
     border: solid 1px rgb(214, 214, 214);
     border-radius: 5px;
     padding-top: 10px;
+    height: 100%;
 }
 
 .inovacao a {
@@ -577,7 +572,7 @@ Início -> Inovaçao, qualidade e tecnologia
     font-weight: 500;
     color: black;
     line-height: 1;
-    padding: 0;
+    padding: 5px;
 }
 
 /* -----------------------------------------
@@ -785,14 +780,10 @@ Início -> Responsividade do site
     }
     
     .carousel i {
-        font-size: 100%;
+        font-size: 200%;
         color: #ffffff;
-        visibility: hidden;
     }
 
-    .carousel button {
-        visibility: hidden;
-    }
     
     .carousel .textoCarrosel {
         padding: 0;
@@ -887,6 +878,10 @@ Início -> Responsividade do site
         width: 100%;
     }
 
+    .maisVendidos h2 {
+        text-align: center !important;
+    }
+
     .maisVendidos .col-6 h3 {
         font-size: 18px;
         width: 100%;
@@ -898,6 +893,76 @@ Início -> Responsividade do site
 
     .maisVendidos span {
         font-size: 14px;
+    }
+
+    .maisVendidos .botaoResponsivo {
+        color: black !important;
+        font-size: 200%;
+    }
+
+    /* ---------------------------------
+    Made for you
+    -------------------------------- */
+
+    .madeForYou {
+        padding: 25px 0 25px 0;
+    }
+
+    /* ----------------------
+    Formlulário
+    ----------------------- */
+
+    .form .col-md-5 {
+        margin-bottom: 10px;
+    }
+
+    .form .col-12 {
+        width: 3000;
+    }
+
+    /* -----------------
+    Footer
+    ------------------- */
+
+    .primeiraDivFooter {
+        padding-bottom: 25px;
+    }
+
+    .primeiraDivFooter img {
+        width: 40% !important;
+        margin: 0 0 0 -10px;
+        padding: 0;
+
+    }
+
+    .primeiraDivFooter p, h2, ul, ul li, ul li i {
+        text-align: left !important;
+    }
+
+    .segundaDivFooter .alinhamento span, h3, h4, ul, .siteSeguro {
+        text-align: center !important;
+    }
+    
+    .segundaDivFooter .mln {
+        margin-left: -190px;
+    }
+
+    .segundaDivFooter .mln i{
+        font-size: 175%;
+    }
+
+    .segundaDivFooter .siteSeguro {
+        letter-spacing: -1px;
+        line-height: -1px !important;
+    }
+
+    .segundaDivFooter .siteSeguro h2, h3 {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .segundaDivFooter .redesSociais {
+        margin-left: -10px;
     }
 
     
