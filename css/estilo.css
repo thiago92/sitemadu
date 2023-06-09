@@ -789,12 +789,12 @@ Início -> Responsividade do site
         padding: 0;
         width: 80%;
         text-align: left;
-        top: 50%;
+        top: 55%;
         transform: translateY(-50%);
         font-size: 50px;
         font-weight: 700;
         line-height: 1;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     /* ------------------------
@@ -939,30 +939,49 @@ Início -> Responsividade do site
         text-align: left !important;
     }
 
-    .segundaDivFooter .alinhamento span, h3, h4, ul, .siteSeguro {
-        text-align: center !important;
-    }
-    
-    .segundaDivFooter .mln {
-        margin-left: -190px;
+    .segundaDivFooter {
+        text-align: center;
     }
 
-    .segundaDivFooter .mln i{
-        font-size: 175%;
+    .segundaDivFooter .copyRight {
+        text-align: left;
+        padding-left: 15px;
+        padding-bottom: 15px;
     }
 
-    .segundaDivFooter .siteSeguro {
+    .segundaDivFooter .escudo {
+        padding: 5px;
+    }
+
+    .segundaDivFooter .escudo i {
+        font-size: 165%;
+    }
+
+    .segundaDivFooter h3 {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0;
+        margin: 0;
         letter-spacing: -1px;
-        line-height: -1px !important;
+        line-height: 10px;
     }
 
-    .segundaDivFooter .siteSeguro h2, h3 {
-        padding: 0 !important;
-        margin: 0 !important;
+    .segundaDivFooter h4 {
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+        letter-spacing: -1px;
     }
 
-    .segundaDivFooter .redesSociais {
-        margin-left: -10px;
+    .segundaDivFooter ul {
+        text-decoration: none;
+        list-style: none;
+        display:inline-flex;
+        padding-right: 5%;
+    }
+
+    .segundaDivFooter ul li {
+        padding: 15px;
     }
 
     
