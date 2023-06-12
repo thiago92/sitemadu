@@ -217,96 +217,6 @@ Início do NavMenu
 Fim -> NavMenu
 -------------------------------------------- */
 
-/* --------------------------
-Início -> navResponsive 
-------------------------------*/
-
-.navResponsive {
-    padding-top: 10px;
-    padding-bottom: 0px;
-    margin: 0;
-}
-
-.navResponsive nav {
-    padding: 0;
-    margin: 0;
-}
-
-.navResponsive form input{
-    border-radius: 15px 0 0 15px !important;
-    background: #EEEEEE !important;
-    border: none;
-    margin: 0;
-    padding: 10px 0px 10px 15px;
-}
-
-.navResponsive form input:focus {
-    box-shadow: none
-}
-
-.navResponsive form button {
-    background: #970000 !important;
-    margin: 0;
-    border-radius: 0 15px 15px 0 !important;
-    border: none;
-}
-
-.navResponsive .btn i {
-    color: white;
-}
-
-.navResponsive .fundo {
-    background: #f7f7f7;;
-}
-
-.navResponsive .navbar-brand ul li{
-    list-style: none;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
-    display:inline-flex;
-}
-
-.navResponsive .navbar-brand .minhaConta {
-    padding-left: 80px;
-}
-
-.navResponsive ul {
-    padding: 0;
-    margin: 0;
-}
-
-.navResponsive .navbar-brand ul li a{
-    list-style: none;
-    text-decoration: none;
-    color: black;
-}
-
-.navResponsive .navbar-brand ul li i{
-    padding-left: 5px;
-    font-size: 125%;
-}
-
-.navResponsive .botao {
-    background: #e0e0e0;
-    border: none;
-    margin: 0;
-}
-
-.navResponsive .botao:focus {
-    box-shadow: none;
-    background: #A30000;
-}
-
-.navResponsive button i {
-    color: black;
-}
-
-
-/* --------------------------
-Fim -> navResponsive 
-------------------------------*/
-
 /* -----------------------
 Início do carrosel
 -------------------------- */
@@ -503,8 +413,8 @@ Início -> Mais vedidos
 }
 
 .maisVendidos .carousel-inner {
-    padding-left: 80px;
-    padding-right: 80px;
+    /* padding-left: 80px;
+    padding-right: 80px; */
     padding-bottom: 40px;
 }
 
@@ -764,6 +674,17 @@ Início -> Responsividade do site
 --------------------------------- */
 
 @media (max-width: 575.98px) {
+    /* ------------------------
+    Body
+    ------------------------ */
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background: #FFFFFF;
+        overflow-x:hidden !important;
+        width: 100% !important; /* Defina o valor desejado */
+        margin: 0 auto !important; /* Centralizar o conteúdo */
+    }
+    
     /* ------------------------------
     header
     ----------------------------- */
@@ -771,6 +692,91 @@ Início -> Responsividade do site
     /*-----------------------
      Nav
      ------------------- */
+
+     .navResponsive {
+        padding-top: 10px;
+        padding-bottom: 0px;
+        margin: 0;
+    }
+    
+    .navResponsive nav {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .navResponsive form input{
+        border-radius: 15px 0 0 15px !important;
+        background: #EEEEEE !important;
+        border: none;
+        margin: 0;
+        padding: 10px 0px 10px 15px;
+    }
+    
+    .navResponsive form input:focus {
+        box-shadow: none
+    }
+    
+    .navResponsive form button {
+        background: #970000 !important;
+        margin: 0;
+        border-radius: 0 15px 15px 0 !important;
+        border: none;
+    }
+    
+    .navResponsive .btn i {
+        color: white;
+    }
+    
+    .navResponsive .fundo {
+        background: #f7f7f7;;
+    }
+    
+    .navResponsive .navbar-brand ul li{
+        list-style: none;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        display:inline-flex;
+    }
+
+    .navResponsive .navbar-brand ul li {
+        padding-left: 15% !important;
+    }
+    
+    .navResponsive .navbar-brand .minhaConta {
+        padding-left: 75% !important;
+    }
+    
+    .navResponsive ul {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .navResponsive .navbar-brand ul li a{
+        list-style: none;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .navResponsive .navbar-brand ul li i{
+        padding-left: 5px;
+        font-size: 125%;
+    }
+    
+    .navResponsive .botao {
+        background: #e0e0e0;
+        border: none;
+        margin: 0;
+    }
+    
+    .navResponsive .botao:focus {
+        box-shadow: none;
+        background: #A30000;
+    }
+    
+    .navResponsive button i {
+        color: black;
+    }
 
      /* -------------------
      Carrosel
@@ -800,14 +806,14 @@ Início -> Responsividade do site
     /* ------------------------
     Segmento
     ------------------------ */
-
+    
     .segmento h2 {
         font-size: 16px;
     }
 
     .segmento .col-4 {
-        padding: 5px;
-        margin: 0px;
+        padding: 0px !important;
+        margin: 0px !important;
     }
 
     .segmento .col-4 h3 {
@@ -821,6 +827,8 @@ Início -> Responsividade do site
     .segmento .segmentoLink {
         padding: 0;
         margin: 0;
+        width: 95%;
+        height: 95%;
     }
 
     .segmento img {
