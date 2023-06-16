@@ -9,7 +9,7 @@ body {
 Inicio do header 
 ---------------------------------------------------*/
 
-.headerTopo{
+.navTopo{
     background: #313131;
     color: #FFFFFF;
     padding: 0px;
@@ -18,7 +18,7 @@ Inicio do header
     /* justify-content: center; Alinha ao centro horizontalmente */
 }
 
-.headerTopo h2 {
+.navTopo h2 {
     display:inline-flex;
     font-size: 12px;
     /* font-weight: 400; */
@@ -26,12 +26,12 @@ Inicio do header
     font-weight: bold;
 }
 
-.headerTopo ul {
+.navTopo ul {
     list-style: none;
     margin: 0;
 }
 
-.headerTopo ul li {
+.navTopo ul li {
     display:inline-flex;
     list-style: none;
     font-size: 13px;
@@ -41,17 +41,17 @@ Inicio do header
     padding-left: 20px;
 }
 
-.headerTopo ul li a {
+.navTopo ul li a {
     text-decoration: none;
     color: #FFFFFF;
     line-height: 20px !important;
 }
-.headerTopo ul li a:hover {
+.navTopo ul li a:hover {
     text-decoration: none;
     color: #FFFFFF;
 }
 
-.headerTopo ul li i {
+.navTopo ul li i {
     font-size: 150%;
     padding-right: 5px;
 }
@@ -61,14 +61,24 @@ Fim do header
 ------------------------------------------ */
 
 /* ------------------------------------------------------
-Inicio -> nav
+Inicio -> navPesquisa
 --------------------------------------- */
 
-.navTopo {
+.navPesquisa {
     margin: 20px;
 }
 
-.navTopo form input{
+.zoomImg {
+    transition: transform 0.3s ease;
+    width: 70%;
+    margin-bottom: 10px;
+  }
+  
+.zoomImg:hover {
+    transform: scale(1.1);
+  }
+
+.navPesquisa form input{
     border-radius: 15px 0 0 15px !important;
     background: #EEEEEE !important;
     border: none;
@@ -77,22 +87,22 @@ Inicio -> nav
     margin-left: 40px;
 }
 
-.navTopo form input:focus {
+.navPesquisa form input:focus {
     box-shadow: none
 }
 
-.navTopo button {
-    background: #970000 !important;
+.navPesquisa button {
+    background: #153B64 !important;
     margin: 0;
     border-radius: 0 15px 15px 0 !important;
     border: none;
 }
 
-.navTopo button i {
+.navPesquisa button i {
     color: white;
 }
 
-.navTopo ul li {
+.navPesquisa ul li {
     text-decoration: none;
     list-style: none;
     display:inline-flex;
@@ -103,7 +113,7 @@ Inicio -> nav
     padding-right: 6px;
 }
 
-.navTopo ul li a {
+.navPesquisa ul li a {
     text-decoration: none;
     list-style: none;
     display:inline-flex;
@@ -111,12 +121,12 @@ Inicio -> nav
     color: black;
 }
 
-.navTopo ul li a:hover {
+.navPesquisa ul li a:hover {
     text-decoration: none;
     list-style: none;
 }
 
-.navTopo ul li a i {
+.navPesquisa ul li a i {
     font-size: 125%;
     padding: 0 7px 0 7px;
 }
@@ -124,7 +134,7 @@ Inicio -> nav
 
 
 /*------------------------------------------- 
-Fim -> navTopo
+Fim -> navPesquisa
 ---------------------------------------------------*/
 
 /* ------------------------------------------
@@ -151,14 +161,30 @@ Início do NavMenu
     margin: 0 10px 0 12px;
 }
 
-.navMenu ul li:hover,
-.ativo {
+.navMenu ul li:hover{
     color: #0F0F0F !important;
-    border-bottom: 3px solid #A30000;
+    border-bottom: 3px solid #153B64;
+}
+
+.navMenu span {
+    font-weight: 600;
+    padding-right: 50px;
+}
+
+.navMenu a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.navMenu a:hover {
+    color: rgb(82, 82, 82);
 }
 
 .navMenu button {
     padding: 5px 25px 5px 25px;
+    background: #153B64;
+    border-radius: 50px;
 }
 
 .navMenu button a{
@@ -170,11 +196,12 @@ Início do NavMenu
 }
 
 .navMenu button:hover {
-    background: black;
+    background: #153B64;
 }
 
 .navMenu button i {
     font-size: 80%;
+    color: white;
 }
 
 .navMenu ul li ul {
@@ -208,7 +235,7 @@ Início do NavMenu
 .navMenu ul li ul li a:hover {
     padding: 0;
     background: white;
-    color: #a73333;
+    color: #153B64;
     border: none;
 }
 
@@ -221,12 +248,31 @@ Fim -> NavMenu
 Início do carrosel
 -------------------------- */
 
-.carousel {
+.carrossel {
+    padding: 25px 0 0 0;
+}
+
+.carrossel .carousel {
     margin: 0px 0 25px 0;
+    border-radius: 15px;
+}
+
+.carrossel .carousel img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.carrossel .carousel-item {
+    height: 400px;
+}
+
+.carrossel .carousel p {
+    font-size: 35px;
+    width: 80%;
 }
 
 .carousel i {
-    font-size: 400%;
+    font-size: 350%;
     color: #ffffff;
 }
 
@@ -237,6 +283,20 @@ Início do carrosel
     font-size: 50px;
     font-weight: 700;
     line-height: 1;
+}
+
+.carrossel .carousel .btn {
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 20px !important;
+    padding-top: 1%;
+    margin-left: 5%;
+    width: 30%;
+    height: 35%;
 }
 
 
@@ -256,12 +316,13 @@ Início ->Confira as possibilidades da MAD.U para o seu segmento:
     background: #F7F7F7;
     margin: 0;
     padding: 25px;
+    height: 100%;
 }
 
 .segmento a {
     text-decoration: none;
     list-style: none;
-    color: #A30000;
+    color: #383838;
 }
 
 .segmento a h3 {
@@ -272,10 +333,27 @@ Início ->Confira as possibilidades da MAD.U para o seu segmento:
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 25px;
+    padding: 0;
+    margin-top: 0;
 }
 
 .segmento h3 {
     font-size: 20px;
+}
+
+.segmento ul {
+    padding: 0;
+    margin: 0;
+}
+
+.segmento ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #54595F;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .zoomImg {
@@ -292,162 +370,61 @@ Início ->Confira as possibilidades da MAD.U para o seu segmento:
 Fim ->Confira as possibilidades da MAD.U para o seu segmento:
 -------------------------------------------------- */
 
-/* ----------------------------------------------
-Início -> Produtos em destaque
---------------------------------------------- */
+/* -------------------------------
+Início da secaoExperimente 
+------------------------------*/
 
-.produtosDestaque {
+.secaoExperimente {
     text-align: center;
 }
 
-.produtosDestaque h2 {
+.secaoExperimente h2 {
     font-size: 25px;
     font-weight: 600;
-    margin-bottom: 25px;
 }
 
-.produtosDestaque .col-md-3 {
-    margin-bottom: 40px;
-}
+/* ---------------------------
+Fim da secaoExperimente
+--------------------------------- */
 
-.produtosDestaque .bordaProdutos {
-    border: 1px solid rgb(214, 214, 214);
-    border-radius: 5px;
-    padding-bottom: 10px;
-    padding-top: 2px;
-    height: 100%;
-}
+/* -------------------------------
+Início do secaoLinhasProdutos
+---------------------------- */
 
-.produtosDestaque .espacoCategorias {
-    padding: 0px !important;
-    margin: 0px !important;
-}
-
-.produtosDestaque img {
-    padding-bottom: 30px;
-}
-
-.produtosDestaque a {
-    list-style: none;
-    text-decoration: none;
-}
-
-.produtosDestaque h3 {
-    font-size: 16px;
-    color: black;
-    font-weight: 600;
-}
-
-.produtosDestaque h4 {
-    font-size: 16px;
-    color: gray;
-    font-weight: 600;
-}
-
-.produtosDestaque span {
-    font-size: 12px;
-    padding: 4px 10px 4px 10px;
-    background-color: black;
-    color: white;
-    margin-top: 20px;
-}
-
-.produtosDestaque span:hover {
-    background-color: black;
-    color: white;
-}
-
-/* ------------------------------------------
-Fim -> Produtos em destaque
---------------------------------------------------- */
-
-/* ------------------------------------------
-Início -> Categorias
---------------------------------------------------- */
-
-.secaoCategorias {
+.secaoLinhasProdutos {
+    padding: 25px 25px 20px 25px;
     background: #F7F7F7;
     text-align: center;
 }
 
-.secaoCategorias h2 {
-    font-size: 25px;
-    font-weight: 600;
-    margin-top: 80px;
-    margin-bottom: 40px;
+.secaoLinhasProdutos h2 {
+    padding: 25px;
 }
 
-.secaoCategorias a {
-    text-decoration: none;
-    list-style: none;
+.secaoLinhasProdutos .fundoMADU {
+    background: #FFFFFF;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
 }
 
-.secaoCategorias img {
-    border-radius: 50%;
-    border: solid 3px rgb(214, 214, 214);
-}
-
-.secaoCategorias h3 {
-    font-size: 14px;
-    font-weight: 600;
-    color: #1f1f1f;
-    margin-top: 10px;
-}
-
-/* ------------------------------------------
-Fim -> Categorias
---------------------------------------------------- */
-
-/* ------------------------------------
-Início -> Mais vedidos
------------------------------------- */
-
-.maisVendidos {
-    text-align: center;
-    padding: 80px 0 25px 0;
-}
-
-.maisVendidos h2 {
-    font-size: 25px;
+.secaoLinhasProdutos h3 {
+    font-size: 28px;
+    color: #153B64;
     font-weight: 600;
 }
 
-.maisVendidos .carousel-inner {
-    /* padding-left: 80px;
-    padding-right: 80px; */
-    padding-bottom: 40px;
+.secaoLinhasProdutos p {
+    font-size: 15px;
+    color: #7A7A7A;
+    font-weight: 500;
 }
 
-.maisVendidos .botao {
-    color: #7a7a7a;
-}
 
-.maisVendidos h3 {
-    font-size: 18px;
-    color: black;
-    font-weight: 600;
-}
 
-.maisVendidos h4 {
-    font-size: 18px;
-    color: #3a3a3a;
-    font-weight: 600;
-}
-
-.maisVendidos .btn {
-    background: #202020;
-    color: white;
-    font-size: 12px;
-    font-weight: 600;
-}
-
-.maisVendidos .btn:hover {
-    background: #AA0000;
-}
-
-/* -------------------------------------
-Fim -> Mais vendidos
------------------------------------- */
+/* ----------------------
+Fim do secaoLinhasProdutos
+---------------------------- */
 
 /* -----------------------------------------
 Início -> Inovaçao, qualidade e tecnologia
@@ -456,6 +433,11 @@ Início -> Inovaçao, qualidade e tecnologia
 .inovacao {
     text-align: center;
     padding-bottom: 25px;
+    padding-top: 40px;
+}
+
+.inovacao .col-md-4 {
+    height: 450px;
 }
 
 .inovacao .inovacaoBorda {
@@ -463,6 +445,7 @@ Início -> Inovaçao, qualidade e tecnologia
     border-radius: 5px;
     padding-top: 10px;
     height: 100%;
+    cursor: pointer;
 }
 
 .inovacao a {
@@ -485,38 +468,41 @@ Início -> Inovaçao, qualidade e tecnologia
     padding: 5px;
 }
 
+.inovacao img {
+    padding-top: 10px;
+    width: 80%;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal h2 {
+    font-size: 41px;
+    font-weight: 600;
+    color: #2C2C2C;
+    padding-bottom: 15px;
+    margin-top: -30px;
+}
+
+.modal h3 {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: #2C2C2C;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+
+.modal p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #2C2C2C;
+    text-align: justify;
+}
+
 /* -----------------------------------------
 Fim -> Inovaçao, qualidade e tecnologia
 ----------------------------------------- */
-
-/* -----------------------------
-Início -> Made for you
--------------------------------- */
-.madeForYou {
-    background: #F7F7F7;
-    text-align: left;
-    padding: 80px 0 25px 0;
-}
-
-.madeForYou h2 {
-    font-size: 43px;
-    font-weight: 600;
-    color: #A30000;
-}
-
-.madeForYou p {
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.madeForYou iframe {
-    border-radius: 20px !important;
-}
-  
-
-/* -------------------------------
-Fim -> Made for you
----------------------------------- */
 
 /* ---------------------------
 Início -> Formulário
@@ -717,7 +703,7 @@ Início -> Responsividade do site
     }
     
     .navResponsive form button {
-        background: #970000 !important;
+        background: #153B64 !important;
         margin: 0;
         border-radius: 0 15px 15px 0 !important;
         border: none;
@@ -744,7 +730,7 @@ Início -> Responsividade do site
     }
     
     .navResponsive .navbar-brand .minhaConta {
-        padding-left: 75% !important;
+        padding-left: 30% !important;
     }
     
     .navResponsive ul {
@@ -752,7 +738,7 @@ Início -> Responsividade do site
         margin: 0;
     }
     
-    .navResponsive .navbar-brand ul li a{
+    .navResponsive ul li a{
         list-style: none;
         text-decoration: none;
         color: black;
@@ -771,7 +757,6 @@ Início -> Responsividade do site
     
     .navResponsive .botao:focus {
         box-shadow: none;
-        background: #A30000;
     }
     
     .navResponsive button i {
@@ -784,6 +769,22 @@ Início -> Responsividade do site
     .carousel {
         margin: 0;
     }
+
+    .carousel img {
+        width: 120%;
+        zoom: 1;
+        height: 100%;
+
+    }
+
+    .carousel .carousel-item {
+        height: 180px;
+    }
+
+    .carousel .carousel-item p {
+        width: 80%;
+        font-size: 16px;
+    }
     
     .carousel i {
         font-size: 200%;
@@ -793,9 +794,8 @@ Início -> Responsividade do site
     
     .carousel .textoCarrosel {
         padding: 0;
-        width: 80%;
         text-align: left;
-        top: 55%;
+        top: 50%;
         transform: translateY(-50%);
         font-size: 50px;
         font-weight: 700;
@@ -803,17 +803,33 @@ Início -> Responsividade do site
         font-size: 18px;
     }
 
+    .carousel .textoCarrosel .btn{
+        font-size: 16px !important;
+        height: 50% !important;
+    }
+
     /* ------------------------
     Segmento
     ------------------------ */
     
+    .segmento {
+        text-align: center !important;
+    }
+
     .segmento h2 {
-        font-size: 16px;
+        text-align: center !important;
+        font-size: 27px;
     }
 
     .segmento .col-4 {
         padding: 0px !important;
         margin: 0px !important;
+        text-align: center !important;
+        padding-bottom: 10px !important;
+    }
+
+    .segmento .col-4 ul li{
+        text-align: center !important;
     }
 
     .segmento .col-4 h3 {
@@ -828,97 +844,54 @@ Início -> Responsividade do site
         padding: 0;
         margin: 0;
         width: 95%;
-        height: 95%;
+        height: 100%;
     }
 
     .segmento img {
-        width: 40%;
+        width: 50%;
         margin-top: 20px;
         margin-bottom: 10px;
     }
 
     /* ------------------------
-    Produtos em destque
-    ------------------------- */
+    secaoExperimente
+    --------------------- */
 
-    .produtosDestaque h2 {
-        font-size: 16px;
-    }
-
-    .produtosDestaque h3 {
-        font-size: 16px;
-    }
-
-    .produtosDestaque h4 {
-        font-size: 16px;
-    }
-
-    .produtosDestaque span {
-        margin: 0;
-    }
-
-    .produtosDestaque .bordaProdutos {
-        height: 100%;
-    }
-
-    /* -----------------------------
-    Categorias
-    ----------------------------- */
-
-    .secaoCategorias h2 {
-        font-size: 16px;
-    }
-
-    .secaoCategorias h3 {
-        font-size: 14px;
-    }
-
-    /* -----------------------------
-    Mais vendidos
-    --------------------------------- */
-    .maisVendidos .container {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-    }
-
-    .maisVendidos .container {
-        width: 100%;
-    }
-
-    .maisVendidos h2 {
+    .secaoExperimente .col-md-12 h2 {
         text-align: center !important;
     }
 
-    .maisVendidos .col-6 h3 {
-        font-size: 18px;
+    .secaoExperimente iframe {
+        height: 200px;
         width: 100%;
     }
 
-    .maisVendidos .col-6 h4 {
-        font-size: 18px;
+    /* ------------------
+    secaoLinhasProdutos
+    --------------------- */
+
+    .secaoLinhasProdutos {
+        padding: 0 0 25px 0;
+        margin: 0;
     }
 
-    .maisVendidos span {
-        font-size: 14px;
+    .secaoLinhasProdutos .col-md-12 h2 {
+        text-align: center !important;
+        font-size: 28px;
+        font-weight: 600;
     }
-
-    .maisVendidos .botaoResponsivo {
-        color: black !important;
-        font-size: 200%;
-    }
-
-    /* ---------------------------------
-    Made for you
-    -------------------------------- */
-
-    .madeForYou {
-        padding: 25px 0 25px 0;
-    }
-
+   
     /* ----------------------
     Formlulário
     ----------------------- */
+
+    .form {
+        padding: 25px 0;
+    }
+
+    .form h2 {
+        text-align: center !important;
+    }
 
     .form .col-md-5 {
         margin-bottom: 10px;

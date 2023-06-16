@@ -20,30 +20,30 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css">
 </head>
 <body>
-    <header class="">
-        <div class="headerTopo p-1 d-none d-xl-block d-xxl-none">
-          <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="">A maior linha de mobiliário técnico do mundo!</h2>
-                </div>
-                <div class="col-md-8 d-flex justify-content-end">
-                    <ul>
-                        <li class=""><i class="fa-solid fa-square-phone"></i>0800 721 8533</li>
-                        <li class=""><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/5541996278783">41 99687-8783</a></li>
-                        <li class=""><i class="fa-regular fa-envelope"></i>comercial@madumfm.com.br</li>
-                    </ul>
-                </div>
-              </div>
+  <header>
+    <nav class="navTopo p-1 d-none d-xl-block d-xxl-none">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2 class="">A maior linha de mobiliário técnico do mundo!</h2>
             </div>
+            <div class="col-md-8 d-flex justify-content-end">
+                <ul>
+                    <li class=""><i class="fa-solid fa-square-phone"></i>0800 721 8533</li>
+                    <li class=""><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/5541996278783">41 99687-8783</a></li>
+                    <li class=""><i class="fa-regular fa-envelope"></i>comercial@madumfm.com.br</li>
+                </ul>
+            </div>
+          </div>
         </div>
+      </nav>
 
-      <nav class="navTopo d-none d-xl-block d-xxl-none wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
+      <nav class="navPesquisa d-none d-xl-block d-xxl-none wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
         <div class="container">
             <div class="row">
                 <div class="col-md-2">
                   <a href="">
-                    <img class="w-100" src="img/logo_madu.png" alt="">
+                    <img class="w-100 zoomImg" src="img/logo_madu.png" alt="">
                   </a>
                 </div>
                 <div class="col-md-5">
@@ -61,8 +61,7 @@
                 <div class="col-md-5 pt-2 d-flex justify-content-end">
                     <ul>
                         <li><a href="">Minha conta<i class="fa-regular fa-user"></i></a></li>
-                        <li class=""><a href="">Meus pedidos<i class="fa-solid fa-truck"></i></a></li>
-                        <li><a href=""></i>R$ 0,00<i class="fas fa-regular fa-cart-shopping"></i></a></li>
+                        <li><img src="img/pais.png" alt=""></li>
                     </ul>
                 </div>
             </div>
@@ -74,43 +73,30 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link " href="#">Início</a>
+                <a class="nav-link " href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">Saúde</a>
+                <a class="nav-link " href="#">Produtos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">Estética</a>
+                <a class="nav-link " href="#">Made for you</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">Alimentos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#">Comércio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#">Indústria</a>
-              </li>
-              <li class="nav-item dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
-                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Categorias
-                </a>
-                <ul id="dropdownMenu" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Categoria Titúlo</a></li>
-                  <li><a class="dropdown-item" href="#">Categoria Titúlo</a></li>
-                  <li><a class="dropdown-item" href="#">Categoria Titúlo</a></li>
-                </ul>
+                <a class="nav-link " href="#">Fale Conosco</a>
               </li>
             </ul>
           </div>
           <div>
-            <button class="btn btn-dark">
+            <a href=""><span>R$ 0,00<i class="fa-solid fa-cart-shopping"></i></span></a>
+          </div>
+          <div>
+            <button class="btn">
               <i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/xxxxxxxxxxxxxx">ATENDIMENTO</a>
             </button>
           </div>
         </div>
       </nav>
-      
+
       <!-- Início da Nav para celular -->
       <nav class="navResponsive d-block d-sm-none wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
         <div class="container mb-2">
@@ -144,38 +130,22 @@
                       <li class="minhaConta"><a href="">Minha conta<i class="fa-regular fa-user"></i></a></li>
                     </ul>
                   </div>
-                  <button class="navbar-toggler botao" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="true" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i>
+                  <button id="toggle-button" class="navbar-toggler botao" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="true" aria-label="Toggle navigation">
+                    <i id="toggle-icon" class="fa-solid fa-bars"></i>
                   </button>
                   <div class="navbar-collapse collapse" id="menu">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Início</a>
+                        <a class="nav-link" href="#">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Saúde</a>
+                        <a class="nav-link" href="#">Produtos</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Estética</a>
+                        <a class="nav-link" href="#">Made for you</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Alimentos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Comércio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Indústria</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Categorias
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="#">Categoria Título</a></li>
-                          <li><a class="dropdown-item" href="#">Categoria Título</a></li>
-                          <li><a class="dropdown-item" href="#">Categoria Título</a></li>
-                        </ul>
+                        <a class="nav-link" href="#">Fale Conosco</a>
                       </li>
                     </ul>
                   </div>
@@ -186,24 +156,52 @@
         </div>
       </nav>
       <!-- Fim da Nav para celular -->
-    </header>
+  </header>
 
+  <section class="carrossel">
+    <div class="container">
       <div id="carouselExampleCaptions" class="carousel slide wow fadeInLeftBig" data-wow-duration="0.8s" data-wow-delay="0.6s" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/img-carrousel-1.png" class="d-block w-100" alt="...">
+            <img src="img/img-carrousel-1.png" class="d-block" alt="...">
             <div class="carousel-caption textoCarrosel container row col-md-6 col">
               <p>A maior linha de mobiliário técnico do mundo!</p>
+              <span class="btn">Veja mais</span>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img/img-carrousel-2.png" class="d-block w-100" alt="...">
+            <img src="img/img-carrousel-2.png" class="d-block" alt="...">
             <div class="carousel-caption textoCarrosel container row col-md-6">
               <p>A maior linha de mobiliário técnico do mundo!</p>
+              <span class="btn">Veja mais</span>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/img-carrousel-3.png" class="d-block" alt="...">
+            <div class="carousel-caption textoCarrosel container row col-md-6">
+              <p>A maior linha de mobiliário técnico do mundo!</p>
+              <span class="btn">Veja mais</span>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide3.jpg" class="d-block" alt="...">
+            <div class="carousel-caption textoCarrosel container row col-md-6">
+              <p>A maior linha de mobiliário técnico do mundo!</p>
+              <span class="btn">Veja mais</span>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide4.jpg" class="d-block" alt="...">
+            <div class="carousel-caption textoCarrosel container row col-md-6">
+              <p>A maior linha de mobiliário técnico do mundo!</p>
+              <span class="btn">Veja mais</span>
             </div>
           </div>
         </div>
@@ -214,772 +212,440 @@
           <i class="fa-solid fa-angle-right"></i>
         </button>
       </div>
+    </div>
+  </section>
 
-      <section class="container">
-        <div class="container">
-          <div class="segmento">
-            <div class="row">
-              <div class="col-md-12">
-                <h2>Confira as possibilidades da MAD.U para o seu segmento:</h2>
-              </div>
-            </div>
-            <div class="row wow fadeInRightBig" data-wow-duration="0.8s" data-wow-delay="0.6s">
-              <div class="col-md-2 col-4">
-                <div class="segmentoLink">
-                <a href="">
-                  <img class="zoomImg" src="img/ico-1.png" alt="">
-                  <h3>Saúde</h3>
-                </a>
-                </div>
-              </div>
-              <div class="col-md-2 col-4">
-                <div class="segmentoLink">
-                  <a href="">
-                    <img class="zoomImg" src="img/ico-2.png" alt="">
-                    <h3>Estética</h3>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-2 col-4">
-                <div class="segmentoLink">
-                  <a href="">
-                    <img class="zoomImg" src="img/ico-3.png" alt="">
-                    <h3>Alimentos</h3>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-2 col-4">
-                <div class="segmentoLink">
-                  <a href="">
-                    <img class="zoomImg" src="img/ico-4.png" alt="">
-                    <h3> Comércio</h3>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-2 col-4">
-                <div class="segmentoLink">
-                  <a href="">
-                    <img class="zoomImg" src="img/ico-5.png" alt="">
-                    <h3>Indústria</h3>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-2 col-4">
-                <div class="segmentoLink">
-                  <a href="">
-                    <img class="zoomImg" src="img/ico-6.png" alt="">
-                    <h3>Outros</h3>
-                  </a>
-                </div>
-              </div>
+  <section class="container">
+    <div class="container">
+      <div class="segmento">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Confira as possibilidades da MAD.U para o seu segmento:</h2>
           </div>
         </div>
-      </section>
+        <div class="row wow fadeInRightBig" data-wow-duration="0.8s" data-wow-delay="0.6s">
+          <div class="col-md-2 col-4">
+            <div class="segmentoLink">
+            <a href="">
+              <img class="zoomImg" src="img/ico-1.png" alt="">
+              <h3>Saúde</h3>
+            </a>
+            <ul>
+              <li>Hospitais</li>
+              <li>Clínicas e Consultórios</li>
+              <li>Odontologia</li>
+              <li>Veterinária</li>
+              <li>Farmácias</li>
+              <li>Home Care</li>
+              <li>Higiene e Limpeza</li>
+            </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-4">
+            <div class="segmentoLink">
+              <a href="">
+                <img class="zoomImg" src="img/ico-7.png" alt="">
+                <h3>Estética</h3>
+              </a>
+              <ul>
+                <li>Salões e Barbearias</li>
+                <li>Clínicas</li>
+                <li>Manicure</li>
+                <li>Podologia</li>
+                <li>Depilação</li>
+                <li>Piercing</li>
+                <li>Tatuagem</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-4">
+            <div class="segmentoLink">
+              <a href="">
+                <img class="zoomImg" src="img/ico-3.png" alt="">
+                <h3>Alimentos</h3>
+              </a>
+              <ul>
+                <li>Armazenamento</li>
+                <li>Cozinhas Industriais</li>
+                <li>Panificadoras</li>
+                <li>Bares</li>
+                <li>Restaurantes</li>
+                <li>Açougues</li>
+                <li>Higiene e Limpeza</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-4">
+            <div class="segmentoLink">
+              <a href="">
+                <img class="zoomImg" src="img/ico-4.png" alt="">
+                <h3> Comércio</h3>
+              </a>
+              <ul>
+                <li>Lojas</li>
+                <li>Supermercados</li>
+                <li>Shopping Center</li>
+                <li>Oficinas e Garagens</li>
+                <li>Depósitos</li>
+                <li>Farmácias</li>
+                <li>Escritórios</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-4">
+            <div class="segmentoLink">
+              <a href="">
+                <img class="zoomImg" src="img/ico-5.png" alt="">
+                <h3>Indústria</h3>
+              </a>
+              <ul>
+                <li>Escritórios</li>
+                <li>Almoxarifado</li>
+                <li>Laboratórios</li>
+                <li>Vestiários</li>
+                <li>Produção</li>
+                <li>Manutenção</li>
+                <li>Estações de trabalho</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-4">
+            <div class="segmentoLink">
+              <a href="">
+                <img class="zoomImg" src="img/ico-6.png" alt="">
+                <h3>Outros</h3>
+              </a>
+              <ul>
+                <li>Hotéis</li>
+                <li>Escolas</li>
+                <li>Estúdios</li>
+                <li>Laboratórios</li>
+                <li>Lavanderias</li>
+                <li>Residencial</li>
+                <li>Logística</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
 
-      <section>
-        <div class="container produtosDestaque">
-          <div class="row">
-            <div class="col-md-12 wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
-              <h2>Produtos em destaque</h2>
-            </div>
+  <section class="secaoExperimente">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Experimente Infinitas possibilidades!</h2>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <iframe src="https://player.vimeo.com/video/633104570?h=8c08741626&title=0&byline=0&portrait=0&autoplay=1&loop=1" width="100%" height="700" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen playsinline></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="secaoLinhasProdutos">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Conheca nossas linhas de produtos</h2>
+        </div>
+        <div class="col-md-4">
+          <div class="fundoMADU">
+            <img src="img/M.png" alt="">
+            <h3>MADU One</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
           </div>
-          <div class="row">
-            <div class="col-md-3 col-6">
-              <div class="bordaProdutos">
-                <a href="">
-                  <img class="w-100" src="img/suporte-com-soro-com-poupa-pes.jpg" alt="">
-                  <h3>Suporte de Soro com Poupa-Pés</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">COMPRAR</span>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-6">
-              <div class="bordaProdutos">
-                <a href="">
-                  <img class="w-100" src="img/mesa-estofada.jpg" alt="">
-                  <h3>Mesa Estofada</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">COMPRAR</span>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-6">
-              <div class="bordaProdutos">
-                <a href="">
-                  <img class="w-100" src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
-                  <h3>Mesa de inox com 12 gavetas e bins</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">VER OPÇOES</span>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-6">
-              <div class="bordaProdutos">
-                <a href="">
-                  <img class="w-100" src="img/mesa-inox.jpg" alt="">
-                  <h3>Mesa de inox</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">COMPRAR</span>
-                </a>
-              </div>
-            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="fundoMADU">
+            <img src="img/M.png" alt="">
+            <h3>MADU Expand</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
           </div>
-          <div class="row">
-            <div class="col-md-3 col-6">
-              <div class="bordaProdutos">
-                <a href="">
-                  <img class="w-100" src="img/mesa-de-inox-com-12-gavetas-e-acessorios-lilas.jpg" alt="">
-                  <h3>Mesa de inox com 12 gavetas e acessórios</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">VER OPÇOES</span>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-6">
-              <div class="bordaProdutos">
-                <a href="">
-                  <img class="w-100" src="img/armario-vitrine-vermelho.jpg" alt="">
-                  <h3>Armário Vitrine</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">VER OPÇOES</span>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-6">
-              <div class="bordaProdutos">
-                <a href="">
-                  <img class="w-100" src="img/carro-compacto-com-5-prateleiras-laranja.jpg" alt="">
-                  <h3>Carro compacto com 5 prateleiras</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">VER OPÇOES</span>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-6">
-              <div class="bordaProdutos">
-                <a href="">
-                  <img class="w-100" src="img/armario-com-36-cases-verde.jpg" alt="">
-                  <h3>Armário com 36 cases</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">VER OPÇOES</span>
-                </a>
-              </div>
-            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="fundoMADU">
+            <img src="img/M.png" alt="">
+            <h3>MADU Express</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
           </div>
-          <div class="row">
-            <div class="col-md-3 col-6">
-              <div class="bordaProdutos">
-                <a href="">
-                  <img class="w-100" src="img/armario-com-96-gaveteiros-laranja.jpg" alt="">
-                  <h3>Armário com 96 gaveteiros</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">VER OPÇOES</span>
-                </a>
+        </div>
+        <div class="col-md-4">
+          <div class="fundoMADU">
+            <img src="img/M.png" alt="">
+            <h3>MADU Extreme</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="fundoMADU">
+            <img src="img/M.png" alt="">
+            <h3>MADU Expert</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="fundoMADU">
+            <img src="img/M.png" alt="">
+            <h3>MADU Extra</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="inovacao wow fadeInLeftBig" data-wow-duration="0.8s" data-wow-delay="0.6s">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 pb-2">
+          <div class="inovacaoBorda pb-3">
+            <div data-bs-toggle="modal" data-bs-target="#staticBackdropInovacao">
+              <div class="">
+                <img class="zoomImg" src="img/inovacao.png" alt="">
               </div>
-            </div>
-            <div class="col-md-3 col-6">
-              <div class="bordaProdutos">
-                <a href="">
-                  <img class="w-100" src="img/armario-com-36-gavetas-verde.jpg" alt="">
-                  <h3>Armário com 36 gavetas</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">VER OPÇOES</span>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-6">
-              <div class="bordaProdutos">
-                <a href="">
-                  <img class="w-100" src="img/carro-compacto-com-suporte-hamper.jpg" alt="">
-                  <h3>Carro compacto com suporte hamper</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">COMPRAR</span>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3 col-6">
-              <div class="bordaProdutos">
-                <a href="">
-                  <img class="w-100" src="img/carro-para-caixa-agricola-3-1.jpg" alt="">
-                  <h3>Carro para caixa agrícola</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">COMPRAR</span>
-                </a>
-              </div>
+              <h3>Inovação</h3>
+              <p>Inovar é a LIBERDADE para escolher o que, onde e principalmente QUANDO quiser!</p>
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="secaoCategorias">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h2>Navegue pelas categorias de produtos</h2>
+        <div class="col-md-4 pb-2">
+          <div class="inovacaoBorda pb-3">
+            <div data-bs-toggle="modal" data-bs-target="#staticBackdropQualidade">
+              <div class="">
+                <img class="zoomImg" src="img/qualidade.png" alt="">
+              </div>
+              <h3>Qualidade</h3>
+              <p>Mobiliário técnico feito 100% no Brasil, com a melhor qualidade disponível no Mundo.</p>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-2 p-4 col-4">
-              <div>
-                <a href="">
-                  <img class="w-100" src="img/mesa-de-inox-com-12-gavetas-e-acessorios-laranja.jpg" alt="">
-                  <h3 class="">Bancadas e estantes reforçadas</h3>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-2 p-4 col-4">
-              <div>
-                <a href="">
-                  <img class="w-100" src="img/cat-carrinhos-auxiliares.jpg" alt="">
-                  <h3>Carrinhos auxiliares</h3>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-2 p-4 col-4">
-              <div>
-                <a href="">
-                  <img class="w-100" src="img/cat-carrinhos-gavetas.jpg" alt="">
-                  <h3>Carrinhos com gavetas</h3>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-2 p-4 col-4">
-              <div>
-                <a href="">
-                  <img class="w-100" src="img/cat-carrinhos-prateleiras.jpg" alt="">
-                  <h3>Carrinhos com prateleiras</h3>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-2 p-4 col-4">
-              <div>
-                <a href="">
-                  <img class="w-100" src="img/carrinho-com-gavetas-vermelho.jpg" alt="">
-                  <h3>Carrinhos de transporte geral</h3>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-2 p-4 col-4">
-              <div>
-                <a href="">
-                  <img class="w-100" src="img/cat-estantes-armarios-gaveteiros.jpg" alt="">
-                  <h3>Estantes e armário para gaveteiros</h3>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-2 p-4 col-4">
-              <div>
-                <a href="">
-                  <img class="w-100" src="img/cat-estantes-armarios-abertos.jpg" alt="">
-                  <h3>Estantes e armários abertos</h3>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-2 p-4 col-4">
-              <div>
-                <a href="">
-                  <img class="w-100" src="img/cat-carrinhos-auxiliares.jpg" alt="">
-                  <h3>Estantes e armários com rodas</h3>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-2 p-4 col-4">
-              <div>
-                <a href="">
-                  <img class="w-100" src="img/cat-estantes-armarios.jpg" alt="">
-                  <h3>Estantes e armários fechados</h3>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-2 p-4 col-4">
-              <div>
-                <a href="">
-                  <img class="w-100" src="img/cat-expositores.jpg" alt="">
-                  <h3>Expositores, gôndolas e displays</h3>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-2 p-4 col-4">
-              <div>
-                <a href="">
-                  <img class="w-100" src="img/cat-mesas-diversas.jpg" alt="">
-                  <h3>Mesas diversas</h3>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-2 p-4 col-4">
-              <div>
-                <a href="">
-                  <img class="w-100" src="img/cat-mesas-estofadas.jpg" alt="">
-                  <h3>Mesas estofadas</h3>
-                </a>
-              </div>
-            </div>
         </div>
-      </section>
+        <div class="col-md-4">
+          <div class="inovacaoBorda">
+            <div data-bs-toggle="modal" data-bs-target="#staticBackdropTecnologia">
+              <div class="">
+                <img class="zoomImg" src="img/tecnologia.png" alt="">
+              </div>
+              <h3>Tecnologia</h3>
+              <p>A MAIOR linha de mobiliário técnico do mundo também merece a MELHOR tecnologia do mundo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <section>
-        <div class="maisVendidos d-none d-xl-block d-xxl-none">
+  <section class="meusModals">
+    <!-- Modal -->
+  <div class="modal fade" id="staticBackdropInovacao" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
           <div class="container">
             <div class="row">
-              <div class="col-md-12">
-                <h2>Mais vendidos</h2>
+              <div class="col-md-4 p-5">
+                <img class="w-100 zoomImg" src="img/inovacao.png" alt="">
               </div>
-            </div>
-          </div>
-          <div class="wow fadeInLeftBig" data-wow-duration="0.8s" data-wow-delay="0.6s">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              </div>
-              <div class="carousel-inner container">
-                <div class="carousel-item active">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <img class="w-100" src="img/suporte-com-soro-com-poupa-pes.jpg" class="d-block w-100" alt="...">
-                      <h3>Suporte de Soro com Poupa-Pés</h3>
-                      <h4>R$ 1.500,00</h4>
-                      <span class="btn">ADICIONAR AO CARRINHO</span>
-                    </div>
-                    <div class="col-md-3">
-                      <img class="w-100" src="img/cat-mesas-estofadas.jpg" class="d-block w-100" alt="...">
-                      <h3>Mesa Estofada</h3>
-                      <h4>R$ 1.500,00</h4>
-                      <span class="btn">ADICIONAR AO CARRINHO</span>
-                    </div>
-                    <div class="col-md-3">
-                      <img class="w-100" src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" class="d-block w-100" alt="...">
-                      <h3>Mesa de Inox com 12 Gavetas e Bins</h3>
-                      <h4>R$ 1.500,00</h4>
-                      <span class="btn">ADICIONAR AO CARRINHO</span>
-                    </div>
-                    <div class="col-md-3">
-                      <img class="w-100" src="img/mesa-inox.jpg" class="d-block w-100" alt="...">
-                      <h3>Mesa de Inox</h3>
-                      <h4>R$ 1.500,00</h4>
-                      <span class="btn">ADICIONAR AO CARRINHO</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <img class="w-100" src="img/mesa-de-inox-com-12-gavetas-e-acessorios-laranja.jpg" class="d-block w-100" alt="...">
-                      <h3>Mesa de Inox com 12 gavetas e acessórios</h3>
-                      <h4>R$ 1.500,00</h4>
-                      <span class="btn">ADICIONAR AO CARRINHO</span>
-                    </div>
-                    <div class="col-md-3">
-                      <img class="w-100" src="img/armario-vitrine-vermelho.jpg" class="d-block w-100" alt="...">
-                      <h3>Armário Vitrine</h3>
-                      <h4>R$ 1.500,00</h4>
-                      <span class="btn">ADICIONAR AO CARRINHO</span>
-                    </div>
-                    <div class="col-md-3">
-                      <img class="w-100" src="img/carro-compacto-com-5-prateleiras-laranja.jpg" class="d-block w-100" alt="...">
-                      <h3>Carro Compactado com 5 Prateleiras</h3>
-                      <h4>R$ 1.500,00</h4>
-                      <span class="btn">ADICIONAR AO CARRINHO</span>
-                    </div>
-                    <div class="col-md-3">
-                      <img class="w-100" src="img/armario-com-36-cases-verde.jpg" class="d-block w-100" alt="...">
-                      <h3>Armário com 36 Cases</h3>
-                      <h4>R$ 1.500,00</h4>
-                      <span class="btn">ADICIONAR AO CARRINHO</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <img class="w-100" src="img/armario-com-96-gaveteiros-laranja.jpg" class="d-block w-100" alt="...">
-                      <h3>Armário com 96 Gaveteiros</h3>
-                      <h4>R$ 1.500,00</h4>
-                      <span class="btn">ADICIONAR AO CARRINHO</span>
-                    </div>
-                    <div class="col-md-3">
-                      <img class="w-100" src="img/armario-com-36-gavetas-verde.jpg" class="d-block w-100" alt="...">
-                      <h3>Carro Compactado Suporte Hamper</h3>
-                      <h4>R$ 1.500,00</h4>
-                      <span class="btn">ADICIONAR AO CARRINHO</span>
-                    </div>
-                    <div class="col-md-3">
-                      <img class="w-100" src="img/carro-compacto-com-suporte-hamper.jpg" class="d-block w-100" alt="...">
-                      <h3>Carro para Caixa Agrícola</h3>
-                      <h4>R$ 1.500,00</h4>
-                      <span class="btn">ADICIONAR AO CARRINHO</span>
-                    </div>
-                    <div class="col-md-3">
-                      <img class="w-100" src="img/carro-para-caixa-agricola-3-1.jpg" class="d-block w-100" alt="...">
-                      <h3></h3>
-                      <h4>R$ 1.500,00</h4>
-                      <span class="btn">ADICIONAR AO CARRINHO</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <img class="w-100" src="img/cat-estantes-armarios-abertos.jpg" class="d-block w-100" alt="...">
-                      <h3>Estante com 5 Prateleiras</h3>
-                      <h4>R$ 1.500,00</h4>
-                      <span class="btn">ADICIONAR AO CARRINHO</span>
-                    </div>
-                    <div class="col-md-3">
-                      <img class="w-100" src="img/cat-carrinhos-auxiliares.jpg" class="d-block w-100" alt="...">
-                      <h3> Carro Auxiliar com Suporte para Rolo e Acessórios Diversos</h3>
-                      <h4>R$ 1.500,00</h4>
-                      <span class="btn">ADICIONAR AO CARRINHO</span>
-                    </div>
-                    <div class="col-md-3">
-                      <img class="w-100" src="img/cat-carrinhos-gaveteiros.jpg" class="d-block w-100" alt="...">
-                      <h3>Carro com 3 Gavetas e Bins Suspensos</h3>
-                      <h4>R$ 1.500,00</h4>
-                      <span class="btn">ADICIONAR AO CARRINHO</span>
-                    </div>
-                    <div class="col-md-3">
-                      <img class="w-100" src="img/suporte-com-soro-com-poupa-pes.jpg" class="d-block w-100" alt="...">
-                      <h3>Suporte de Soro com Poupa-Pés</h3>
-                      <h4>R$ 1.500,00</h4>
-                      <span class="btn">ADICIONAR AO CARRINHO</span>
-                    </div>
-                  </div>
+              <div class="col-md-8">
+                <div class="larguraTextoModal">
+                  <h2>Inovação</h2>
+                  <h3>Inovar é a LIBERDADE para escolher o que, onde e principalmente QUANDO quiser!</h3>
+                  <p>A maior linha de mobiliário técnico do mundo foi feita para aqueles que desejam ampla liberdade de escolha. São milhares de possibilidades de modelos, tamanhos, formatos, materiais, montagens, acessórios e cores que criam combinações e múltiplas utilizações de acordo com a necessidade de cada cliente.<br><br>
+                    A MAD.U inova nos mínimos detalhes. Como num jogo de blocos de montar os produtos podem ser fornecidos individualmente ou em conjuntos completos montados, formando composições intercambiáveis com a possibilidade de reconfiguração para novos modelos, novas composições, novas utilizações e em qualquer momento da vida do seu mobiliário.</p>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <i class="fa-solid fa-angle-left botao"></i>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <i class="fa-solid fa-angle-right botao"></i>
-              </button>
             </div>
           </div>
         </div>
-        <!-- Carrosel Responsivo -->
-        <div class="maisVendidos d-block d-sm-none">
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <div class="modal fade" id="staticBackdropQualidade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
           <div class="container">
             <div class="row">
-              <div class="col-md-12">
-                <h2>Mais vendidos</h2>
+              <div class="col-md-4 p-5">
+                <img class="w-100 zoomImg" src="img/qualidade.png" alt="">
               </div>
-            </div>
-          </div>
-          <div class="container wow fadeInLeftBig" data-wow-duration="0.8s" data-wow-delay="0.6s">
-            <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="8" aria-label="Slide 9"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="9" aria-label="Slide 10"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="10" aria-label="Slide 11"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="11" aria-label="Slide 12"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="12" aria-label="Slide 13"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="13" aria-label="Slide 14"></button>
+              <div class="col-md-8">
+                <h2>Qualidade</h2>
+                <h3>Mobiliário técnico feito 100% no Brasil, com a melhor qualidade disponível no Mundo.</h3>
+                <p>A MAD.U tem sua própria infraestrutura de indústria dominando a cadeia produtiva desde o projeto inicial até sua fabricação final.<br><br>
+                Todos os componentes são desenvolvidos para uso específico, sem a utilização de partes genéricas ou adaptadas.<br><br>
+                Partes plásticas produzidas por injeção em polímeros de engenharia de altíssima durabilidade, totalmente imunes à oxidação ou ferrugem, elevada resistência ao impacto, agentes químicos, raios ultravioletas ou outras intempéries. Com aditivo antimicrobiano para proteção contra a proliferação de microrganismos e diminuição da contaminação cruzada.<br><br>
+                Partes metálicas com chassi totalmente em aço anticorrosivo ou aço inoxidável, as peças sujeitas ao manejo constante estão recobertas por componentes plásticos projetados para facilitar a limpeza e promover elevada resistência ao uso evitando corrosão.<br><br>
+                Cada componente e seus materiais foram pensados e especificados para o seu melhor uso.</p>
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="w-100" src="img/suporte-com-soro-com-poupa-pes.jpg" alt="...">
-                  <h3>Suporte de Soro com Poupa-Pés</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">ADICIONAR AO CARRINHO</span>
-                </div>
-                <div class="carousel-item">
-                  <img class="w-100" src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="...">
-                  <h3>Mesa de Inox com 12 Gavetas e Bins</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">ADICIONAR AO CARRINHO</span>
-                </div>
-                <div class="carousel-item">
-                  <img class="w-100" src="img/mesa-inox.jpg" alt="...">
-                  <h3>Mesa de Inox</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">ADICIONAR AO CARRINHO</span>
-                </div>
-                <div class="carousel-item">
-                  <img class="w-100" src="img/mesa-de-inox-com-12-gavetas-e-acessorios-laranja.jpg" alt="...">
-                  <h3>Mesa de Inox com 12 gavetas e acessórios</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">ADICIONAR AO CARRINHO</span>
-                </div>
-                <div class="carousel-item">
-                  <img class="w-100" src="img/armario-vitrine-vermelho.jpg" alt="...">
-                  <h3>Armário Vitrine</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">ADICIONAR AO CARRINHO</span>
-                </div>
-                <div class="carousel-item">
-                  <img class="w-100" src="img/carro-compacto-com-5-prateleiras-laranja.jpg" alt="...">
-                  <h3>Carro Compactado com 5 Prateleiras</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">ADICIONAR AO CARRINHO</span>
-                </div>
-                <div class="carousel-item">
-                  <img class="w-100" src="img/armario-com-36-cases-verde.jpg" alt="...">
-                  <h3>Armário com 36 Cases</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">ADICIONAR AO CARRINHO</span>
-                </div>
-                <div class="carousel-item">
-                  <img class="w-100" src="img/armario-com-96-gaveteiros-laranja.jpg" alt="...">
-                  <h3>Armário com 96 Gaveteiros</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">ADICIONAR AO CARRINHO</span>
-                </div>
-                <div class="carousel-item">
-                  <img class="w-100" src="img/armario-com-36-gavetas-verde.jpg" alt="...">
-                  <h3>Armário com 36 Gavetas</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">ADICIONAR AO CARRINHO</span>
-                </div>
-                <div class="carousel-item">
-                  <img class="w-100" src="img/carro-compacto-com-suporte-hamper.jpg" alt="...">
-                  <h3>Carro para Caixa Agrícola</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">ADICIONAR AO CARRINHO</span>
-                </div>
-                <div class="carousel-item">
-                  <img class="w-100" src="img/carro-para-caixa-agricola-3-1.jpg" alt="...">
-                  <h3>Carro para Caixa Acricola</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">ADICIONAR AO CARRINHO</span>
-                </div>
-                <div class="carousel-item">
-                  <img class="w-100" src="img/cat-estantes-armarios-abertos.jpg" alt="...">
-                  <h3>Estante com 5 Prateleiras</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">ADICIONAR AO CARRINHO</span>
-                </div>
-                <div class="carousel-item">
-                  <img class="w-100" src="img/cat-carrinhos-auxiliares.jpg" alt="...">
-                  <h3> Carro Auxiliar com Suporte para Rolo e Acessórios Diversos</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">ADICIONAR AO CARRINHO</span>
-                </div>
-                <div class="carousel-item">
-                  <img class="w-100" src="img/cat-carrinhos-gaveteiros.jpg" alt="...">
-                  <h3>Carro com 3 Gavetas e Bins Suspensos</h3>
-                  <h4>R$ 1.500,00</h4>
-                  <span class="btn">ADICIONAR AO CARRINHO</span>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
-                <i class="fa-solid fa-angle-left botao"></i>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
-                <i class="fa-solid fa-angle-right botao"></i>
-              </button>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <div class="modal fade" id="staticBackdropTecnologia" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 p-5">
+                <img class="w-100 zoomImg" src="img/tecnologia.png" alt="">
+              </div>
+              <div class="col-md-8">
+                <h2>Tecnologia</h2>
+              <h3>A MAIOR linha de mobiliário técnico do mundo também merece a MELHOR tecnologia do mundo.</h3>
+              <p>Cada parte foi estritamente pensada e desenvolvida para o uso específico e resistente permitindo a agilidade na manutenção e eventual substituição de peças.<br><br>
+                Rodízios especialmente desenvolvidos para uso extra silencioso e de alta durabilidade, com rotação e translação 360°. Bandas de rodagem com perfil reduzido para evitar o arrasto de contaminantes.<br><br>
+                Gavetas com trilhos imunes à oxidação ou ferrugem, auto lubrificados e com exclusivo sistema de interferência de abertura escalonada para maior segurança nos deslocamentos.<br><br>
+                Diversas opções de tampos, hastes, suportes, rodas, travas, pés, para-choques, prateleiras e outros.<br><br>
+                Tudo feito para você.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  
+  <section class="form">
+    <div class="container d-none d-xl-block d-xxl-none">
+      <div>
+        <h2>RECEBA NOVIDADES E PROMOÇÕES DA MAD.U</h2>
+      </div>
+      <form class="row">
+        <div class="col-md-5 col-12">
+          <input type="text" class="form-control" id="name" name="name" placeholder="Nome">
+        </div>
+        <div class="col-md-5 col-12">
+          <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="E-mail">
+        </div>
+        <div class="col-md-2 col-12">
+          <button type="submit" class="btn">Enviar</button>
+        </div>
+      </form>
+    </div>
+    <!-- Responsivo -->
+    <div class="container d-block d-sm-none">
+      <div>
+        <h2>RECEBA NOVIDADES E PROMOÇÕES DA MAD.U</h2>
+      </div>
+      <form class="">
+        <div class="mb-2">
+          <input type="text" class="form-control" id="name" name="name" placeholder="Nome">
+        </div>
+        <div class="mb-2">
+          <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="E-mail">
+        </div>
+        <div class="">
+          <button type="submit" class="btn w-100">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
 
-      <section class="inovacao wow fadeInLeftBig" data-wow-duration="0.8s" data-wow-delay="0.6s">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 pb-2">
-              <div class="inovacaoBorda pb-3">
-                <a href="">
-                  <div class="">
-                    <img class="w-50 zoomImg" src="img/inovacao.png" alt="">
-                  </div>
-                  <h3>Inovação</h3>
-                  <p>Inovar é a LIBERDADE para escolher o que, onde e principalmente QUANDO quiser!</p>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4 pb-2">
-              <div class="inovacaoBorda pb-3">
-                <a href="">
-                  <div class="">
-                    <img class="w-50 zoomImg" src="img/qualidade.png" alt="">
-                  </div>
-                  <h3>Qualidade</h3>
-                  <p>Mobiliário técnico feito 100% no Brasil, com a melhor qualidade disponível no Mundo.</p>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="inovacaoBorda">
-                <a href="">
-                  <div class="">
-                    <img class="w-50 zoomImg" src="img/tecnologia.png" alt="">
-                  </div>
-                  <h3>Tecnologia</h3>
-                  <p>A MAIOR linha de mobiliário técnico do mundo também merece a MELHOR tecnologia do mundo.</p>
-                </a>
-              </div>
-            </div>
+  <footer>
+    <div class="primeiraDivFooter">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="img/logo-madu.png" alt="" class="w-50">
+            <p>A maior linha de mobiliário técnico do mundo foi feita para aqueles que desejam ampla liberdade de escolha.</p>
           </div>
-        </div>
-      </section>
-
-      <section class="madeForYou d-none d-xl-block d-xxl-none">
-        <div class="container wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
-          <div class="row">
-            <div class="col-md-6">
-                <h2>Made for you</h2>
-                <p>Já imaginou poder montar um mobiliário perfeito para o seu espaço de trabalho, sem limitações? E se você ainda pudesse contar com inúmeras opções de partes e cores à sua disposição?<br /><br />
-
-                  Essa é a missão da MAD.U. Como empresa integrante do Grupo MFM, nosso mobiliário parte do desejo de inovar e buscar crescimento contínuo.<br /><br />
-                  
-                  Somos uma organização audaciosa e incansável, e por isso, queremos trazer soluções criativas e práticas para o mercado.
-                </p>
-              </div>
-            <div class="col-md-6">
-              <iframe src="https://player.vimeo.com/video/633104570?h=8c08741626&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>    
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="madeForYou d-block d-sm-none">
-        <div class="container wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
-          <div class="row">
-            <div class="col-12">
-              <h2>Made for you</h2>
-              <p>Já imaginou poder montar um mobiliário perfeito para o seu espaço de trabalho, sem limitações? E se você ainda pudesse contar com inúmeras opções de partes e cores à sua disposição?<br /><br />
-                Essa é a missão da MAD.U. Como empresa integrante do Grupo MFM, nosso mobiliário parte do desejo de inovar e buscar crescimento contínuo.<br /><br />
-                Somos uma organização audaciosa e incansável, e por isso, queremos trazer soluções criativas e práticas para o mercado.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
-          <iframe src="https://player.vimeo.com/video/633104570?h=8c08741626&title=0&byline=0&portrait=0"width="100%" height="300" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen playsinline></iframe>
-        </div>
-      </section>
-      
-
-      <section class="form">
-        <div class="container d-none d-xl-block d-xxl-none">
-          <div>
-            <h2>RECEBA NOVIDADES E PROMOÇÕES DA MAD.U</h2>
-          </div>
-          <form class="row">
-            <div class="col-md-5 col-12">
-              <input type="text" class="form-control" id="name" name="name" placeholder="Nome">
-            </div>
-            <div class="col-md-5 col-12">
-              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="E-mail">
-            </div>
-            <div class="col-md-2 col-12">
-              <button type="submit" class="btn">Enviar</button>
-            </div>
-          </form>
-        </div>
-        <!-- Responsivo -->
-        <div class="container d-block d-sm-none">
-          <div>
-            <h2>RECEBA NOVIDADES E PROMOÇÕES DA MAD.U</h2>
-          </div>
-          <form class="">
-            <div class="mb-2">
-              <input type="text" class="form-control" id="name" name="name" placeholder="Nome">
-            </div>
-            <div class="mb-2">
-              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="E-mail">
-            </div>
+          <div class="col-md-4">
             <div class="">
-              <button type="submit" class="btn w-100">Enviar</button>
+              <h2 class="">Atendimento</h2>
+              <ul class="">
+                <li><i class="fa-solid fa-phone"></i>Telefone: 0800 721 8533</li>
+                <li><i class="fa-solid fa-envelope"></i>Email: contato@grupomfm.com.br</li>
+                <li><i class="fa-brands fa-whatsapp"></i>WhatsApp: (55) 41 99687-8783</li>
+              </ul>
             </div>
-          </form>
-        </div>
-      </section>
-
-      <footer>
-        <div class="primeiraDivFooter">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4">
-                <img src="img/logo-madu.png" alt="" class="w-50">
-                <p>A maior linha de mobiliário técnico do mundo foi feita para aqueles que desejam ampla liberdade de escolha.</p>
-              </div>
-              <div class="col-md-4">
-                <div class="">
-                  <h2 class="">Atendimento</h2>
-                  <ul class="">
-                    <li><i class="fa-solid fa-phone"></i>Telefone: 0800 721 8533</li>
-                    <li><i class="fa-solid fa-envelope"></i>Email: contato@grupomfm.com.br</li>
-                    <li><i class="fa-brands fa-whatsapp"></i>WhatsApp: (55) 41 99687-8783</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <h2 class="">Endereço</h2>
-                <div class="divSocial">
-                  <ul>
-                    <li><i class="fa-solid fa-location-dot"></i> R. Emma Rohrsetzer, 1011 - Emiliano Perneta, Pinhais - PR, 83324-190</li>
-                  </ul>
-                </div>
-              </div>
+          </div>
+          <div class="col-md-4">
+            <h2 class="">Endereço</h2>
+            <div class="divSocial">
+              <ul>
+                <li><i class="fa-solid fa-location-dot"></i> R. Emma Rohrsetzer, 1011 - Emiliano Perneta, Pinhais - PR, 83324-190</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="segundaDivFooter d-none d-xl-block d-xxl-none">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-5">
-                <span>
-                  Copyright &copy; 2023 - Todos os Direitos Reservados
-                </span>
-              </div>
-              <div class="col-md-2 siteSeguro">
-                <i class="fa-solid fa-shield-halved"></i>
-              </div>
-              <div class="col-md-2 siteSeguro">
-                <h3>SITE SEGURO</h3>
-                <h4>CERTIFICADO SSL</h4>
-              </div>
-              <div class="col-md-3 redesSociais">
-                <ul class="">
-                  <li><i class="fa-brands fa-facebook"></i></li>
-                  <li><i class="fa-brands fa-twitter"></i></li>
-                  <li><i class="fa-brands fa-vimeo"></i></li>
-                  <li><i class="fa-brands fa-instagram"></i></li>
-                </ul>
-              </div>
-            </div>
+      </div>
+    </div>
+    <div class="segundaDivFooter d-none d-xl-block d-xxl-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <span>
+              Copyright &copy; 2023 - Todos os Direitos Reservados
+            </span>
+          </div>
+          <div class="col-md-2 siteSeguro">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div class="col-md-2 siteSeguro">
+            <h3>SITE SEGURO</h3>
+            <h4>CERTIFICADO SSL</h4>
+          </div>
+          <div class="col-md-3 redesSociais">
+            <ul class="">
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-vimeo"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+            </ul>
           </div>
         </div>
+      </div>
+    </div>
 
-        <!-- Resposvivo -->
-        <div class="segundaDivFooter d-block d-sm-none">
+    <!-- Resposvivo -->
+    <div class="segundaDivFooter d-block d-sm-none">
+      <div class="">
+        <div class="">
+          <div class="copyRight">
+            <span>
+              Copyright &copy; 2023 - Todos os Direitos Reservados
+            </span>
+          </div>
+          <div class="escudo">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
           <div class="">
-            <div class="">
-              <div class="copyRight">
-                <span>
-                  Copyright &copy; 2023 - Todos os Direitos Reservados
-                </span>
-              </div>
-              <div class="escudo">
-                <i class="fa-solid fa-shield-halved"></i>
-              </div>
-              <div class="">
-                <h3>SITE SEGURO</h3>
-                <h4>CERTIFICADO SSL</h4>
-              </div>
-              <div class="">
-                <ul class="">
-                  <li><i class="fa-brands fa-facebook"></i></li>
-                  <li><i class="fa-brands fa-twitter"></i></li>
-                  <li><i class="fa-brands fa-vimeo"></i></li>
-                  <li><i class="fa-brands fa-instagram"></i></li>
-                </ul>
-              </div>
-            </div>
+            <h3>SITE SEGURO</h3>
+            <h4>CERTIFICADO SSL</h4>
+          </div>
+          <div class="">
+            <ul class="">
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-vimeo"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+            </ul>
           </div>
         </div>
-      </footer>
+      </div>
+    </div>
+
+    <a href="#" style="position:fixed;width:60px;height:120px;bottom:40px;right:40px; z-index:1000;">
+        <img src="https://agenciaflag.com.br/wp-content/themes/agenciaflag/assets/images/ico-whatsapp.png" class="image-fit w-100">
+    </a>
+  </footer>
+
       
     
 </body>
