@@ -18,6 +18,8 @@
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <!-- Animações -->
     <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!-- CSS do jQuery -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 <body>
   <header>
@@ -42,7 +44,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-2">
-                  <a href="">
+                  <a href="index.html">
                     <img class="w-100 zoomImg" src="img/logo_madu.png" alt="">
                   </a>
                 </div>
@@ -73,10 +75,10 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link " href="#">Home</a>
+                <a class="nav-link " href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">Produtos</a>
+                <a class="nav-link " href="produtos.html">Produtos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link " href="#">Made for you</a>
@@ -401,33 +403,30 @@
         <div class="col-md-4 pb-2">
           <div class="inovacaoBorda pb-3">
             <div data-bs-toggle="modal" data-bs-target="#staticBackdropInovacao">
-              <div class="">
                 <img class="zoomImg" src="img/inovacao.png" alt="">
-              </div>
-              <h3>Inovação</h3>
-              <p>Inovar é a LIBERDADE para escolher o que, onde e principalmente QUANDO quiser!</p>
+                <h3>Inovação</h3>
+                <p>Inovar é a LIBERDADE para escolher o que, onde e principalmente QUANDO quiser!</p>
+                <span class="btn btn-dark rounded-pill">SAIBA MAIS</span>
             </div>
           </div>
         </div>
         <div class="col-md-4 pb-2">
           <div class="inovacaoBorda pb-3">
             <div data-bs-toggle="modal" data-bs-target="#staticBackdropQualidade">
-              <div class="">
                 <img class="zoomImg" src="img/qualidade.png" alt="">
-              </div>
               <h3>Qualidade</h3>
               <p>Mobiliário técnico feito 100% no Brasil, com a melhor qualidade disponível no Mundo.</p>
+              <span class="btn btn-dark rounded-pill">SAIBA MAIS</span>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="inovacaoBorda">
+        <div class="col-md-4 pb-2">
+          <div class="inovacaoBorda pb-3">
             <div data-bs-toggle="modal" data-bs-target="#staticBackdropTecnologia">
-              <div class="">
                 <img class="zoomImg" src="img/tecnologia.png" alt="">
-              </div>
               <h3>Tecnologia</h3>
               <p>A MAIOR linha de mobiliário técnico do mundo também merece a MELHOR tecnologia do mundo.</p>
+              <span class="btn btn-dark rounded-pill">SAIBA MAIS</span>
             </div>
           </div>
         </div>
@@ -453,8 +452,8 @@
                 <div class="larguraTextoModal">
                   <h2>Inovação</h2>
                   <h3>Inovar é a LIBERDADE para escolher o que, onde e principalmente QUANDO quiser!</h3>
-                  <p>A maior linha de mobiliário técnico do mundo foi feita para aqueles que desejam ampla liberdade de escolha. São milhares de possibilidades de modelos, tamanhos, formatos, materiais, montagens, acessórios e cores que criam combinações e múltiplas utilizações de acordo com a necessidade de cada cliente.<br><br>
-                    A MAD.U inova nos mínimos detalhes. Como num jogo de blocos de montar os produtos podem ser fornecidos individualmente ou em conjuntos completos montados, formando composições intercambiáveis com a possibilidade de reconfiguração para novos modelos, novas composições, novas utilizações e em qualquer momento da vida do seu mobiliário.</p>
+                  <p>A maior linha de mobiliário técnico do mundo foi feita para aqueles que desejam ampla liberdade de escolha. São <strong>milhares</strong> de possibilidades de modelos, tamanhos, formatos, materiais, montagens, acessórios e cores que criam combinações e <strong>múltiplas utilizações</strong> de acordo com a necessidade de cada cliente.<br><br>
+                    A MAD.U inova nos mínimos detalhes. <strong>Como num jogo de blocos de montar</strong> os produtos podem ser fornecidos individualmente ou em conjuntos completos montados, formando composições intercambiáveis com a possibilidade de reconfiguração para <strong>novos modelos, novas composições, novas utilizações e em qualquer momento da vida do seu mobiliário.</strong></p>
                 </div>
               </div>
             </div>
@@ -510,8 +509,8 @@
               <p>Cada parte foi estritamente pensada e desenvolvida para o uso específico e resistente permitindo a agilidade na manutenção e eventual substituição de peças.<br><br>
                 Rodízios especialmente desenvolvidos para uso extra silencioso e de alta durabilidade, com rotação e translação 360°. Bandas de rodagem com perfil reduzido para evitar o arrasto de contaminantes.<br><br>
                 Gavetas com trilhos imunes à oxidação ou ferrugem, auto lubrificados e com exclusivo sistema de interferência de abertura escalonada para maior segurança nos deslocamentos.<br><br>
-                Diversas opções de tampos, hastes, suportes, rodas, travas, pés, para-choques, prateleiras e outros.<br><br>
-                Tudo feito para você.</p>
+                Diversas opções de tampos, hastes, suportes, rodas, travas, pés, para-choques, prateleiras e outros.</p>
+                <span>Tudo feito para você.</span>
               </div>
             </div>
           </div>
@@ -649,6 +648,9 @@
       
     
 </body>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <!-- meu script -->
 <script src="js/meu-script.js"></script>
 <!-- ScriptBootstrap -->

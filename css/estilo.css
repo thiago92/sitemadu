@@ -437,7 +437,7 @@ Início -> Inovaçao, qualidade e tecnologia
 }
 
 .inovacao .col-md-4 {
-    height: 450px;
+    height: 100%;
 }
 
 .inovacao .inovacaoBorda {
@@ -473,6 +473,17 @@ Início -> Inovaçao, qualidade e tecnologia
     width: 80%;
 }
 
+.inovacao span {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 25px;
+    background: #383838;
+}
+
+.inovacao .btn:hover {
+    background: #383838 !important;
+}
+
 .modal-header {
     border-bottom: none;
 }
@@ -498,6 +509,13 @@ Início -> Inovaçao, qualidade e tecnologia
     font-weight: 500;
     color: #2C2C2C;
     text-align: justify;
+}
+
+.modal span {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    color: #2C2C2C;
 }
 
 /* -----------------------------------------
@@ -654,6 +672,55 @@ Início -> Footer
 /* ------------------------------------
 Fim -> Footer
 -------------------------------- */
+
+/* --------------------------------------------------------------- Página Produtos ------------------------------------------------------------------------------------- */
+
+/* -------------------------
+Início do NavRotas
+-------------------------- */
+
+.secaoRotas{
+    background: #444444;
+    color: #FFFFFF;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.secaoRotas h2 {
+    display:inline-flex;
+    font-size: 14px;
+    /* font-weight: 400; */
+    /* margin-left: 0px; */
+    font-weight: bold;
+    padding-top: 1%;
+}
+
+.secaoRotas h2 a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding-right: 5px;
+}
+
+ /* Estilo personalizado para os seletores de preço */
+ /* Estilo personalizado para os seletores de preço */
+ .ui-slider-handle {
+    border-radius: 50% !important; /* Torna os seletores de preço redondos */
+    height: 18px; /* Ajusta o tamanho dos seletores de preço */
+    background-color: #fff; /* Cor de fundo dos seletores de preço */
+    cursor: pointer; /* Cursor do mouse ao passar sobre os seletores de preço */
+  }
+
+  /* Estilo personalizado para a linha entre os seletores de preço */
+  .ui-slider-horizontal .ui-slider-range {
+    border: 3px solid #000; /* Espessura da linha: 3px */
+    background-color: #000; /* Cor da linha entre os seletores de preço */
+  }
+
+
+
+
 
 /* -------------------------------
 Início -> Responsividade do site

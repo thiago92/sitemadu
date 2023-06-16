@@ -38,3 +38,22 @@ window.addEventListener("scroll", function() {
     }
 });
 
+//Página - Produtos - range
+$(function() {
+  var minPrice = 1000;
+  var maxPrice = 2200;
+
+  $("#price-slider").slider({
+    range: true,
+    min: minPrice,
+    max: maxPrice,
+    values: [minPrice, maxPrice],
+    slide: function(event, ui) {
+      $("#price-min").val("R$ " + ui.values[0]);
+      $("#price-max").val("R$ " + ui.values[1]);
+    }
+  });
+
+  $("#price-min").val("R$ " + minPrice);
+  $("#price-max").val("R$ " + maxPrice);
+});
