@@ -57,3 +57,27 @@ $(function() {
   $("#price-min").val("R$ " + minPrice);
   $("#price-max").val("R$ " + maxPrice);
 });
+
+const cartButton = document.getElementById("cart-button");
+const cartWindow = document.getElementById("cart-window");
+
+// Adiciona evento de clique ao botão de carrinho
+cartButton.addEventListener("click", (event) => {
+  event.preventDefault(); // Impede que o comportamento padrão do link ocorra
+
+  // Verifica se a janela do carrinho está visível
+  const isVisible = cartWindow.style.display === "block";
+
+  // Alterna a visibilidade da janela do carrinho
+  if (isVisible) {
+    cartWindow.style.display = "none";
+  } else {
+    cartWindow.style.display = "block";
+  }
+});
+
+
+
+
+
+

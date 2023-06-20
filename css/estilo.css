@@ -12,48 +12,50 @@ Inicio do header
 .navTopo{
     background: #313131;
     color: #FFFFFF;
-    padding: 0px;
-    /* display: flex;
-    align-items: center; Alinha ao centro verticalmente */
-    /* justify-content: center; Alinha ao centro horizontalmente */
+    padding: 0px !important;
 }
 
 .navTopo h2 {
-    display:inline-flex;
-    font-size: 12px;
-    /* font-weight: 400; */
-    /* margin-left: 0px; */
-    font-weight: bold;
+    display:inline-flex !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    height: 0% !important;
 }
 
 .navTopo ul {
     list-style: none;
-    margin: 0;
+    height: 0% !important;
+    padding: 0 !important;
 }
 
 .navTopo ul li {
-    display:inline-flex;
-    list-style: none;
-    font-size: 13px;
-    font-weight: 600;
-    padding-right: 20px;
-    vertical-align: middle;
-    padding-left: 20px;
+    display:inline-flex !important;
+    list-style: none !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    padding-right: 20px !important;
+    vertical-align: middle !important;
+    padding-left: 20px !important;
+    margin-top: 4%;
 }
 
 .navTopo ul li a {
     text-decoration: none;
+    list-style: none;
     color: #FFFFFF;
-    line-height: 20px !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 .navTopo ul li a:hover {
     text-decoration: none;
+    list-style: none;
     color: #FFFFFF;
 }
 
 .navTopo ul li i {
     font-size: 150%;
-    padding-right: 5px;
+    padding: 0 5px 0 0 !important;
+    margin: 0 !important;
 }
 
 /* ------------------------------------
@@ -129,6 +131,7 @@ Inicio -> navPesquisa
 .navPesquisa ul li a i {
     font-size: 125%;
     padding: 0 7px 0 7px;
+    color: #153B64;
 }
 
 
@@ -238,6 +241,98 @@ Início do NavMenu
     color: #153B64;
     border: none;
 }
+
+.navMenu .position-relative {
+    background: none;
+    border: none;
+}
+
+.navMenu .position-relative:hover {
+    background: none;
+    border: none;
+}
+
+.navMenu .position-relative i {
+    color: black;
+    font-size: 150%;
+}
+
+.navMenu .position-relative span:nth-child(1) {
+    color: #000000;
+    font-size: 14px;
+}
+
+.navMenu .position-relative span:nth-child(2) {
+    color: white;
+    font-size: 10px;
+    background: #153B64 !important;
+    padding: 5px;
+    margin-left: -40px;
+    width: 20px;
+}
+
+.navMenu .cart-container {
+    position: relative;
+    z-index: 1000;
+  }
+
+.navMenu .cart-window {
+    position: absolute;
+    top: 160%;
+    left: 0;
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 50px;
+    display: none;
+    border-radius: 5px;
+  }
+
+.navMenu .cart-window .nomeProduto {
+    font-size: 14px;
+    color: #0A0A0A;
+  }
+
+.navMenu .cart-window .preçoProduto {
+    font-size: 14px;
+    color: #858585;
+    font-weight: 600;
+  }
+
+.navMenu .cart-window .subTotal {
+    text-align: center;
+    font-size: 14px;
+    color: #0A0A0A;
+    padding-bottom: 15px;
+  }
+
+.navMenu .cart-window .verCarrinho {
+    text-align: center;
+}
+
+.navMenu .cart-window .finalizacaoCompra {
+    text-align: center;
+}
+.navMenu .cart-window .verCarrinho button {
+    font-size: 14px;
+    color: white;
+    background: #962222;
+    margin-bottom: 10px;
+    width: 100%;
+    border: none;
+    padding: 13px;
+    font-weight: 600;
+  }
+
+.navMenu .cart-window .finalizacaoCompra button {
+    font-size: 14px;
+    color: white;
+    background: #202020;
+    width: 100%;
+    border: none;
+    padding: 13px;
+    font-weight: 600;
+  }
 
     
 /* -----------------------------------------
@@ -399,6 +494,8 @@ Início do secaoLinhasProdutos
 
 .secaoLinhasProdutos h2 {
     padding: 25px;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .secaoLinhasProdutos .fundoMADU {
@@ -558,9 +655,21 @@ Início -> Footer
 ------------------------------------ */
 
 .primeiraDivFooter {
-    background: #393939;
+    background: #000000;
     color: white;
-    padding-top: 25px;
+    padding: 25px 0;
+}
+
+.primeiraDivFooter .col-md-4 {
+    width: 26%;
+}
+
+.primeiraDivFooter .col-md-2 {
+    width: 28%;
+}
+
+.primeiraDivFooter .col-md-6 {
+    width: 46%;
 }
 
 .primeiraDivFooter .col-md-4 p {
@@ -569,7 +678,7 @@ Início -> Footer
     margin-left: 0px;
 }
 
-.primeiraDivFooter .col-md-4 h2 {
+.primeiraDivFooter .col-md-6 h2, .col-md-4 h2, .col-md-2 h2 {
     font-size: 16px;
     font-weight: 600;
     padding-top: 25px;
@@ -579,6 +688,7 @@ Início -> Footer
 .primeiraDivFooter a {
     text-decoration: none;
     list-style: none;
+    color: white;
 }
 
 .primeiraDivFooter ul {
@@ -598,7 +708,7 @@ Início -> Footer
 
 .primeiraDivFooter i {
     font-size: 85%;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
 .segundaDivFooter {
@@ -673,7 +783,7 @@ Início -> Footer
 Fim -> Footer
 -------------------------------- */
 
-/* --------------------------------------------------------------- Página Produtos ------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------- Página Filtro de Produtos ------------------------------------------------------------------------------------- */
 
 /* -------------------------
 Início do NavRotas
@@ -690,8 +800,6 @@ Início do NavRotas
 .secaoRotas h2 {
     display:inline-flex;
     font-size: 14px;
-    /* font-weight: 400; */
-    /* margin-left: 0px; */
     font-weight: bold;
     padding-top: 1%;
 }
@@ -705,21 +813,260 @@ Início do NavRotas
 
  /* Estilo personalizado para os seletores de preço */
  /* Estilo personalizado para os seletores de preço */
- .ui-slider-handle {
-    border-radius: 50% !important; /* Torna os seletores de preço redondos */
-    height: 18px; /* Ajusta o tamanho dos seletores de preço */
-    background-color: #fff; /* Cor de fundo dos seletores de preço */
-    cursor: pointer; /* Cursor do mouse ao passar sobre os seletores de preço */
+
+.secaoFiltro {
+    padding: 25px 0;
+}
+
+.search-input {
+        padding-left: 20px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ccc'%3E%3Cpath d='M10.8 4.3c-3.5 0-6.3 2.8-6.3 6.3 0 1.6.6 3.2 1.7 4.3l-4.7 4.7c-.4.4-.4 1 0 1.4.2.2.5.3.7.3s.5-.1.7-.3l4.7-4.7c1.1 1 2.7 1.7 4.3 1.7 3.5 0 6.3-2.8 6.3-6.3 0-3.5-2.8-6.3-6.3-6.3zm0 10.4c-2.5 0-4.6-2-4.6-4.6s2-4.6 4.6-4.6 4.6 2 4.6 4.6-2 4.6-4.6 4.6z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 20px; 
   }
 
-  /* Estilo personalizado para a linha entre os seletores de preço */
-  .ui-slider-horizontal .ui-slider-range {
-    border: 3px solid #000; /* Espessura da linha: 3px */
-    background-color: #000; /* Cor da linha entre os seletores de preço */
-  }
+ .secaoFiltro .col-md-4 {
+    height: 100%;
+    background: #F7F7F7;
+    padding: 0 20px 20px 20px!important;
+}
+
+.secaoFiltro .col-md-6 {
+    margin-bottom: 20px;
+}
+
+.secaoFiltro .col-md-6 input{
+    border: none;
+    width: 100%;
+    font-weight: 500;
+}
+
+.secaoFiltro h2 {
+    font-size: 16px;
+    color: #333333;
+    padding: 25px 0 0 0;
+}
+
+.secaoFiltro .form-check {
+    padding: 5px 20px;
+    font-size: 15px;
+    color: #000000;
+}
+
+.ui-slider-horizontal {
+    border: none !important;
+    background: #C5C5C5 !important;
+}
+
+.ui-slider-handle {
+    border-radius: 50% !important; 
+    background-color: #fff; 
+    cursor: pointer !important; 
+    font-size: 125%;
+    bottom: 50% !important;
+}
 
 
+.ui-slider-horizontal .ui-slider-range {
+    background-color: #0570E2; 
+    border: none !important;
+    height: 100% !important;
+}
 
+.secaoFiltro .form-select {
+    width: 40%;
+    border: none;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.secaoFiltro .col-md-8, .col-md-8 .col-md-4{
+    background: white !important;
+    text-align: center;
+}
+
+.secaoFiltro .itens {
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+}
+
+.secaoFiltro .itens img {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.secaoFiltro .itens h3 {
+    font-size: 16px;
+    color: #1D1D1D;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.secaoFiltro .itens h4 {
+    font-size: 16px;
+    color: #727272;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.secaoFiltro .itens span {
+    background: black;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.secaoFiltro .itens a {
+    text-decoration: none;
+    list-style: none;
+}
+
+/* --------------------------------------------------------------------Início da página de produtos------------------------------------------------------------------------ */
+
+/* ---------------
+Início da secaoProduto
+---------------------- */
+
+.secaoProduto {
+    padding: 25px 0;
+}
+
+.secaoProduto h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #383838;
+}
+
+.secaoProduto h3 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #383838;
+    padding-bottom: 30px;
+}
+
+.secaoProduto span {
+    font-size: 16px;
+    color: #54595F;
+}
+
+.secaoProduto h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #202020;
+    text-align: center;
+}
+
+.secaoProduto i {
+    padding-right: 5px;
+}
+
+.secaoProduto .metodoPagamento {
+    padding-bottom: 30px;
+}
+
+.secaoProduto .col {
+    margin-top: 10px;
+}
+
+.secaoProduto .borda {
+    border: 1px solid #C5C5C5;
+}
+
+.secaoProduto .borda .borda {
+    border: 2px solid white;
+}
+
+.secaoProduto .col span {
+    border: 1px solid #727272;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.secaoProduto .col .amarelo{
+    background: #F5C500;
+    padding: 50% 100%;
+}
+
+.secaoProduto .col .amareloClaro{
+    background: #FBECA6;
+    padding: 50% 100%;
+}
+
+.secaoProduto .col .azulClaro{
+    background: #A2C7E2;
+    padding: 50% 100%;
+}
+
+.secaoProduto .col .azulMarinho{
+    background: #202945;
+    padding: 50% 100%;
+}
+
+.secaoProduto .col .branco{
+    background: #ECECEC;
+    padding: 50% 100%;
+}
+
+.secaoProduto .col .cinzaClaro{
+    background: #C8C8C8;
+    padding: 50% 100%;
+}
+
+.secaoProduto .col .cinzaEscuro{
+    background: #6F7271;
+    padding: 50% 100%;
+}
+
+.secaoProduto .col .laranja{
+    background: #F68B2A;
+    padding: 50% 100%;
+}
+
+.secaoProduto .col .lilas{
+    background: #AA91E0;
+    padding: 50% 100%;
+}
+
+.secaoProduto .col .pink{
+    background: #CB007B;
+    padding: 50% 100%;
+}
+
+.secaoProduto .col .rosa{
+    background: #DCA6BC;
+    padding: 50% 100%;
+}
+
+.secaoProduto .col .turquesa{
+    background: #97E3D5;
+    padding: 50% 100%;
+}
+
+.secaoProduto .col .verde{
+    background: #00AD42;
+    padding: 50% 100%;
+}
+
+.secaoProduto .col .vermelho{
+    background: #D73131;
+    padding: 50% 100%;
+}
+
+.secaoProduto .col span:hover{
+    border: 3px solid #444444;
+}
+
+.secaoProduto .botaoLimpar {
+    padding-top: 10px;
+}
+.secaoProduto .botaoLimpar span {
+    font-size: 11px;
+    cursor: pointer;
+    color: red;
+    font-weight: 500;
+}
 
 
 /* -------------------------------
@@ -942,10 +1289,10 @@ Início -> Responsividade do site
         margin: 0;
     }
 
-    .secaoLinhasProdutos .col-md-12 h2 {
+    .secaoLinhasProdutos h2 {
         text-align: center !important;
-        font-size: 28px;
-        font-weight: 600;
+        font-size: 20px !important;
+        font-weight: 600 !important;
     }
    
     /* ----------------------
