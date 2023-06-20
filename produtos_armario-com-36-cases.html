@@ -23,7 +23,7 @@
 </head>
 <body>
   <header>
-    <nav class="navTopo p-1 d-none d-xl-block d-xxl-none">
+    <nav class="navTopo d-none d-xl-block d-xxl-none">
       <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -89,7 +89,45 @@
             </ul>
           </div>
           <div>
-            <a href=""><span>R$ 0,00<i class="fa-solid fa-cart-shopping"></i></span></a>
+            <div class="cart-container">
+              <button class="position-relative" id="cart-button">
+                <a href="#">
+                  <span>
+                    R$ 0,00<i class="fa-solid fa-cart-shopping"></i>
+                  </span>
+                  <span class="position-absolute top-0 translate-middle badge rounded-pill bg-danger">
+                    1
+                  <span class="visually-hidden">unread messages</span>
+                  </span>
+                </a>
+              </button>
+            
+              <div class="cart-window" id="cart-window">
+                <!-- Conteúdo da janela do carrinho -->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img class="w-100" src="img/armario-com-36-cases-verde.jpg" alt="">
+                    </div>
+                    <div class="col-md-8">
+                      <span class="nomeProduto">Armário com 36 cases - Verde</span><br>
+                      <span class="preçoProduto">1 x R$ 1500,00</span><i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <hr>
+                    <div class="col-md-12 subTotal">
+                      <span class=""><strong>Subtotal: </strong>R$ 1500,00</span>
+                    </div>
+                    <hr>
+                    <div class="col-md-12 verCarrinho">
+                      <button class="">Ver carrinho</button>
+                    </div>
+                    <div class="col-md-12 finalizacaoCompra">
+                      <button class="">Finalização de compra</button>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+            </div>
           </div>
           <div>
             <button class="btn">
@@ -104,7 +142,7 @@
         <div class="container mb-2">
           <div class="row">
             <div class="col-5">
-              <a href="">
+              <a href="index.html">
                 <img class="w-100" src="img/logo_madu.png" alt="">
               </a></div>
             <div class="col-7">
@@ -127,10 +165,63 @@
               <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                   <div class="navbar-brand">
-                    <ul>
-                      <li class=""><a href=""></i>R$ 0,00<i class="fas fa-regular fa-cart-shopping"></i></a></li>
-                      <li class="minhaConta"><a href="">Minha conta<i class="fa-regular fa-user"></i></a></li>
-                    </ul>
+                      <span class="">
+                        <div class="cart-container">
+                          <button class="position-relative" id="cart-button-responsivo">
+                            <a href="#">
+                              <span>
+                                R$ 0,00<i class="fa-solid fa-cart-shopping"></i>
+                              </span>
+                              <span class="position-absolute translate-middle badge rounded-pill">
+                                1
+                              </span>
+                            </a>
+                          </button>
+
+                          <div class="cart-window-responsivo" id="cart-window-responsivo">
+                            <!-- Conteúdo da janela do carrinho -->
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-4">
+                                  <img class="w-100" src="img/armario-com-36-cases-verde.jpg" alt="">
+                                </div>
+                                <div class="col-8">
+                                  <div class="d-flex flex-wrap">
+                                    <span class="nomeProduto">Armário com 36 cases - Verde</span><br>
+                                    <span class="preçoProduto">1 x R$ 1500,00</span><i class="fa-solid fa-circle-xmark"></i>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12">
+                                  <hr>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 subTotal">
+                                  <span class=""><strong>Subtotal: </strong>R$ 1500,00</span>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12">
+                                  <hr>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 verCarrinho">
+                                  <button class="">Ver carrinho</button>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-12 finalizacaoCompra">
+                                  <button class="">Finalização de compra</button>
+                                </div>
+                              </div>
+                            </div>                             
+                          </div>
+                        </div>
+                      </span>
+                      <span class="minhaConta"><a href="">Minha conta<i class="fa-regular fa-user"></i></a></span>
                   </div>
                   <button id="toggle-button" class="navbar-toggler botao" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="true" aria-label="Toggle navigation">
                     <i id="toggle-icon" class="fa-solid fa-bars"></i>
@@ -138,10 +229,10 @@
                   <div class="navbar-collapse collapse" id="menu">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Produtos</a>
+                        <a class="nav-link" href="produtos.html">Produtos</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Made for you</a>
@@ -160,11 +251,11 @@
       <!-- Fim da Nav para celular -->
   </header>
 
-  <section class="secaoRotas p-1 d-none d-xl-block d-xxl-none">
+  <section class="secaoRotas p-1">
     <div class="container">
       <div class="row">
           <div class="col-md-12">
-              <h2 class=""><a href="index.html">Início / </a> <a href="">Nossos Produtos</a>/ Estantes e armário para gaveteiros</h2>
+              <p class="">CONHEÇA NOSSAS LINHAS │ <a href="">MADU ONE</a> │ <a href="">MADU EXPAND</a> │ <a href="">MADU EXRESS │ <a href="">MADU EXTREME</a> │ <a href="">MADU EXPERT │ <a href="">MADU EXTRA</a></a></a></p>
           </div>
       </div>
   </section>
@@ -228,6 +319,11 @@
                 <div class="botaoLimpar">
                     <span>Limpar</span>
                 </div>
+                <div class="botaoSoma">
+                  <button id="decrement">-</button>
+                  <input type="text" id="value" value="1">
+                  <button id="increment">+</button>
+                </div>
             </div>
         </div>
     </div>
@@ -237,33 +333,47 @@
     <div class="primeiraDivFooter">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 divResponsiva">
             <div class="">
               <h2 class="">Atendimento</h2>
               <ul class="">
-                <li><i class="fa-solid fa-phone"></i>Telefone: 0800 721 8533</li>
-                <li><i class="fa-solid fa-envelope"></i>Email: contato@grupomfm.com.br</li>
-                <li><i class="fa-brands fa-whatsapp"></i>WhatsApp: (55) 41 99687-8783</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <h2 class="">Endereço</h2>
-            <div class="divSocial">
-              <ul>
+                <li><i class="fa-solid fa-envelope"></i>contato@grupomfm.com.br</li>
+                <li><i class="fa-brands fa-whatsapp"></i>(55) 41 99687-8783</li>
                 <li><i class="fa-solid fa-location-dot"></i>R. Emma Rohrsetzer, 1011 - Emiliano Perneta, Pinhais - PR, 83324-190</li>
               </ul>
-            </div>
-            <div>
-              <img class="w-100" src="img/cartoes.png" alt="">
+              <div class="phone">
+                <span><i class="fa-solid fa-phone"></i>0800 721 8533</span>
+              </div>
             </div>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 divResponsiva">
+            <h2>Nossas Linhas</h2>
+            <ul>
+              <li>MADU One</li>
+              <li>MADU Expand</li>
+              <li>MADU Express</li>
+              <li>MADU Extreme</li>
+              <li>MADU Expert</li>
+              <li>MADU Extra</li>
+            </ul>
+          </div>
+          <div class="col-md-3 divResponsiva">
             <h2>Institucional</h2>
             <ul>
-              <li><a href=""><i class="fa-solid fa-circle-arrow-right"></i>POLÍTICA DE PRIVACIDADE</a></li>
-              <li><a href=""><i class="fa-solid fa-circle-arrow-right"></i>POLÍTICA DE TROCAS E DEVOLUÇÕES</a></li>
-              <li><a href=""><i class="fa-solid fa-circle-arrow-right"></i>POLÍTICA DE ENVIO DE PRODUTOS</a></li>
+              <li>Made for you</li>
+              <li>Política de Privacidade</li>
+              <li>Política de Trocas de Devolução</li>
+              <li>Política de Envios de Produtos</li>
+              <li>Formas de pagamento</li>
+            </ul>
+          </div>
+          <div class="col-md-2 divResponsiva">
+            <h2>Siga-nos</h2>
+            <ul class="social">
+              <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-vimeo"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
           </div>
         </div>
@@ -272,10 +382,13 @@
     <div class="segundaDivFooter d-none d-xl-block d-xxl-none">
       <div class="container">
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-4">
             <span>
               Copyright &copy; 2023 - Todos os Direitos Reservados
             </span>
+          </div>
+          <div class="col-md-4 cartoes">
+            <img src="img/cartoes.png" alt="">
           </div>
           <div class="col-md-2 siteSeguro">
             <i class="fa-solid fa-shield-halved"></i>
@@ -283,14 +396,6 @@
           <div class="col-md-2 siteSeguro">
             <h3>SITE SEGURO</h3>
             <h4>CERTIFICADO SSL</h4>
-          </div>
-          <div class="col-md-3 redesSociais">
-            <ul class="">
-              <li><i class="fa-brands fa-facebook"></i></li>
-              <li><i class="fa-brands fa-twitter"></i></li>
-              <li><i class="fa-brands fa-vimeo"></i></li>
-              <li><i class="fa-brands fa-instagram"></i></li>
-            </ul>
           </div>
         </div>
       </div>
@@ -305,6 +410,9 @@
               Copyright &copy; 2023 - Todos os Direitos Reservados
             </span>
           </div>
+          <div class="cartoes">
+            <img src="img/cartoes.png" alt="">
+          </div>
           <div class="escudo">
             <i class="fa-solid fa-shield-halved"></i>
           </div>
@@ -312,21 +420,14 @@
             <h3>SITE SEGURO</h3>
             <h4>CERTIFICADO SSL</h4>
           </div>
-          <div class="">
-            <ul class="">
-              <li><i class="fa-brands fa-facebook"></i></li>
-              <li><i class="fa-brands fa-twitter"></i></li>
-              <li><i class="fa-brands fa-vimeo"></i></li>
-              <li><i class="fa-brands fa-instagram"></i></li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
-
-    <a href="#" style="position:fixed;width:60px;height:120px;bottom:40px;right:40px; z-index:1000;">
-        <img src="https://agenciaflag.com.br/wp-content/themes/agenciaflag/assets/images/ico-whatsapp.png" class="image-fit w-100">
+    <div class="whatsapp">
+      <a href="#">
+        <img src="https://agenciaflag.com.br/wp-content/themes/agenciaflag/assets/images/ico-whatsapp.png">
     </a>
+    </div>
   </footer>
 
       

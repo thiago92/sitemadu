@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", function() {
+  // Seu código aqui...
+
 // Função para mostrar o dropdown de categorias do NavMenu
 
 var dropdownMenu = document.getElementById('dropdownMenu');
@@ -58,6 +61,7 @@ $(function() {
   $("#price-max").val("R$ " + maxPrice);
 });
 
+//Carrinho
 const cartButton = document.getElementById("cart-button");
 const cartWindow = document.getElementById("cart-window");
 
@@ -75,6 +79,58 @@ cartButton.addEventListener("click", (event) => {
     cartWindow.style.display = "block";
   }
 });
+
+//Carrinho responsivo
+const cartButtonResponsivo = document.getElementById("cart-button-responsivo");
+const cartWindowResponsivo = document.getElementById("cart-window-responsivo");
+
+// Adiciona evento de clique ao botão de carrinho
+cartButtonResponsivo.addEventListener("click", (event) => {
+  event.preventDefault(); // Impede que o comportamento padrão do link ocorra
+
+  // Verifica se a janela do carrinho está visível
+  const isVisible = cartWindowResponsivo.style.display === "block";
+
+  // Alterna a visibilidade da janela do carrinho
+  if (isVisible) {
+    cartWindowResponsivo.style.display = "none";
+  } else {
+    cartWindowResponsivo.style.display = "block";
+  }
+});
+
+// Obtém os elementos HTML
+const decrementButton = document.getElementById("decrement");
+const incrementButton = document.getElementById("increment");
+const valueInput = document.getElementById("value");
+
+// Define o valor inicial
+let value = 1;
+valueInput.value = value;
+
+// Adiciona evento de clique ao botão de decremento
+decrementButton.addEventListener("click", () => {
+  if (value > 1) {
+    value--;
+    valueInput.value = value;
+  }
+});
+
+// Adiciona evento de clique ao botão de incremento
+incrementButton.addEventListener("click", () => {
+  value++;
+  valueInput.value = value;
+});
+
+});
+
+
+
+
+
+
+
+
 
 
 

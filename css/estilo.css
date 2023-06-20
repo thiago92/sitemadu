@@ -5,6 +5,26 @@ body {
     overflow-x:hidden;
 }
 
+/* -----------------------------
+Botão do WhatsApp
+--------------------------- */
+
+/* style="position:fixed;width:60px;height:120px;bottom:-20px;right:40px; z-index:1000;" */
+
+.whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 120px;
+    top: 85%;
+    right: 40px;
+    z-index: 1500;
+
+}
+
+.whatsapp img {
+    width: 100%;
+}
+
 /*--------------------------------------- 
 Inicio do header 
 ---------------------------------------------------*/
@@ -13,10 +33,12 @@ Inicio do header
     background: #313131;
     color: #FFFFFF;
     padding: 0px !important;
+    display: flex;
+    align-items: center;
 }
 
 .navTopo h2 {
-    display:inline-flex !important;
+    padding-top: 4%;
     font-size: 12px !important;
     font-weight: bold !important;
     height: 0% !important;
@@ -36,7 +58,8 @@ Inicio do header
     padding-right: 20px !important;
     vertical-align: middle !important;
     padding-left: 20px !important;
-    margin-top: 4%;
+    padding-top: 2%;
+
 }
 
 .navTopo ul li a {
@@ -655,21 +678,9 @@ Início -> Footer
 ------------------------------------ */
 
 .primeiraDivFooter {
-    background: #000000;
+    background: #222222;
     color: white;
     padding: 25px 0;
-}
-
-.primeiraDivFooter .col-md-4 {
-    width: 26%;
-}
-
-.primeiraDivFooter .col-md-2 {
-    width: 28%;
-}
-
-.primeiraDivFooter .col-md-6 {
-    width: 46%;
 }
 
 .primeiraDivFooter .col-md-4 p {
@@ -678,7 +689,17 @@ Início -> Footer
     margin-left: 0px;
 }
 
-.primeiraDivFooter .col-md-6 h2, .col-md-4 h2, .col-md-2 h2 {
+.primeiraDivFooter .phone {
+    padding-top: 20px;
+}
+
+.primeiraDivFooter .col-md-4 span {
+    font-size: 22px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.primeiraDivFooter h2 {
     font-size: 16px;
     font-weight: 600;
     padding-top: 25px;
@@ -704,6 +725,7 @@ Início -> Footer
     padding: 0 0 5px 0;
     margin: 0;
     font-size: 14px;
+    font-weight: 500;
 }
 
 .primeiraDivFooter i {
@@ -711,8 +733,20 @@ Início -> Footer
     padding-right: 5px;
 }
 
+.primeiraDivFooter .social {
+    display: flex;
+}
+
+.primeiraDivFooter .social i {
+    background: #292828;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 150%;
+    border-radius: 50%;
+}
+
 .segundaDivFooter {
-    background: #2C2C2C;
+    background: #000000;
     color: white;
     padding-top: 30px;
     padding-bottom: 20px;
@@ -761,20 +795,9 @@ Início -> Footer
     text-align: right;
 }
 
-.segundaDivFooter .redesSociais ul li {
-    text-decoration: none;
-    list-style: none;
-    display:inline-flex;
-    padding-left: 20px;
-    padding-right: 0px;
-    text-align: right;
-    padding-bottom: 0;
-}
-
-.segundaDivFooter .redesSociais ul li i {
-    font-size: 120%;
-    text-align: right;
-    padding: 0;
+.segundaDivFooter .cartoes img {
+    margin-left: 20%;
+    width: 100%;
 }
 
 
@@ -792,23 +815,23 @@ Início do NavRotas
 .secaoRotas{
     background: #444444;
     color: #FFFFFF;
-    padding: 0px;
+    padding: 10px !important;
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
-.secaoRotas h2 {
-    display:inline-flex;
+.secaoRotas p {
     font-size: 14px;
-    font-weight: bold;
-    padding-top: 1%;
+    font-weight: 500;
+    margin: 0;
 }
 
-.secaoRotas h2 a {
+.secaoRotas p a {
     text-decoration: none;
     list-style: none;
     color: white;
-    padding-right: 5px;
+    margin: 0;
 }
 
  /* Estilo personalizado para os seletores de preço */
@@ -816,6 +839,7 @@ Início do NavRotas
 
 .secaoFiltro {
     padding: 25px 0;
+    background: #F7F7F7;
 }
 
 .search-input {
@@ -828,7 +852,6 @@ Início do NavRotas
 
  .secaoFiltro .col-md-4 {
     height: 100%;
-    background: #F7F7F7;
     padding: 0 20px 20px 20px!important;
 }
 
@@ -881,14 +904,31 @@ Início do NavRotas
     margin-bottom: 30px;
 }
 
+.secaoFiltro .botaoFiltrar {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.secaoFiltro .botaoFiltrar button {
+    background: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+}
+
 .secaoFiltro .col-md-8, .col-md-8 .col-md-4{
-    background: white !important;
+    background: #F7F7F7;;
     text-align: center;
 }
 
 .secaoFiltro .itens {
     border: 1px solid #d1d1d1;
     border-radius: 5px;
+    background: white;
 }
 
 .secaoFiltro .itens img {
@@ -908,14 +948,6 @@ Início do NavRotas
     color: #727272;
     padding-bottom: 10px;
     font-weight: 600;
-}
-
-.secaoFiltro .itens span {
-    background: black;
-    border-radius: 5px;
-    color: white;
-    padding: 5px 10px;
-    font-size: 12px;
 }
 
 .secaoFiltro .itens a {
@@ -1131,7 +1163,7 @@ Início -> Responsividade do site
         background: #f7f7f7;;
     }
     
-    .navResponsive .navbar-brand ul li{
+    .navResponsive .navbar-brand span{
         list-style: none;
         text-decoration: none;
         font-size: 14px;
@@ -1139,7 +1171,7 @@ Início -> Responsividade do site
         display:inline-flex;
     }
 
-    .navResponsive .navbar-brand ul li {
+    .navResponsive .navbar-brand span {
         padding-left: 15% !important;
     }
     
@@ -1152,13 +1184,13 @@ Início -> Responsividade do site
         margin: 0;
     }
     
-    .navResponsive ul li a{
+    .navResponsive span a{
         list-style: none;
         text-decoration: none;
         color: black;
     }
     
-    .navResponsive .navbar-brand ul li i{
+    .navResponsive .navbar-brand span i{
         padding-left: 5px;
         font-size: 125%;
     }
@@ -1176,6 +1208,105 @@ Início -> Responsividade do site
     .navResponsive button i {
         color: black;
     }
+
+    .navResponsive .position-relative {
+        background: none;
+        border: none;
+    }
+    
+    .navResponsive .position-relative:hover {
+        background: none;
+        border: none;
+    }
+    
+    .navResponsive .position-relative i {
+        color: black;
+        font-size: 150%;
+    }
+    
+    .navResponsive .position-relative span:nth-child(1) {
+        color: #000000;
+        font-size: 14px;
+    }
+    
+    .navResponsive .position-relative span:nth-child(2) {
+        color: white;
+        font-size: 12px;
+        background: #153B64 !important;
+        padding: 3px; 
+        margin-left: 7%;
+        width: 20%;
+        text-align: left;
+        padding-left: 7% !important;
+    }
+
+    .navResponsive .cart-container {
+        position: relative;
+        z-index: 1000;
+      }
+    
+    .navResponsive .cart-window-responsivo {
+        position: absolute;
+        top: 160%;
+        left: -35%;
+        width: 350px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        display: none;
+        border-radius: 5px;
+        height: 350px;
+      }
+    
+    .navResponsive .cart-window-responsivo .nomeProduto {
+        font-size: 14px;
+        color: #0A0A0A;
+        margin-left: -30%;
+        margin-bottom: 5%;
+      }
+    
+    .navResponsive .cart-window-responsivo .preçoProduto {
+        font-size: 14px;
+        color: #858585;
+        font-weight: 600;
+        margin-left: -30%;
+        margin-right: 40%;
+      }
+    
+    .navResponsive .cart-window-responsivo .subTotal {
+        text-align: center;
+        font-size: 14px;
+        color: #0A0A0A;
+        padding-bottom: 15px;
+      }
+    
+    .navResponsive .cart-window-responsivo .verCarrinho {
+        text-align: center;
+    }
+    
+    .navResponsive .cart-window-responsivo .finalizacaoCompra {
+        text-align: center;
+    }
+    .navResponsive .cart-window-responsivo .verCarrinho button {
+        font-size: 14px;
+        color: white;
+        background: #962222;
+        margin-bottom: 10px;
+        width: 100%;
+        border: none;
+        padding: 13px;
+        font-weight: 600;
+      }
+    
+    .navResponsive .cart-window-responsivo .finalizacaoCompra button {
+        font-size: 14px;
+        color: white;
+        background: #202020;
+        width: 100%;
+        border: none;
+        padding: 13px;
+        font-weight: 600;
+      }
 
      /* -------------------
      Carrosel
@@ -1323,15 +1454,12 @@ Início -> Responsividade do site
         padding-bottom: 25px;
     }
 
-    .primeiraDivFooter img {
-        width: 40% !important;
-        margin: 0 0 0 -10px;
-        padding: 0;
-
-    }
-
     .primeiraDivFooter p, h2, ul, ul li, ul li i {
         text-align: left !important;
+    }
+
+    .primeiraDivFooter .divResponsiva {
+        width: 100%;
     }
 
     .segundaDivFooter {
@@ -1342,6 +1470,12 @@ Início -> Responsividade do site
         text-align: left;
         padding-left: 15px;
         padding-bottom: 15px;
+    }
+
+    .segundaDivFooter .cartoes img {
+        margin: 0;
+        width: 80%;
+        padding-bottom: 20px;
     }
 
     .segundaDivFooter .escudo {
@@ -1366,17 +1500,6 @@ Início -> Responsividade do site
         padding: 0;
         margin: 0;
         letter-spacing: -1px;
-    }
-
-    .segundaDivFooter ul {
-        text-decoration: none;
-        list-style: none;
-        display:inline-flex;
-        padding-right: 5%;
-    }
-
-    .segundaDivFooter ul li {
-        padding: 15px;
     }
 
     
