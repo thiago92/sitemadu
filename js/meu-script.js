@@ -61,6 +61,26 @@ $(function() {
   $("#price-max").val("R$ " + maxPrice);
 });
 
+//Página - Produtos - range - responsivo
+$(function() {
+  var minPriceResponsivo = 1000;
+  var maxPriceResponsivo = 2200;
+
+  $("#price-slider-responsivo").slider({
+    range: true,
+    min: minPriceResponsivo,
+    max: maxPriceResponsivo,
+    values: [minPriceResponsivo, maxPriceResponsivo],
+    slide: function(event, ui) {
+      $("#price-min-reponsivo").val("R$ " + ui.values[0]);
+      $("#price-max-responsivo").val("R$ " + ui.values[1]);
+    }
+  });
+
+  $("#price-min-reponsivo").val("R$ " + minPriceResponsivo);
+  $("#price-max-responsivo").val("R$ " + maxPriceResponsivo);
+});
+
 //Carrinho
 const cartButton = document.getElementById("cart-button");
 const cartWindow = document.getElementById("cart-window");
@@ -122,6 +142,66 @@ incrementButton.addEventListener("click", () => {
   valueInput.value = value;
 });
 
+});
+
+//Mostrar secaoFiltroCategoria
+
+function toggleFiltro() {
+  var secaoFiltro = document.getElementById("secaoFiltroCategoria");
+  var botaoMostrar = document.getElementById("botaoMostrar");
+
+  if (secaoFiltro.style.display === "none") {
+    secaoFiltro.style.display = "block";
+    botaoMostrar.innerText = "Ocultar filtro";
+  } else {
+    secaoFiltro.style.display = "none";
+    botaoMostrar.innerText = "Mostrar filtro categorias";
+  }
+}
+
+// Obtém a posição do cursor em relação à imagem
+function getCursorPosition(image, event) {
+  const rect = image.getBoundingClientRect();
+  const x = event.clientX - rect.left;
+  const y = event.clientY - rect.top;
+  return { x, y };
+}
+
+// Função para controlar o efeito de zoom
+function zoomImage(event) {
+  var zoomContainer = event.currentTarget;
+  var zoomImage = zoomContainer.querySelector('.zoom-image');
+
+  // Coordenadas do cursor do mouse relativas à imagem
+  var mouseX = event.pageX - zoomContainer.offsetLeft;
+  var mouseY = event.pageY - zoomContainer.offsetTop;
+
+  // Tamanho da imagem
+  var imageWidth = zoomImage.width;
+  var imageHeight = zoomImage.height;
+
+  // Tamanho do contêiner de zoom
+  var containerWidth = zoomContainer.offsetWidth;
+  var containerHeight = zoomContainer.offsetHeight;
+
+  // Proporção entre o tamanho real da imagem e o tamanho do contêiner de zoom
+  var zoomFactorX = imageWidth / containerWidth;
+  var zoomFactorY = imageHeight / containerHeight;
+
+  // Posição do zoom na imagem
+  var zoomX = mouseX * zoomFactorX;
+  var zoomY = mouseY * zoomFactorY;
+
+  // Atualiza a posição do zoom na imagem
+  zoomImage.style.transformOrigin = zoomX + 'px ' + zoomY + 'px';
+}
+
+// Obtém todos os contêineres de zoom
+var zoomContainers = document.querySelectorAll('.zoom-container');
+
+// Adiciona o evento de mousemove a cada contêiner de zoom
+zoomContainers.forEach(function (container) {
+  container.addEventListener('mousemove', zoomImage);
 });
 
 

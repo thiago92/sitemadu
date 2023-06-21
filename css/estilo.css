@@ -898,10 +898,10 @@ Início do NavRotas
 }
 
 .secaoFiltro .form-select {
-    width: 40%;
+    width: 60%;
     border: none;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin: 30px 0;
 }
 
 .secaoFiltro .botaoFiltrar {
@@ -953,6 +953,17 @@ Início do NavRotas
 .secaoFiltro .itens a {
     text-decoration: none;
     list-style: none;
+}
+
+.secaoFiltro .botaoFiltro button{
+    background: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
 }
 
 /* --------------------------------------------------------------------Início da página de produtos------------------------------------------------------------------------ */
@@ -1098,6 +1109,112 @@ Início da secaoProduto
     cursor: pointer;
     color: red;
     font-weight: 500;
+}
+
+.secaoProduto .botaoSoma {
+    margin-top: 40px;
+}
+
+.secaoProduto .botaoSoma button {
+    border: 1px solid #d4d4d4;
+    padding: 8px 15px;
+    background: #EDEDED;
+    border-radius: 5px;
+}
+
+.secaoProduto .botaoSoma button:nth-child(1) {
+    margin-right: -3px;
+}
+
+.secaoProduto .botaoSoma input {
+    margin-right: -3px;
+    width: 70px;
+    padding: 8px 15px 8px 30px;
+    border-radius: 5px;
+    border: 1px solid #d4d4d4;
+    font-size: 18px;
+}
+
+.secaoProduto .botaoComprar {
+    margin-top: 40px;
+}
+
+.secaoProduto .botaoComprar button{
+    background: #303030 !important;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.secaoProduto .lojaParceira {
+    padding-top: 15px;
+}
+
+.secaoProduto .lojaParceira img{
+    width: 25%;
+}
+
+.secaoProduto .lojaParceira a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.secaoProduto .lojaParceira span{
+    font-size: 13px;
+    font-weight: 600;
+    color: #4B4B4B;
+}
+
+.image-container {
+    position: relative;
+    border: 1px solid #727272;
+    border-radius: 10px;
+    width: 100%;
+
+  }
+  
+  .zoom-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .zoom-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+    border-radius: 10px;
+  }
+  
+  .zoom-container:hover .zoom-image {
+    transform: scale(3); /* Defina o valor de escala desejado para o zoom */
+    border-radius: 10px;
+    padding-left: 30%;
+    padding-top: 30%;
+  }
+  
+
+/* <img role="presentation" alt="armario-com-36-cases-amarelo" src="https://madu-experience.com.br/wp-content/uploads/2023/05/armario-com-36-cases-amarelo.jpg" class="zoomImg" style="position: absolute; top: -72.8102px; left: -339.296px; opacity: 1; width: 1080px; height: 1080px; border: none; max-width: none; max-height: none;"> */
+
+.secaoProduto .imgProduto .col-md-2 img {
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    opacity: 0.7;
+    cursor: pointer;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.secaoProduto .imgProduto .col-md-2 img:hover {
+    border: 1px solid #727272;
+    border-radius: 10px;
+    opacity: 1;
+    cursor: pointer;
 }
 
 

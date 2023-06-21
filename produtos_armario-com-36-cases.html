@@ -263,7 +263,24 @@
   <section class="secaoProduto">
     <div class="container">
         <div class="row">
-            <div class="col-md-6"></div>
+            <div class="col-md-6">
+              <div class="imgProduto">
+                <div class="row">
+                  <div class="col-md-2">
+                    <img class="" src="img/armario-com-36-cases-verde.jpg" alt="">
+                    <img class="" src="img/armario-com-36-cases-1.jpg" alt="">
+                    <img class="" src="img/armario-com-36-cases-2.jpg" alt="">
+                  </div>
+                  <div class="col-md-10">
+                    <div class="image-container">
+                      <div class="zoom-container">
+                        <img class="zoom-image" src="img/armario-com-36-cases-verde.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="col-md-6">
                 <h2>Armário com 36 cases</h2>
                 <h3>R$ 1.500,00</h3>
@@ -274,55 +291,76 @@
                 <h4>Cor do produto: Amarelo</h4>
                 <div class="row">
                     <div class="col">
-                        <span class="amarelo"></span>
+                        <span class="amarelo" tabindex="0" data-bs-toggle="tooltip" title="Amarelo"></span>
                     </div>
                     <div class="col">
-                        <span class="amareloClaro"></span>
+                        <span class="amareloClaro" tabindex="0" data-bs-toggle="tooltip" title="Amarelo Claro"></span>
                     </div>
                     <div class="col">
-                        <span class="azulClaro"></span>
+                        <span class="azulClaro" tabindex="0" data-bs-toggle="tooltip" title="Azul Claro"></span>
                     </div>
                     <div class="col">
-                        <span class="azulMarinho"></span>
+                        <span class="azulMarinho" tabindex="0" data-bs-toggle="tooltip" title="Azul Marinho"></span>
                     </div>
                     <div class="col">
-                        <span class="branco"></span>
+                        <span class="branco" tabindex="0" data-bs-toggle="tooltip" title="Branco"></span>
                     </div>
                     <div class="col">
-                        <span class="cinzaClaro"></span>
+                        <span class="cinzaClaro" tabindex="0" data-bs-toggle="tooltip" title="Cinza Claro"></span>
                     </div>
                     <div class="col">
-                        <span class="cinzaEscuro"></span>
+                        <span class="cinzaEscuro" tabindex="0" data-bs-toggle="tooltip" title="Cinza Escuro"></span>
                     </div>
                     <div class="col">
-                        <span class="laranja"></span>
+                        <span class="laranja" tabindex="0" data-bs-toggle="tooltip" title="Laranja"></span>
                     </div>
                     <div class="col">
-                        <span class="lilas"></span>
+                        <span class="lilas" tabindex="0" data-bs-toggle="tooltip" title="Lilas"></span>
                     </div>
                     <div class="col">
-                        <span class="pink"></span>
+                        <span class="pink" tabindex="0" data-bs-toggle="tooltip" title="Pink"></span>
                     </div>
                     <div class="col">
-                        <span class="rosa"></span>
+                        <span class="rosa" tabindex="0" data-bs-toggle="tooltip" title="Roza"></span>
                     </div>
                     <div class="col">
-                        <span class="turquesa"></span>
+                        <span class="turquesa" tabindex="0" data-bs-toggle="tooltip" title="Turquesa"></span>
                     </div>
                     <div class="col">
-                        <span class="verde"></span>
+                        <span class="verde" tabindex="0" data-bs-toggle="tooltip" title="Verde"></span>
                     </div>
                     <div class="col">
-                        <span class="vermelho"></span>
+                        <span class="vermelho" tabindex="0" data-bs-toggle="tooltip" title="Vermelho"></span>
                     </div>
                 </div>
                 <div class="botaoLimpar">
                     <span>Limpar</span>
                 </div>
-                <div class="botaoSoma">
-                  <button id="decrement">-</button>
-                  <input type="text" id="value" value="1">
-                  <button id="increment">+</button>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="botaoSoma">
+                        <button id="decrement">-</button>
+                        <input type="text" id="value" value="1">
+                        <button id="increment">+</button>
+                      </div>
+                    </div>
+                    <div class="col-md-6 botaoComprar">
+                      <button class="">
+                        Comprar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="lojaParceira">
+                      <a href="#">
+                        <img src="img/logo-magalu.png" alt="">
+                        <span>Comprar na loja parceira</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -448,5 +486,12 @@
 <!-- Iniciar animações do WOW.JS -->
 <script>
     new WOW().init();
+</script>
+<script>
+  // Inicialize o JavaScript do Bootstrap
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
 </script>
 </html>
