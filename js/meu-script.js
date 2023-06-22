@@ -41,6 +41,7 @@ window.addEventListener("scroll", function() {
     }
 });
 
+//------------------------------------ Range de preços da página produtos--------------------------------------
 //Página - Produtos - range
 $(function() {
   var minPrice = 1000;
@@ -81,6 +82,8 @@ $(function() {
   $("#price-max-responsivo").val("R$ " + maxPriceResponsivo);
 });
 
+
+//------------------------------------Janela carrinho-----------------------------------------------------------
 //Carrinho
 const cartButton = document.getElementById("cart-button");
 const cartWindow = document.getElementById("cart-window");
@@ -119,6 +122,8 @@ cartButtonResponsivo.addEventListener("click", (event) => {
   }
 });
 
+//-------------------------------------Botão +1 e -1 da página produto-----------------------------------------------
+
 // Obtém os elementos HTML
 const decrementButton = document.getElementById("decrement");
 const incrementButton = document.getElementById("increment");
@@ -142,8 +147,7 @@ incrementButton.addEventListener("click", () => {
   valueInput.value = value;
 });
 
-});
-
+//-------------------------------------------Botão mostrar filtro-------------------------------------------------------
 //Mostrar secaoFiltroCategoria
 
 function toggleFiltro() {
@@ -159,6 +163,8 @@ function toggleFiltro() {
   }
 }
 
+
+//-------------------------------zoomm da image------------------------------------------------
 // Obtém a posição do cursor em relação à imagem
 function getCursorPosition(image, event) {
   const rect = image.getBoundingClientRect();
@@ -203,6 +209,124 @@ var zoomContainers = document.querySelectorAll('.zoom-container');
 zoomContainers.forEach(function (container) {
   container.addEventListener('mousemove', zoomImage);
 });
+
+
+//--------------------------------Cores dos produtos---------------------------------------//
+// Obtém todas as spans de cores
+const cores = document.querySelectorAll('.cores .cor');
+
+// Obtém as imagens que serão alteradas
+const imagemPrincipal = document.querySelector('.zoom-image');
+//const imagensCor = document.querySelectorAll('.imagem-cor');
+
+// Define um evento de clique para cada span de cor
+// cores.forEach((cor) => {
+//   cor.addEventListener('click', () => {
+//     // Obtém a cor selecionada
+//     const corSelecionada = cor.classList[1];
+
+//     // Atualiza a imagem principal
+//     imagemPrincipal.src = `img/armario-com-36-cases-${corSelecionada}.jpg`;
+
+//     // Atualiza as imagens da col-md-2
+//     imagensCor.forEach((imagem) => {
+//       const nomeImagem = imagem.src.split('/').pop();
+//       imagem.src = `img/${corSelecionada}/${nomeImagem}`;
+//     });
+//   });
+// });
+
+// Obtém a imagem atual da div col-md-10
+//const imagemAtual = document.querySelector('.zoom-image').src;
+
+cores.forEach((cor) => {
+  cor.addEventListener('click', () => {
+    const corSelecionada = cor.classList[1];
+
+    // Restaura a primeira imagem da div col-md-2
+    // const primeiraImagem = document.querySelector('.imagem-cor');
+    // primeiraImagem.src = imagemAtual;
+
+    imagemPrincipal.src = `img/armario-com-36-cases-${corSelecionada}.jpg`;
+
+    // imagensCor.forEach((imagem) => {
+    //   const nomeImagem = imagem.src.split('/').pop();
+    //   imagem.src = `img/${corSelecionada}/${nomeImagem}`;
+    // });
+  });
+});
+
+//---------------------------------Cores dos produtos da imagem menor-------------------------------
+// Obtém todas as spans de cores
+const coresIcon = document.querySelectorAll('.cores .cor');
+
+// Obtém as imagens que serão alteradas
+const imagemPrincipalIcon = document.querySelector('.zoom-image-icon');
+//const imagensCorIcon = document.querySelectorAll('.imagem-cor');
+
+// Define um evento de clique para cada span de cor
+coresIcon.forEach((cor) => {
+  cor.addEventListener('click', () => {
+    // Obtém a cor selecionada
+    const corSelecionada = cor.classList[1];
+
+    // Atualiza a imagem principal
+    imagemPrincipalIcon.src = `img/armario-com-36-cases-${corSelecionada}.jpg`;
+
+    // Atualiza as imagens da col-md-2
+    // imagensCorIcon.forEach((imagem) => {
+    //   const nomeImagem = imagem.src.split('/').pop();
+    //   imagem.src = `img/${corSelecionada}/${nomeImagem}`;
+    // });
+  });
+});
+
+//------------------------------------Selecionar as imagens menores-----------------------------------
+
+//obtém a imagem menor
+const imgIcon = document.querySelectorAll('.img-icon');
+
+// Obtém as imagens que serão alteradas
+const imagemPrincipalIconLateral = document.querySelector('.zoom-image');
+
+// Define um evento de clique para cada span de cor
+imgIcon.forEach((img) => {
+  img.addEventListener('click', () => {
+    // Obtém a cor selecionada
+    const imgSelecionada = img.getAttribute('src');
+
+    // Atualiza a imagem principal com a imagem selecionada
+    imagemPrincipalIconLateral.src = imgSelecionada;
+
+    // Atualiza as imagens da col-md-2
+    // imagensCorIcon.forEach((imagem) => {
+    //   const nomeImagem = imagem.src.split('/').pop();
+    //   imagem.src = `img/${corSelecionada}/${nomeImagem}`;
+    // });
+  });
+});
+
+
+
+//-------------------------------Seleção de cores da imagem menor---------------------------------------------
+// Obtém o elemento h4 pelo seu ID
+const h4CorProduto = document.getElementById('h4CorProduto');
+
+// Obtém todos os elementos <span> com a classe 'cor'
+const spans = document.querySelectorAll('.cores .cor');
+
+// Adiciona um evento de clique a cada <span>
+spans.forEach(span => {
+  span.addEventListener('click', function() {
+    // Obtém a cor do título do <span> atual
+    const cor = this.getAttribute('data-cor');
+
+    // Define a cor obtida como o texto do elemento h4
+    h4CorProduto.textContent = 'Cor do produto: ' + cor;
+  });
+});
+});
+
 
 
 

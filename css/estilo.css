@@ -973,7 +973,7 @@ Início da secaoProduto
 ---------------------- */
 
 .secaoProduto {
-    padding: 25px 0;
+    padding: 40px 0;
 }
 
 .secaoProduto h2 {
@@ -1217,6 +1217,74 @@ Início da secaoProduto
     cursor: pointer;
 }
 
+.secaoSobreProduto {
+    background: #F7F7F7;
+    padding: 40px;
+}
+
+.secaoSobreProduto h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #313131;
+    padding: 10px 0;
+}
+
+.secaoSobreProduto h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.secaoSobreProduto p {
+    font-size: 16px;
+    color: #000000;
+}
+
+.secaoSobreProduto ul li {
+    font-size: 16px;
+    color: #000000;
+}
+
+.secaoMaisProdutos {
+    background: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.secaoMaisProdutos a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.secaoMaisProdutos h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #313131;
+    padding-bottom: 10px;
+}
+
+.secaoMaisProdutos .imgMaisProduto {
+    border: 1px solid #acacac;
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+
+.secaoMaisProdutos .imgMaisProduto img {
+    width: 100%;
+}
+
+.secaoMaisProdutos .imgMaisProduto h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1D1D1D;
+}
+
+.secaoMaisProdutos .imgMaisProduto h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #727272;
+    padding-bottom: 20px;
+}
 
 /* -------------------------------
 Início -> Responsividade do site

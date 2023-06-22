@@ -267,9 +267,10 @@
               <div class="imgProduto">
                 <div class="row">
                   <div class="col-md-2">
-                    <img class="" src="img/armario-com-36-cases-verde.jpg" alt="">
-                    <img class="" src="img/armario-com-36-cases-1.jpg" alt="">
-                    <img class="" src="img/armario-com-36-cases-2.jpg" alt="">
+                    <img class="img-icon zoom-image-icon" src="img/armario-com-36-cases-verde.jpg" alt="">
+                    <!-- <img class="d-none imagem-cor" src="img/armario-com-36-cases-verde.jpg" alt=""> -->
+                    <img class="img-icon" src="img/armario-com-36-cases-1.jpg" alt="">
+                    <img class="img-icon" src="img/armario-com-36-cases-2.jpg" alt="">
                   </div>
                   <div class="col-md-10">
                     <div class="image-container">
@@ -288,49 +289,49 @@
                     <span><i class="fa-solid fa-credit-card"></i>10x de R$ 150 semjuros no cartão</span><br>
                     <span><i class="fa-regular fa-address-card"></i>Ou R$ 1350 à vista no boleto (10% desconto)</span>
                 </div>
-                <h4>Cor do produto: Amarelo</h4>
-                <div class="row">
+                <h4 id="h4CorProduto">Cor do produto:</h4>
+                <div class="row cores">
                     <div class="col">
-                        <span class="amarelo" tabindex="0" data-bs-toggle="tooltip" title="Amarelo"></span>
+                        <span class="cor amarelo" tabindex="0" data-cor="Amarelo" data-bs-toggle="tooltip" title="Amarelo"></span>
                     </div>
                     <div class="col">
-                        <span class="amareloClaro" tabindex="0" data-bs-toggle="tooltip" title="Amarelo Claro"></span>
+                        <span class="cor amareloClaro" tabindex="0" data-cor="Amarelo Claro" data-bs-toggle="tooltip" title="Amarelo Claro"></span>
                     </div>
                     <div class="col">
-                        <span class="azulClaro" tabindex="0" data-bs-toggle="tooltip" title="Azul Claro"></span>
+                        <span class="cor azulClaro" tabindex="0" data-cor="Azul Claro" data-bs-toggle="tooltip" title="Azul Claro"></span>
                     </div>
                     <div class="col">
-                        <span class="azulMarinho" tabindex="0" data-bs-toggle="tooltip" title="Azul Marinho"></span>
+                        <span class="cor azulMarinho" tabindex="0" data-cor="Azul Marinho" data-bs-toggle="tooltip" title="Azul Marinho"></span>
                     </div>
                     <div class="col">
-                        <span class="branco" tabindex="0" data-bs-toggle="tooltip" title="Branco"></span>
+                        <span class="cor branco" tabindex="0" data-cor="Branco" data-bs-toggle="tooltip" title="Branco"></span>
                     </div>
                     <div class="col">
-                        <span class="cinzaClaro" tabindex="0" data-bs-toggle="tooltip" title="Cinza Claro"></span>
+                        <span class="cor cinzaClaro" tabindex="0" data-cor="Cinza Claro" data-bs-toggle="tooltip" title="Cinza Claro"></span>
                     </div>
                     <div class="col">
-                        <span class="cinzaEscuro" tabindex="0" data-bs-toggle="tooltip" title="Cinza Escuro"></span>
+                        <span class="cor cinzaEscuro" tabindex="0" data-cor="Cinza Escuro" data-bs-toggle="tooltip" title="Cinza Escuro"></span>
                     </div>
                     <div class="col">
-                        <span class="laranja" tabindex="0" data-bs-toggle="tooltip" title="Laranja"></span>
+                        <span class="cor laranja" tabindex="0" data-cor="Laranja" data-bs-toggle="tooltip" title="Laranja"></span>
                     </div>
                     <div class="col">
-                        <span class="lilas" tabindex="0" data-bs-toggle="tooltip" title="Lilas"></span>
+                        <span class="cor lilas" tabindex="0" data-cor="Lilas" data-bs-toggle="tooltip" title="Lilas"></span>
                     </div>
                     <div class="col">
-                        <span class="pink" tabindex="0" data-bs-toggle="tooltip" title="Pink"></span>
+                        <span class="cor pink" tabindex="0" data-cor="Pink" data-bs-toggle="tooltip" title="Pink"></span>
                     </div>
                     <div class="col">
-                        <span class="rosa" tabindex="0" data-bs-toggle="tooltip" title="Roza"></span>
+                        <span class="cor rosa" tabindex="0" data-cor="Rosa" data-bs-toggle="tooltip" title="Rosa"></span>
                     </div>
                     <div class="col">
-                        <span class="turquesa" tabindex="0" data-bs-toggle="tooltip" title="Turquesa"></span>
+                        <span class="cor turquesa" tabindex="0" data-cor="Turquesa" data-bs-toggle="tooltip" title="Turquesa"></span>
                     </div>
                     <div class="col">
-                        <span class="verde" tabindex="0" data-bs-toggle="tooltip" title="Verde"></span>
+                        <span class="cor verde" tabindex="0" data-cor="Verde" data-bs-toggle="tooltip" title="Verde"></span>
                     </div>
                     <div class="col">
-                        <span class="vermelho" tabindex="0" data-bs-toggle="tooltip" title="Vermelho"></span>
+                        <span class="cor vermelho" tabindex="0" data-cor="Vermelho" data-bs-toggle="tooltip" title="Vermelho"></span>
                     </div>
                 </div>
                 <div class="botaoLimpar">
@@ -364,6 +365,117 @@
                 </div>
             </div>
         </div>
+    </div>
+  </section>
+
+  <section class="secaoSobreProduto">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Sobre o produto</h2>
+          <p><b>A MAD.U</b> se inspira naquilo que transcende o convencional para criar algo único, trazendo modularidade, tecnologia, inovação, design, qualidade e versatilidade em seus produtos.</p>
+          <p>Uma ideia brilhante, desenvolvida especialmente para você. O Armário com 36 cases é ideal para quem precisa de um mobiliário prático e versátil.</p>
+          <p>Estruturas metálicas internas reforçadas com chassi totalmente em aço, com tratamento anticorrosivo por galvanização e/ou pintura eletrostática pó. Peças produzidas por processo de injeção plástica em polímeros de engenharia de altíssima durabilidade. O modelo também possui gavetas com trilhos telescópicos, totalmente imunes à oxidação ou ferrugem.</p>
+          <p>É a peça que faltava para o seu ambiente. <b>DESCUBRA O NOVO!</b></p>
+        </div>
+        <div class="col-md-12">
+          <h2>Informações técnicas</h2>
+          <h3>Código MAD.U 00023</h3>
+          <ul>
+            <li>4 rodas com travas</li>
+            <li>4 para-choques</li>
+            <li>12 prateleiras para Case MAD.U</li>
+            <li>36 Case MAD.U</li>
+          </ul>
+          <p>Escolha acrescentar gavetas, tampos, tipos e quantidades de prateleiras, rodas, pés e outros, conforme sua necessidade. Adicione ou retire acessórios de acordo com o uso pretendido.</p>
+          <h3>Dimensões aproximadas:</h3>
+          <p>C: 790mm X L: 530mm X A: 1540mm</p>
+          <p><b>Indicação:</b> Uso Geral, Medicamentos, Separação</p>
+          <p>#tecnologia #design  #qualidade #mobiliário #empreendedorismo #ciência #Brasil #sustentabilidade #furniture #decoração #inovar #saúde #hospital #clínicas #consultório #novo #lançamento #descubra #mobiliariotecnico #maiorlinhademobiliariotecnicodomundo #Mad.u #Mad.uexperience #Liberdade #exclusividade</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secaoMaisProdutos">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Mais produtos</h2>
+        </div>
+        <div class="col-md-3">
+          <a href="">
+            <div class="imgMaisProduto">
+              <img src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
+              <h3>Mesa de inox com 12 gavetas e bins</h3>
+              <h4>R$ 1.500,00</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="">
+            <div class="imgMaisProduto">
+              <img src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
+              <h3>Mesa de inox com 12 gavetas e bins</h3>
+              <h4>R$ 1.500,00</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="">
+            <div class="imgMaisProduto">
+              <img src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
+              <h3>Mesa de inox com 12 gavetas e bins</h3>
+              <h4>R$ 1.500,00</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="">
+            <div class="imgMaisProduto">
+              <img src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
+              <h3>Mesa de inox com 12 gavetas e bins</h3>
+              <h4>R$ 1.500,00</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="form">
+    <div class="container d-none d-xl-block d-xxl-none">
+      <div>
+        <h2>RECEBA NOVIDADES E PROMOÇÕES DA MAD.U</h2>
+      </div>
+      <form class="row">
+        <div class="col-md-5 col-12">
+          <input type="text" class="form-control" id="name" name="name" placeholder="Nome">
+        </div>
+        <div class="col-md-5 col-12">
+          <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="E-mail">
+        </div>
+        <div class="col-md-2 col-12">
+          <button type="submit" class="btn">Enviar</button>
+        </div>
+      </form>
+    </div>
+    <!-- Responsivo -->
+    <div class="container d-block d-sm-none">
+      <div>
+        <h2>RECEBA NOVIDADES E PROMOÇÕES DA MAD.U</h2>
+      </div>
+      <form class="">
+        <div class="mb-2">
+          <input type="text" class="form-control" id="name" name="name" placeholder="Nome">
+        </div>
+        <div class="mb-2">
+          <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="E-mail">
+        </div>
+        <div class="">
+          <button type="submit" class="btn w-100">Enviar</button>
+        </div>
+      </form>
     </div>
   </section>
 
@@ -468,11 +580,9 @@
     </div>
   </footer>
 
-      
-    
 </body>
 <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <!-- meu script -->
 <script src="js/meu-script.js"></script>
@@ -494,4 +604,5 @@
     return new bootstrap.Tooltip(tooltipTriggerEl);
   });
 </script>
+
 </html>
