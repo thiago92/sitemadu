@@ -1,7 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-  // Seu código aqui...
-
-// Função para mostrar o dropdown de categorias do NavMenu
 
 var dropdownMenu = document.getElementById('dropdownMenu');
 
@@ -122,6 +118,23 @@ cartButtonResponsivo.addEventListener("click", (event) => {
   }
 });
 
+
+//-------------------------------------------Botão mostrar filtro-------------------------------------------------------
+//Mostrar secaoFiltroCategoria
+
+function toggleFiltro() {
+  var secaoFiltro = document.getElementById("secaoFiltroCategoria");
+  var botaoMostrar = document.getElementById("botaoMostrar");
+
+  if (secaoFiltro.style.display === "none") {
+    secaoFiltro.style.display = "block";
+    botaoMostrar.innerText = "Ocultar filtro";
+  } else {
+    secaoFiltro.style.display = "none";
+    botaoMostrar.innerText = "Mostrar filtro categorias";
+  }
+}
+
 //-------------------------------------Botão +1 e -1 da página produto-----------------------------------------------
 
 // Obtém os elementos HTML
@@ -146,22 +159,6 @@ incrementButton.addEventListener("click", () => {
   value++;
   valueInput.value = value;
 });
-
-//-------------------------------------------Botão mostrar filtro-------------------------------------------------------
-//Mostrar secaoFiltroCategoria
-
-function toggleFiltro() {
-  var secaoFiltro = document.getElementById("secaoFiltroCategoria");
-  var botaoMostrar = document.getElementById("botaoMostrar");
-
-  if (secaoFiltro.style.display === "none") {
-    secaoFiltro.style.display = "block";
-    botaoMostrar.innerText = "Ocultar filtro";
-  } else {
-    secaoFiltro.style.display = "none";
-    botaoMostrar.innerText = "Mostrar filtro categorias";
-  }
-}
 
 
 //-------------------------------zoomm da image------------------------------------------------
@@ -360,7 +357,6 @@ $(document).ready(function() {
 
 
 
-});
 
 
 
