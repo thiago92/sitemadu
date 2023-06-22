@@ -325,6 +325,41 @@ spans.forEach(span => {
     h4CorProduto.textContent = 'Cor do produto: ' + cor;
   });
 });
+
+//----------------------------------------Afeito de check radio---------------------------------
+$(document).ready(function() {
+  $('.cor').click(function() {
+      // Remover a classe de seleção das spans anteriores
+      $('.cor').removeClass('selected');
+
+      // Adicionar a classe de seleção à span selecionada
+      $(this).addClass('selected');
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
 
 

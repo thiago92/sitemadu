@@ -1098,8 +1098,13 @@ Início da secaoProduto
 }
 
 .secaoProduto .col span:hover{
+    border: 2px solid #444444;
+}
+
+.secaoProduto .col .cor.selected {
     border: 3px solid #444444;
 }
+
 
 .secaoProduto .botaoLimpar {
     padding-top: 10px;
@@ -1170,7 +1175,6 @@ Início da secaoProduto
 
 .image-container {
     position: relative;
-    border: 1px solid #727272;
     border-radius: 10px;
     width: 100%;
 
@@ -1687,6 +1691,48 @@ Início -> Responsividade do site
         letter-spacing: -1px;
     }
 
+    /* ---------------------------Página Produto------------------------- */
+    /* --------------------
+    secaoProduto
+    -------------------- */
+
+    .secaoProduto h4 {
+        text-align: left;
+        padding-bottom: 5px;
+    }
+
+    .secaoProduto .cores .col-1 {
+        padding-bottom: 15px;
+        margin-right: 5px;
+    }
+
+    .secaoProduto .botaoLimpar span {
+        font-size: 15px;
+    }
+
+    /* -------------
+    secaoSobreProduto
+    ----------------------- */
+
+    .secaoSobreProduto {
+        padding: 30px 0;
+    }
+
+    /* -----------------
+    secaoMaisProdutos
+    ------------------ */
+
+    .secaoMaisProdutos {
+        padding: 30px 0;
+    }
+
+    .secaoMaisProdutos h2 {
+        text-align: center !important;
+    }
+
+    .secaoMaisProdutos .imgMaisProduto {
+        margin-bottom: 20px;
+    }
     
 }
 
