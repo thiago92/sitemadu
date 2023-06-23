@@ -30,18 +30,16 @@ Inicio do header
 ---------------------------------------------------*/
 
 .navTopo{
-    background: #313131;
+    background: #153B64;
     color: #FFFFFF;
     padding: 0px !important;
-    display: flex;
-    align-items: center;
 }
 
 .navTopo h2 {
-    padding-top: 4%;
     font-size: 12px !important;
     font-weight: bold !important;
     height: 0% !important;
+    padding-top: 2%;
 }
 
 .navTopo ul {
@@ -56,9 +54,7 @@ Inicio do header
     font-size: 13px !important;
     font-weight: 600 !important;
     padding-right: 20px !important;
-    vertical-align: middle !important;
     padding-left: 20px !important;
-    padding-top: 2%;
 
 }
 
@@ -90,36 +86,35 @@ Inicio -> navPesquisa
 --------------------------------------- */
 
 .navPesquisa {
-    margin: 20px;
+    margin: 30px;
 }
 
-.zoomImg {
+.navPesquisa .zoomImg {
     transition: transform 0.3s ease;
     width: 70%;
     margin-bottom: 10px;
   }
   
-.zoomImg:hover {
+.navPesquisa .zoomImg:hover {
     transform: scale(1.1);
   }
 
 .navPesquisa form input{
-    border-radius: 15px 0 0 15px !important;
+    border-radius: 15px 0px 0px 15px !important;
     background: #EEEEEE !important;
     border: none;
     margin: 0;
-    padding: 10px 0px 10px 15px;
-    margin-left: 40px;
+    padding: 15px 0px 15px 15px;
 }
 
 .navPesquisa form input:focus {
-    box-shadow: none
+    box-shadow: none;
 }
 
 .navPesquisa button {
     background: #153B64 !important;
     margin: 0;
-    border-radius: 0 15px 15px 0 !important;
+    border-radius: 0px 15px 15px 0px !important;
     border: none;
 }
 
@@ -152,7 +147,7 @@ Inicio -> navPesquisa
 }
 
 .navPesquisa ul li a i {
-    font-size: 125%;
+    font-size: 150%;
     padding: 0 7px 0 7px;
     color: #153B64;
 }
@@ -170,6 +165,14 @@ Início do NavMenu
 .navMenu {
     background: #F7F7F7 !important;
     padding: 13px;
+    border-top: 1px outset #d3d3d3;
+    border-bottom: 1px inset #d3d3d3;
+}
+
+.navMenu .divisor {
+	width: 2px;
+	background: #b4b4b4;
+	margin: 10px 5px;
 }
 
 .navMenu ul {
@@ -187,11 +190,6 @@ Início do NavMenu
     margin: 0 10px 0 12px;
 }
 
-.navMenu ul li:hover{
-    color: #0F0F0F !important;
-    border-bottom: 3px solid #153B64;
-}
-
 .navMenu span {
     font-weight: 600;
     padding-right: 50px;
@@ -204,7 +202,7 @@ Início do NavMenu
 }
 
 .navMenu a:hover {
-    color: rgb(82, 82, 82);
+    color: #153B64 !important;
 }
 
 .navMenu button {
@@ -430,11 +428,22 @@ Início ->Confira as possibilidades da MAD.U para o seu segmento:
     text-align: center;
 }
 
+.segmento .col-md-2 {
+    padding: 0 5px;
+}
+
 .segmento .segmentoLink {
     background: #F7F7F7;
     margin: 0;
-    padding: 25px;
+    padding: 15px 25px;
     height: 100%;
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+}
+
+.segmento .segmentoLink:hover {
+    border: 2px solid #6182C2;
+    border-radius: 10px;
 }
 
 .segmento a {
@@ -474,13 +483,14 @@ Início ->Confira as possibilidades da MAD.U para o seu segmento:
     font-weight: 600;
 }
 
-.zoomImg {
+.segmento .zoomImg {
     transition: transform 0.3s ease;
-    width: 70%;
+    width: 40%;
     margin-bottom: 10px;
+    padding-bottom: 15px;
   }
   
-.zoomImg:hover {
+.segmento .zoomImg:hover {
     transform: scale(1.1);
   }
 
@@ -493,12 +503,54 @@ Início da secaoExperimente
 ------------------------------*/
 
 .secaoExperimente {
-    text-align: center;
+    text-align: right;
+}
+
+.secaoExperimente .row {
+    display: flex;
+    align-items: center;
+    text-align: right !important;
+  }
+  
+.secaoExperimente .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.secaoExperimente span {
+   background: #153B64;
+   cursor: pointer;
+   padding: 10px 15px;
+   font-size: 13px;
+   font-weight: 500;
+   border-radius: 50px;
+   color: white;
+}
+
+.secaoExperimente span:hover {
+    background: black;
+    cursor: pointer;
+ }
+
+.secaoExperimente .col-md-6:nth-child(2) {
+    padding: 0;
 }
 
 .secaoExperimente h2 {
-    font-size: 25px;
+    font-size: 46px;
     font-weight: 600;
+    color: #153B64;
+}
+
+.secaoExperimente P {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.secaoExperimente a {
+    text-decoration: none;
+    list-style: none;
 }
 
 /* ---------------------------
@@ -536,9 +588,22 @@ Início do secaoLinhasProdutos
 
 .secaoLinhasProdutos p {
     font-size: 15px;
-    color: #7A7A7A;
+    color: black;
     font-weight: 500;
 }
+
+.secaoFiltro .secaoLinhasProdutos {
+    text-align: left;
+}
+
+.secaoFiltro .secaoLinhasProdutos h2 {
+    padding: 25px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center  ;
+}
+
+
 
 
 
@@ -745,6 +810,24 @@ Início -> Footer
     border-radius: 50%;
 }
 
+.primeiraDivFooter .logoMFM {
+    padding-top: 20px;
+}
+
+.primeiraDivFooter .logoMFM img {
+    width: 100%;
+}
+
+.primeiraDivFooter .zoomImg {
+    transition: transform 0.3s ease;
+    width: 70%;
+    margin-bottom: 10px;
+  }
+  
+.primeiraDivFooter .zoomImg:hover {
+    transform: scale(1.1);
+  }
+
 .segundaDivFooter {
     background: #000000;
     color: white;
@@ -840,6 +923,11 @@ Início do NavRotas
 .secaoFiltro {
     padding: 25px 0;
     background: #F7F7F7;
+}
+
+.secaoFiltro a {
+    text-decoration: none;
+    list-style: none;
 }
 
 .search-input {
@@ -1330,7 +1418,7 @@ Início -> Responsividade do site
         background: #EEEEEE !important;
         border: none;
         margin: 0;
-        padding: 10px 0px 10px 15px;
+        padding: 10px 0px 0px 15px;
     }
     
     .navResponsive form input:focus {
@@ -1351,7 +1439,7 @@ Início -> Responsividade do site
     .navResponsive .fundo {
         background: #f7f7f7;;
     }
-    
+
     .navResponsive .navbar-brand span{
         list-style: none;
         text-decoration: none;
@@ -1501,16 +1589,17 @@ Início -> Responsividade do site
      Carrosel
      ----------------- */
     .carousel {
-        margin: 0;
+        margin: -15px 0 0 0 !important;
+        padding: 0;
     }
 
     .carousel img {
         width: 120%;
         zoom: 1;
         height: 100%;
+        object-fit: cover;
 
     }
-
     .carousel .carousel-item {
         height: 180px;
     }
@@ -1552,7 +1641,7 @@ Início -> Responsividade do site
 
     .segmento h2 {
         text-align: center !important;
-        font-size: 27px;
+        font-size: 19px;
     }
 
     .segmento .col-4 {

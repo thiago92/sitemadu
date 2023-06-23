@@ -9,6 +9,8 @@ function hideDropdown() {
     dropdownMenu.classList.remove('show');
 }
 
+//---------------------------Select para traduzir----------------------------------------
+
 
 //Botão no navbar no modo responsivo
 document.getElementById('toggle-button').addEventListener('click', function() {

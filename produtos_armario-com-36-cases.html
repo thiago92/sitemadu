@@ -26,10 +26,10 @@
     <nav class="navTopo d-none d-xl-block d-xxl-none">
       <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 align-self-center">
                 <h2 class="">A maior linha de mobiliário técnico do mundo!</h2>
             </div>
-            <div class="col-md-8 d-flex justify-content-end">
+            <div class="col-md-8 d-flex justify-content-end align-items-center">
                 <ul>
                     <li class=""><i class="fa-solid fa-square-phone"></i>0800 721 8533</li>
                     <li class=""><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/5541996278783">41 99687-8783</a></li>
@@ -45,25 +45,34 @@
             <div class="row">
                 <div class="col-md-2">
                   <a href="index.html">
-                    <img class="w-100 zoomImg" src="img/logo_madu.png" alt="">
+                    <img class="w-100 zoomImg" src="img/logo_madu_blue.png" alt="">
                   </a>
                 </div>
-                <div class="col-md-5">
-                    <form class="" action="https://madu-experience.com.br" method="get" role="search">
-                        <div class="input-group">
-                            <!-- <label class="" for="">Pesquisar</label> -->
-                            <input type="search" id="" placeholder="Buscar no site:" class="form-control text-left" name="" value="">
-                            <button class="btn" type="submit" aria-label="Pesquisar">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                                <!-- <span class="">Pesquisar</span> -->
-                            </button>
-                        </div>
+                <div class="col-md-4">
+                    <form class="w-100" action="index.html" method="get" role="search">
+                      <div class="input-group">
+                        <!-- <label class="" for="">Pesquisar</label> -->
+                        <input type="search" id="" placeholder="Buscar no site:" class="form-control text-left" name="" value="">
+                        <button class="btn" type="submit" aria-label="Pesquisar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <!-- <span class="">Pesquisar</span> -->
+                        </button>
+                    </div>
                     </form>
                 </div>
-                <div class="col-md-5 pt-2 d-flex justify-content-end">
+                <div class="col-md-6 pt-2 d-flex justify-content-end">
                     <ul>
+                        <li><a href="">Meus pedidos<i class="fa-solid fa-truck"></i></a></li>
                         <li><a href="">Minha conta<i class="fa-regular fa-circle-user"></i></a></li>
-                        <li><img src="img/pais.png" alt=""></li>
+                        <li>
+                          <select id="selectLanguage">
+                            <option value="pt-BR">Português (Brasil)</option>
+                            <option value="en">English</option>
+                            <option value="es">Español</option>
+                            <option value="it">Italiano</option>
+                            <option value="fr">Français</option>
+                          </select>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -77,12 +86,15 @@
               <li class="nav-item">
                 <a class="nav-link " href="index.html">Home</a>
               </li>
+              <li class="nav-item divisor"></li>
               <li class="nav-item">
-                <a class="nav-link " href="produtos.html">Produtos</a>
+                <a class="nav-link " href="nossas_linhas.html">Produtos</a>
               </li>
+              <li class="nav-item divisor"></li>
               <li class="nav-item">
                 <a class="nav-link " href="#">Made for you</a>
               </li>
+              <li class="nav-item divisor"></li>
               <li class="nav-item">
                 <a class="nav-link " href="#">Fale Conosco</a>
               </li>
@@ -93,7 +105,7 @@
               <button class="position-relative" id="cart-button">
                 <a href="#">
                   <span>
-                    R$ 0,00 <i class="fa fa-bag-shopping"></i>
+                    R$ 0,00<i class="fa-solid fa-cart-shopping"></i>
                   </span>
                   <span class="position-absolute top-0 translate-middle badge rounded-pill bg-danger">
                     1
@@ -143,7 +155,7 @@
           <div class="row">
             <div class="col-5">
               <a href="index.html">
-                <img class="w-100" src="img/logo_madu.png" alt="">
+                <img class="w-100" src="img/logo_madu_blue.png" alt="">
               </a></div>
             <div class="col-7">
               <form class="" action="https://madu-experience.com.br" method="get" role="search">
@@ -221,7 +233,7 @@
                           </div>
                         </div>
                       </span>
-                      <span class="minhaConta"><a href="">Minha conta<i class="fa-regular fa-user"></i></a></span>
+                      <span class="minhaConta"><a href="">Minha conta<i class="fa-regular fa-circle-user"></i></a></span>
                   </div>
                   <button id="toggle-button" class="navbar-toggler botao" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="true" aria-label="Toggle navigation">
                     <i id="toggle-icon" class="fa-solid fa-bars"></i>
@@ -525,6 +537,9 @@
               <li><a href=""><i class="fa-brands fa-vimeo"></i></a></li>
               <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
+            <div class="logoMFM">
+              <img class="zoomImg" src="img/logo-grupo.png" alt="">
+            </div>
           </div>
         </div>
       </div>
