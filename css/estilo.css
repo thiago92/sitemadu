@@ -92,7 +92,7 @@ Inicio -> navPesquisa
 .navPesquisa .zoomImg {
     transition: transform 0.3s ease;
     width: 70%;
-    margin-bottom: 10px;
+    padding-top: 5px;
   }
   
 .navPesquisa .zoomImg:hover {
@@ -104,7 +104,10 @@ Inicio -> navPesquisa
     background: #EEEEEE !important;
     border: none;
     margin: 0;
-    padding: 15px 0px 15px 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navPesquisa form input:focus {
@@ -150,6 +153,12 @@ Inicio -> navPesquisa
     font-size: 150%;
     padding: 0 7px 0 7px;
     color: #153B64;
+}
+
+.navPesquisa .col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -288,7 +297,7 @@ Início do NavMenu
     font-size: 10px;
     background: #153B64 !important;
     padding: 5px;
-    margin-left: -40px;
+    margin-left: -50px;
     width: 20px;
 }
 
@@ -415,6 +424,11 @@ Início do carrosel
     height: 35%;
 }
 
+.carrossel .carousel .btn:hover {
+    background: #1D1D1D;
+    color: white
+}
+
 
 /* --------------------------------
 Fim do carrosel
@@ -439,6 +453,7 @@ Início ->Confira as possibilidades da MAD.U para o seu segmento:
     height: 100%;
     border: 2px solid #f0f0f0;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .segmento .segmentoLink:hover {
@@ -446,13 +461,7 @@ Início ->Confira as possibilidades da MAD.U para o seu segmento:
     border-radius: 10px;
 }
 
-.segmento a {
-    text-decoration: none;
-    list-style: none;
-    color: #383838;
-}
-
-.segmento a h3 {
+.segmento h3 {
     font-weight: 700;
 }
 
@@ -493,6 +502,60 @@ Início ->Confira as possibilidades da MAD.U para o seu segmento:
 .segmento .zoomImg:hover {
     transform: scale(1.1);
   }
+
+  .segmento .modal .zoomImg {
+    width: 40%;
+  }
+
+  .segmento .modal .larguraTextoModal img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: -20px;
+  }
+
+.segmento .modal h4{
+    font-weight: 600;
+    color: #141414;
+    font-size: 32px;
+    line-height: 1;
+    padding-bottom: 10px;
+}
+
+.segmento .modal  ul li {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.7em;
+}
+
+.segmento .modal p {
+    margin-bottom: 0.9rem;
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.segmento .modal .btnModal {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: #153B64;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.segmento .modal .btnModal a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
 
 /* -----------------------------------
 Fim ->Confira as possibilidades da MAD.U para o seu segmento:
@@ -562,22 +625,41 @@ Início do secaoLinhasProdutos
 ---------------------------- */
 
 .secaoLinhasProdutos {
-    padding: 25px 25px 20px 25px;
+    padding: 50px 25px 50px 25px;
     background: #F7F7F7;
     text-align: center;
 }
 
 .secaoLinhasProdutos h2 {
-    padding: 25px;
     font-size: 25px;
     font-weight: 600;
 }
+
+.secaoLinhasProdutos .col-md-4 {
+    padding: 10px;
+}
+
+.secaoLinhasProdutos img {
+    width: 45%;
+    border: 2px solid #E6E6E6;
+    border-radius: 50%;
+    margin: 25px;
+    cursor: pointer;
+}
+
+.secaoLinhasProdutos .zoomImg {
+    transition: transform 0.3s ease;
+  }
+  
+.secaoLinhasProdutos .zoomImg:hover {
+    transform: scale(1.1);
+  }
 
 .secaoLinhasProdutos .fundoMADU {
     background: #FFFFFF;
     padding: 15px;
     border-radius: 15px;
-    margin-bottom: 20px;
+    height: 100%;
 }
 
 .secaoLinhasProdutos h3 {
@@ -617,8 +699,7 @@ Início -> Inovaçao, qualidade e tecnologia
 
 .inovacao {
     text-align: center;
-    padding-bottom: 25px;
-    padding-top: 40px;
+    padding: 50px 0;
 }
 
 .inovacao .col-md-4 {
@@ -626,8 +707,6 @@ Início -> Inovaçao, qualidade e tecnologia
 }
 
 .inovacao .inovacaoBorda {
-    border: solid 1px rgb(214, 214, 214);
-    border-radius: 5px;
     padding-top: 10px;
     height: 100%;
     cursor: pointer;
@@ -640,8 +719,8 @@ Início -> Inovaçao, qualidade e tecnologia
 
 .inovacao h3 {
     font-size: 25px;
-    font-weight: 600;
-    color: black;
+    font-weight: 700;
+    color: #153B64;
     padding: 5px;
 }
 
@@ -655,18 +734,27 @@ Início -> Inovaçao, qualidade e tecnologia
 
 .inovacao img {
     padding-top: 10px;
-    width: 80%;
+    width: 70%;
+    padding-bottom: 10px;
 }
+
+.inovacao .zoomImg {
+    transition: transform 0.3s ease;
+  }
+  
+.inovacao .zoomImg:hover {
+    transform: scale(1.1);
+  }
 
 .inovacao span {
     font-size: 13px;
     font-weight: 600;
     padding: 10px 25px;
-    background: #383838;
+    background: #153B64;
 }
 
 .inovacao .btn:hover {
-    background: #383838 !important;
+    background: #153B64 !important;
 }
 
 .modal-header {
@@ -1418,7 +1506,7 @@ Início -> Responsividade do site
         background: #EEEEEE !important;
         border: none;
         margin: 0;
-        padding: 10px 0px 0px 15px;
+        padding: 10px;
     }
     
     .navResponsive form input:focus {
@@ -1466,6 +1554,26 @@ Início -> Responsividade do site
         text-decoration: none;
         color: black;
     }
+
+    .navResponsive .nav-item {
+        padding: 7px;
+    }
+
+    .navResponsive .navbar-collapse{
+        z-index: 1000;
+        position: absolute;
+        background: #153B64;
+        top: 120%;
+        width: 100%;
+        color: white;
+        font-weight: 500;
+        margin: 0 0 0 -2.3% !important;
+        padding-left: 20px;
+    }
+
+    .navResponsive .navbar-collapse a {
+        color: white;
+    }
     
     .navResponsive .navbar-brand span i{
         padding-left: 5px;
@@ -1511,7 +1619,7 @@ Início -> Responsividade do site
         font-size: 12px;
         background: #153B64 !important;
         padding: 3px; 
-        margin-left: 7%;
+        margin-left: 2%;
         width: 20%;
         text-align: left;
         padding-left: 7% !important;
@@ -1618,7 +1726,7 @@ Início -> Responsividade do site
     .carousel .textoCarrosel {
         padding: 0;
         text-align: left;
-        top: 50%;
+        top: 57%;
         transform: translateY(-50%);
         font-size: 50px;
         font-weight: 700;

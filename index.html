@@ -23,7 +23,7 @@
 </head>
 <body>
   <header>
-    <nav class="navTopo d-none d-xl-block d-xxl-none">
+    <nav class="navTopo d-none d-md-block">
       <div class="container">
         <div class="row">
             <div class="col-md-4 align-self-center">
@@ -40,7 +40,7 @@
         </div>
       </nav>
 
-      <nav class="navPesquisa d-none d-xl-block d-xxl-none wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
+      <nav class="navPesquisa d-none d-md-block wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
         <div class="container">
             <div class="row">
                 <div class="col-md-2">
@@ -79,7 +79,7 @@
         </div>
       </nav>
 
-      <nav class="navMenu navbar navbar-expand-lg d-none d-xl-block d-xxl-none">
+      <nav class="navMenu navbar navbar-expand-lg d-none d-md-block">
         <div class="container">
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
@@ -150,7 +150,7 @@
       </nav>
 
       <!-- Início da Nav para celular -->
-      <nav class="navResponsive d-block d-sm-none wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
+      <nav class="navResponsive d-md-none wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
         <div class="container mb-2">
           <div class="row">
             <div class="col-5">
@@ -280,49 +280,49 @@
             <img src="img/img-carrousel-1.png" class="d-block" alt="...">
             <div class="carousel-caption textoCarrosel container row col-md-6 col">
               <p>A maior linha de mobiliário técnico do mundo!</p>
-              <span class="btn">Veja mais</span>
+              <span class="btn d-none d-md-block">Veja mais</span>
             </div>
           </div>
           <div class="carousel-item">
             <img src="img/slide-hospital.jpg" class="d-block" alt="...">
             <div class="carousel-caption textoCarrosel container row col-md-6">
               <p>A maior linha de mobiliário técnico do mundo!</p>
-              <span class="btn">Veja mais</span>
+              <span class="btn d-none d-md-block">Veja mais</span>
             </div>
           </div>
           <div class="carousel-item">
             <img src="img/img-carrousel-2.png" class="d-block" alt="...">
             <div class="carousel-caption textoCarrosel container row col-md-6">
               <p>A maior linha de mobiliário técnico do mundo!</p>
-              <span class="btn">Veja mais</span>
+              <span class="btn d-none d-md-block">Veja mais</span>
             </div>
           </div>
           <div class="carousel-item">
             <img src="img/slide-industria.jpg" class="d-block" alt="...">
             <div class="carousel-caption textoCarrosel container row col-md-6">
               <p>A maior linha de mobiliário técnico do mundo!</p>
-              <span class="btn">Veja mais</span>
+              <span class="btn d-none d-md-block">Veja mais</span>
             </div>
           </div>
           <div class="carousel-item">
             <img src="img/slide-studio.jpg" class="d-block" alt="...">
             <div class="carousel-caption textoCarrosel container row col-md-6">
               <p>A maior linha de mobiliário técnico do mundo!</p>
-              <span class="btn">Veja mais</span>
+              <span class="btn d-none d-md-block">Veja mais</span>
             </div>
           </div>
           <div class="carousel-item">
             <img src="img/slide-hospital-doutor.jpg" class="d-block" alt="...">
             <div class="carousel-caption textoCarrosel container row col-md-6">
               <p>A maior linha de mobiliário técnico do mundo!</p>
-              <span class="btn">Veja mais</span>
+              <span class="btn d-none d-md-block">Veja mais</span>
             </div>
           </div>
           <div class="carousel-item">
             <img src="img/slide-comercio.jpg" class="d-block" alt="...">
             <div class="carousel-caption textoCarrosel container row col-md-6">
               <p>A maior linha de mobiliário técnico do mundo!</p>
-              <span class="btn">Veja mais</span>
+              <span class="btn d-none d-md-block">Veja mais</span>
             </div>
           </div>
         </div>
@@ -345,52 +345,250 @@
           </div>
         </div>
         <div class="row wow fadeInRightBig" data-wow-duration="0.8s" data-wow-delay="0.6s">
-          <div class="col-md-2 col-4">
+          <div class="col-md-2 col-4" data-bs-toggle="modal" data-bs-target="#staticBackdropSaude">
             <div class="segmentoLink">
-            <a href="">
               <img class="zoomImg" src="img/icone-saude-1.png" alt="">
               <h3>Saúde</h3>
-            </a>
             </div>
           </div>
-          <div class="col-md-2 col-4">
+          <div class="modal fade" id="staticBackdropSaude" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-3 col-3">
+                        <img class="zoomImg" src="img/icone-saude-1.png" alt="">
+                        <h4>Saúde</h4>
+                        <ul>
+                          <li>Hospitais</li>
+                          <li>Clínicas e Consultórios</li>
+                          <li>Odontologia</li>
+                          <li>Veterinária</li>
+                          <li>Farmácias</li>
+                          <li>Home Care</li>
+                          <li>Higiene e Limpeza</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-9 col-9">
+                        <div class="larguraTextoModal">
+                          <img class="" src="img/slide-hospital-doutor.jpg" alt="">
+                          <p>Nosso mobiliário técnico é projetado para atender uma variedade de necessidades para a <b>Área da Saúde</b>, proporcionando soluções eficientes e de alta qualidade. Com uma ampla gama de opções, nosso objetivo é fornecer ambientes funcionais e adequados às necessidades específicas do setor.</p>
+                          <span class="btnModal"><a href="nossas_linhas.html">CONHEÇA NOSSAS LINHAS</a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-4" data-bs-toggle="modal" data-bs-target="#staticBackdropEstetica">
             <div class="segmentoLink">
-              <a href="">
                 <img class="zoomImg" src="img/icone-estetica-1.png" alt="">
                 <h3>Estética</h3>
-              </a>
             </div>
           </div>
-          <div class="col-md-2 col-4">
+          <div class="modal fade" id="staticBackdropEstetica" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-3 col-3">
+                        <img class="zoomImg" src="img/icone-estetica-1.png" alt="">
+                        <h4>Estética</h4>
+                        <ul>
+                          <li>Salões e Barbearias</li>
+                          <li>Clínicas</li>
+                          <li>Manicure</li>
+                          <li>Podologia</li>
+                          <li>Depilação</li>
+                          <li>Piercing</li>
+                          <li>Tatuagem</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-9 col-9">
+                        <div class="larguraTextoModal">
+                          <img class="" src="img/img-carrousel-2.png" alt="">
+                          <p>Nosso mobiliário técnico é projetado para atender uma variedade de necessidades para a <b>Área de Estética</b>, proporcionando soluções eficientes e de alta qualidade. Com uma ampla gama de opções, nosso objetivo é fornecer ambientes funcionais e adequados às necessidades específicas do setor.</p>
+                          <span class="btnModal"><a href="nossas_linhas.html">CONHEÇA NOSSAS LINHAS</a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-4" data-bs-toggle="modal" data-bs-target="#staticBackdropAlimentos">
             <div class="segmentoLink">
-              <a href="">
                 <img class="zoomImg" src="img/icone-alimentos-1.png" alt="">
                 <h3>Alimentos</h3>
-              </a>
             </div>
           </div>
-          <div class="col-md-2 col-4">
-            <div class="segmentoLink">
-              <a href="">
-                <img class="zoomImg" src="img/icone-comercio-1.png" alt="">
-                <h3> Comércio</h3>
-              </a>
+          <div class="modal fade" id="staticBackdropAlimentos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-3 col-3">
+                        <img class="zoomImg" src="img/icone-alimentos-1.png" alt="">
+                        <h4>Alimentos</h4>
+                        <ul>
+                          <li>Armazenamento</li>
+                          <li>Cozinhas Industriais</li>
+                          <li>Panificadoras</li>
+                          <li>Bares</li>
+                          <li>Restaurantes</li>
+                          <li>Açougues</li>
+                          <li>Higiene e Limpeza</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-9 col-9">
+                        <div class="larguraTextoModal">
+                          <img class="" src="img/slide-industria.jpg" alt="">
+                          <p>Nosso mobiliário técnico é projetado para atender uma variedade de necessidades para a <b>Área de Alimentos</b>, proporcionando soluções eficientes e de alta qualidade. Com uma ampla gama de opções, nosso objetivo é fornecer ambientes funcionais e adequados às necessidades específicas do setor.</p>
+                          <span class="btnModal"><a href="nossas_linhas.html">CONHEÇA NOSSAS LINHAS</a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-2 col-4">
+          <div class="col-md-2 col-4" data-bs-toggle="modal" data-bs-target="#staticBackdropComercio">
             <div class="segmentoLink">
-              <a href="">
-                <img class="zoomImg" src="img/icone-industria-1.png" alt="">
-                <h3>Indústria</h3>
-              </a>
+              <img class="zoomImg" src="img/icone-comercio-1.png" alt="">
+              <h3> Comércio</h3>
             </div>
           </div>
-          <div class="col-md-2 col-4">
+          <div class="modal fade" id="staticBackdropComercio" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-3 col-3">
+                        <img class="zoomImg" src="img/icone-comercio-1.png" alt="">
+                        <h4>Comércio</h4>
+                        <ul>
+                          <li>Lojas</li>
+                          <li>Supermercados</li>
+                          <li>Shopping Center</li>
+                          <li>Oficinas e Garagens</li>
+                          <li>Depósitos</li>
+                          <li>Farmácias</li>
+                          <li>Escritórios</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-9 col-9">
+                        <div class="larguraTextoModal">
+                          <img class="" src="img/slide-comercio.jpg" alt="">
+                          <p>Nosso mobiliário técnico é projetado para atender uma variedade de necessidades para o <b>Comércio</b>, proporcionando soluções eficientes e de alta qualidade. Com uma ampla gama de opções, nosso objetivo é fornecer ambientes funcionais e adequados às necessidades específicas do setor.</p>
+                          <span class="btnModal"><a href="nossas_linhas.html">CONHEÇA NOSSAS LINHAS</a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-4" data-bs-toggle="modal" data-bs-target="#staticBackdropIndustria">
             <div class="segmentoLink">
-              <a href="">
-                <img class="zoomImg" src="img/icone-outros-1.png" alt="">
-                <h3>Outros</h3>
-              </a>
+              <img class="zoomImg" src="img/icone-industria-1.png" alt="">
+              <h3>Indústria</h3>
+            </div>
+          </div>
+          <div class="modal fade" id="staticBackdropIndustria" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-3 col-3">
+                        <img class="zoomImg" src="img/icone-industria-1.png" alt="">
+                        <h4>Indústria</h4>
+                        <ul>
+                          <li>Escritórios</li>
+                          <li>Almoxarifado</li>
+                          <li>Laboratórios</li>
+                          <li>Vestiários</li>
+                          <li>Produção</li>
+                          <li>Manutenção</li>
+                          <li>Estações de trabalho</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-9 col-9">
+                        <div class="larguraTextoModal">
+                          <img class="" src="img/img-carrousel-1.png" alt="">
+                          <p>Nosso mobiliário técnico é projetado para atender uma variedade de necessidades para a <b>Indústria</b>, proporcionando soluções eficientes e de alta qualidade. Com uma ampla gama de opções, nosso objetivo é fornecer ambientes funcionais e adequados às necessidades específicas do setor.</p>
+                          <span class="btnModal"><a href="nossas_linhas.html">CONHEÇA NOSSAS LINHAS</a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-4" data-bs-toggle="modal" data-bs-target="#staticBackdropOutros">
+            <div class="segmentoLink">
+              <img class="zoomImg" src="img/icone-outros-1.png" alt="">
+              <h3>Outros</h3>
+            </div>
+          </div>
+          <div class="modal fade" id="staticBackdropOutros" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-3 col-3">
+                        <img class="zoomImg" src="img/icone-outros-1.png" alt="">
+                        <h4>Outros</h4>
+                        <ul>
+                          <li>Hotéis</li>
+                          <li>Escolas</li>
+                          <li>Estúdios</li>
+                          <li>Laboratórios</li>
+                          <li>Lavanderias</li>
+                          <li>Residencial</li>
+                          <li>Logística</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-9 col-9">
+                        <div class="larguraTextoModal">
+                          <img class="" src="img/slide-studio.jpg" alt="">
+                          <p>Nosso mobiliário técnico é projetado para atender uma variedade de necessidades para Todos os <b>Segmentos</b>, proporcionando soluções eficientes e de alta qualidade. Com uma ampla gama de opções, nosso objetivo é fornecer ambientes funcionais e adequados às necessidades específicas de cada setor.</p>
+                          <span class="btnModal"><a href="nossas_linhas.html">CONHEÇA NOSSAS LINHAS</a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
       </div>
@@ -420,42 +618,42 @@
         </div>
         <div class="col-md-4">
           <div class="fundoMADU">
-            <img src="img/M.png" alt="">
+            <img class="zoomImg" src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
             <h3>MADU One</h3>
             <p>É a nossa <b>Linha Premium.</b> Nela você encontrará milhares de combinações possíveis com o que há de melhor em tecnologia e soluções de design.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="fundoMADU">
-            <img src="img/M.png" alt="">
+            <img class="zoomImg" src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
             <h3>MADU Expand</h3>
             <p>Produtos que <b>expandir</b> permitem ainda mais as possibilidades já existentes de uso e dentro das necessidades de cada usuário.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="fundoMADU">
-            <img src="img/M.png" alt="">
+            <img class="zoomImg" src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
             <h3>MADU Express</h3>
             <p>Conheça uma completa linha de bancadas, estações de trabalho e estantes para as mais <b>diferentes aplicações</b> num conceito de <b>modularidade</b> virtualmente definida.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="fundoMADU">
-            <img src="img/M.png" alt="">
+            <img class="zoomImg" src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
             <h3>MADU Extreme</h3>
             <p>Nossa linha "heavy duty". Uma linha completa de bancadas, estações de trabalho e estantes para o <b>serviço pesado.</b> Modularidade total para o uso severo.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="fundoMADU">
-            <img src="img/M.png" alt="">
+            <img class="zoomImg" src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
             <h3>MADU Expert</h3>
             <p>Produtos desenvolvidos especialmente para o <b>uso especializado</b> nos mais diferentes segmentos.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="fundoMADU">
-            <img src="img/M.png" alt="">
+            <img class="zoomImg" src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
             <h3>MADU Extra</h3>
             <p>Essa é a nossa linha <b>básica.</b> Para quem procura uma solução leve, simples e prática. Qualidade e durabilidade numa linha extremamente competitiva.</p>
           </div>
