@@ -1784,6 +1784,57 @@ Início -> Responsividade do site
         margin-bottom: 10px;
     }
 
+    .segmento .modal {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    .segmento .modal-dialog {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    .segmento .modal-body {
+        padding: 10px 0 0 0;
+        margin: 0;
+    }
+
+    .segmento .modal .zoomImg {
+        width: 70%;
+    }
+
+    .segmento .modal h4 {
+        font-size: 16px;
+    }
+
+    .segmento .modal .col-3 {
+        text-align: center !important;
+        padding-right: 5px;
+    }
+
+    .segmento .modal ul li {
+        font-size: 12px;
+        text-align: center !important;
+        line-height: 1.5;
+    }
+
+    .segmento .modal .larguraTextoModal img {
+        margin-bottom: 10px !important;
+    }
+
+    .segmento .modal .larguraTextoModal p {
+        font-size: 14px;
+        padding-top: 0 !important;
+    }
+
+    .segmento .modal .btnModal {
+        width: 100%;
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
     /* ------------------------
     secaoExperimente
     --------------------- */
