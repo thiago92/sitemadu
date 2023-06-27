@@ -282,11 +282,6 @@ Início do NavMenu
     border: none;
 }
 
-.navMenu .position-relative i {
-    color: black;
-    font-size: 150%;
-}
-
 .navMenu .position-relative span:nth-child(1) {
     color: #000000;
     font-size: 14px;
@@ -297,7 +292,8 @@ Início do NavMenu
     font-size: 10px;
     background: #153B64 !important;
     padding: 5px;
-    margin-left: -50px;
+    margin-top: 7%;
+    margin-left: -55px;
     width: 20px;
 }
 
@@ -305,6 +301,11 @@ Início do NavMenu
     position: relative;
     z-index: 1000;
   }
+
+.navMenu .carrinho {
+    width: 40px;
+    margin-left: -10px;
+}
 
 .navMenu .cart-window {
     position: absolute;
@@ -503,16 +504,33 @@ Início ->Confira as possibilidades da MAD.U para o seu segmento:
     transform: scale(1.1);
   }
 
-  .segmento .modal .zoomImg {
+.segmento .modal .zoomImg {
     width: 40%;
   }
 
-  .segmento .modal .larguraTextoModal img {
+.segmento .modal .larguraTextoModal img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 30px;
-    margin-top: -20px;
   }
+
+.segmento .modal .modal-header {
+    z-index: 1000;
+    position: absolute;
+    padding: 0 0 0 94%;
+    display: flex;
+    margin-top: 3%;
+}
+
+.segmento .modal .modal-header i {
+    font-size: 150%;
+    color: white;
+}
+
+.segmento .modal .modal-header i:hover {
+    color: #C8C8C8;
+    cursor: pointer;
+}
 
 .segmento .modal h4{
     font-weight: 600;
@@ -684,10 +702,6 @@ Início do secaoLinhasProdutos
     font-weight: 600;
     text-align: center  ;
 }
-
-
-
-
 
 /* ----------------------
 Fim do secaoLinhasProdutos
@@ -1008,6 +1022,7 @@ Início do NavRotas
  /* Estilo personalizado para os seletores de preço */
  /* Estilo personalizado para os seletores de preço */
 
+
 .secaoFiltro {
     padding: 25px 0;
     background: #F7F7F7;
@@ -1017,14 +1032,6 @@ Início do NavRotas
     text-decoration: none;
     list-style: none;
 }
-
-.search-input {
-        padding-left: 20px;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ccc'%3E%3Cpath d='M10.8 4.3c-3.5 0-6.3 2.8-6.3 6.3 0 1.6.6 3.2 1.7 4.3l-4.7 4.7c-.4.4-.4 1 0 1.4.2.2.5.3.7.3s.5-.1.7-.3l4.7-4.7c1.1 1 2.7 1.7 4.3 1.7 3.5 0 6.3-2.8 6.3-6.3 0-3.5-2.8-6.3-6.3-6.3zm0 10.4c-2.5 0-4.6-2-4.6-4.6s2-4.6 4.6-4.6 4.6 2 4.6 4.6-2 4.6-4.6 4.6z'/%3E%3C/svg%3E");
-        background-repeat: no-repeat;
-        background-position: left center;
-        background-size: 20px; 
-  }
 
  .secaoFiltro .col-md-4 {
     height: 100%;
@@ -1044,13 +1051,8 @@ Início do NavRotas
 .secaoFiltro h2 {
     font-size: 16px;
     color: #333333;
-    padding: 25px 0 0 0;
-}
-
-.secaoFiltro .form-check {
-    padding: 5px 20px;
-    font-size: 15px;
-    color: #000000;
+    padding: 25px 0 0 10px;
+    font-weight: 600;
 }
 
 .ui-slider-horizontal {
@@ -1140,6 +1142,17 @@ Início do NavRotas
     padding: 10px;
     border: none;
     border-radius: 50px;
+}
+
+.secaoFiltro .secaoFiltroCategoria {
+    background: white;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.paginaNossasLinhas .secaoFiltro .col-md-4 {
+    padding: 0 !important;
 }
 
 /* --------------------------------------------------------------------Início da página de produtos------------------------------------------------------------------------ */
@@ -1377,9 +1390,6 @@ Início da secaoProduto
     padding-left: 30%;
     padding-top: 30%;
   }
-  
-
-/* <img role="presentation" alt="armario-com-36-cases-amarelo" src="https://madu-experience.com.br/wp-content/uploads/2023/05/armario-com-36-cases-amarelo.jpg" class="zoomImg" style="position: absolute; top: -72.8102px; left: -339.296px; opacity: 1; width: 1080px; height: 1080px; border: none; max-width: none; max-height: none;"> */
 
 .secaoProduto .imgProduto .col-md-2 img {
     border: 1px solid #cccccc;
@@ -1470,7 +1480,7 @@ Início da secaoProduto
 Início -> Responsividade do site
 --------------------------------- */
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.50px) {
     /* ------------------------
     Body
     ------------------------ */
@@ -1494,6 +1504,7 @@ Início -> Responsividade do site
         padding-top: 10px;
         padding-bottom: 0px;
         margin: 0;
+        background: white;
     }
     
     .navResponsive nav {
@@ -1548,6 +1559,12 @@ Início -> Responsividade do site
         padding: 0;
         margin: 0;
     }
+
+    .navResponsive .carrinho {
+        width: 40px;
+        margin-left: -5%;
+        margin-top: -10%;
+    }
     
     .navResponsive span a{
         list-style: none;
@@ -1564,10 +1581,10 @@ Início -> Responsividade do site
         position: absolute;
         background: #153B64;
         top: 120%;
-        width: 100%;
+        width: 110%;
         color: white;
         font-weight: 500;
-        margin: 0 0 0 -2.3% !important;
+        margin: 0 0 0 -4% !important;
         padding-left: 20px;
     }
 
@@ -1619,8 +1636,8 @@ Início -> Responsividade do site
         font-size: 12px;
         background: #153B64 !important;
         padding: 3px; 
-        margin-left: 2%;
-        width: 20%;
+        margin-left: -9%;
+        width: 18%;
         text-align: left;
         padding-left: 7% !important;
     }
@@ -1697,7 +1714,7 @@ Início -> Responsividade do site
      Carrosel
      ----------------- */
     .carousel {
-        margin: -15px 0 0 0 !important;
+        margin: 110px 0 0 0 !important;
         padding: 0;
     }
 
@@ -1753,8 +1770,6 @@ Início -> Responsividade do site
     }
 
     .segmento .col-4 {
-        padding: 0px !important;
-        margin: 0px !important;
         text-align: center !important;
         padding-bottom: 10px !important;
     }
@@ -1774,7 +1789,7 @@ Início -> Responsividade do site
     .segmento .segmentoLink {
         padding: 0;
         margin: 0;
-        width: 95%;
+        width: 100%;
         height: 100%;
     }
 
@@ -1822,11 +1837,11 @@ Início -> Responsividade do site
 
     .segmento .modal .larguraTextoModal img {
         margin-bottom: 10px !important;
+        margin-top: 0px;
     }
 
     .segmento .modal .larguraTextoModal p {
         font-size: 14px;
-        padding-top: 0 !important;
     }
 
     .segmento .modal .btnModal {
@@ -1835,12 +1850,36 @@ Início -> Responsividade do site
         margin-top: 10px;
     }
 
+    .segmento .modal .modal-header {
+        z-index: 1000;
+        position: absolute;
+        padding: 0 0 0 90%;
+        display: flex;
+        margin-top: 4%;
+    }
+
+    .segmento .modal .modal-header i {
+        font-size: 150%;
+        color: white;
+    }
+
+
+
     /* ------------------------
     secaoExperimente
     --------------------- */
 
-    .secaoExperimente .col-md-12 h2 {
+    .secaoExperimente {
+        padding: 0px;
+    }
+
+    .secaoExperimente .col-md-4 h2 {
         text-align: center !important;
+        font-size: 27px;
+    }
+
+    .secaoExperimente .col-md-4 a {
+        margin-bottom: 10px;
     }
 
     .secaoExperimente iframe {
@@ -1853,13 +1892,13 @@ Início -> Responsividade do site
     --------------------- */
 
     .secaoLinhasProdutos {
-        padding: 0 0 25px 0;
+        padding: 50px 0 50px 0;
         margin: 0;
     }
 
     .secaoLinhasProdutos h2 {
         text-align: center !important;
-        font-size: 20px !important;
+        font-size: 27px !important;
         font-weight: 600 !important;
     }
    

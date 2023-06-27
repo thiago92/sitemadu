@@ -23,7 +23,7 @@
 </head>
 <body>
   <header>
-    <nav class="navTopo d-none d-xl-block d-xxl-none">
+    <nav class="navTopo d-none d-md-block">
       <div class="container">
         <div class="row">
             <div class="col-md-4 align-self-center">
@@ -40,7 +40,7 @@
         </div>
       </nav>
 
-      <nav class="navPesquisa d-none d-xl-block d-xxl-none wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
+      <nav class="navPesquisa d-none d-md-block wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
         <div class="container">
             <div class="row">
                 <div class="col-md-2">
@@ -60,7 +60,7 @@
                     </div>
                     </form>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 pt-2 d-flex justify-content-end">
                     <ul>
                         <li><a href="">Meus pedidos<i class="fa-solid fa-truck"></i></a></li>
                         <li><a href="">Minha conta<i class="fa-regular fa-circle-user"></i></a></li>
@@ -79,7 +79,7 @@
         </div>
       </nav>
 
-      <nav class="navMenu navbar navbar-expand-lg d-none d-xl-block d-xxl-none">
+      <nav class="navMenu navbar navbar-expand-lg d-none d-md-block">
         <div class="container">
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
@@ -105,7 +105,7 @@
               <button class="position-relative" id="cart-button">
                 <a href="#">
                   <span>
-                    R$ 0,00<i class="fa-solid fa-cart-shopping"></i>
+                    R$ 0,00 <img class="carrinho" src="img/icon-carrinho.png" alt="">
                   </span>
                   <span class="position-absolute top-0 translate-middle badge rounded-pill bg-danger">
                     1
@@ -150,7 +150,7 @@
       </nav>
 
       <!-- Início da Nav para celular -->
-      <nav class="navResponsive d-block d-sm-none wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
+      <nav class="navResponsive fixed-top d-md-none wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
         <div class="container mb-2">
           <div class="row">
             <div class="col-5">
@@ -182,7 +182,7 @@
                           <button class="position-relative" id="cart-button-responsivo">
                             <a href="#">
                               <span>
-                                R$ 0,00<i class="fa-solid fa-cart-shopping"></i>
+                                R$ 0,00 <img class="carrinho" src="img/icon-carrinho.png" alt="">
                               </span>
                               <span class="position-absolute translate-middle badge rounded-pill">
                                 1
@@ -272,228 +272,240 @@
       </div>
   </section>
 
-  <section class="secaoFiltro">
-    <div class="container">
+  <section class="paginaNossasLinhas">
+    <div class="secaoFiltro">
+      <div class="container">
         <div class="row">
-            <div class="col-md-4 d-none d-xl-block d-xxl-none">
-                <a href="produtos.html">
-                    <h2>Filtrar Por Linha</h2>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                        MADU One ()
+
+          <a href="produtos.html">
+            <section class="botaoFiltro container d-md-none">
+              <div class="row">
+                <div class="col-md-12">
+                  <button id="botaoMostrar" onclick="toggleFiltro()">Mostrar filtro categorias</button>
+                </div>
+              </div>
+            </section>
+          </a>
+
+          <a class="col-md-4" href="produtos.html" id="secaoFiltroCategoria">
+            <div class="secaoFiltroCategoria d-none d-md-block" id="secaoFiltroCategoria">
+              <div class="row">
+                <div class="col-md-12">
+                  <h2>Filtrar por Categoria</h2>
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check1" autocomplete="off">
+                    <label class="btn" for="btn-check1">
+                      Bancadas e estantes reforçadas (0)
                     </label>
                   </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                        MADU Expand ()
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check2" autocomplete="off">
+                    <label class="btn" for="btn-check2">
+                      Carrinhos auxiliares (0)
                     </label>
                   </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                        MADU Express ()
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check3" autocomplete="off">
+                    <label class="btn" for="btn-check3">
+                      Carrinhos com gavetas (0)
                     </label>
                   </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                        MADU Extreme ()
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check4" autocomplete="off">
+                    <label class="btn" for="btn-check4">
+                      Carrinhos com prateleiras (0)
                     </label>
                   </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                        MADU Expert ()
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check5" autocomplete="off">
+                    <label class="btn" for="btn-check5">
+                      Carrinhos de transporte geral (0)
                     </label>
                   </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">
-                        MADU Extra ()
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check6" autocomplete="off">
+                    <label class="btn" for="btn-check6">
+                      Carrinhos para gaveteiros e bins (0)
                     </label>
                   </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                        <h2>Filtrar por Categoria</h2>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                            Bancadas e estantes reforçadas ()
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                        <label class="form-check-label" for="defaultCheck2">
-                            Carrinhos auxiliares ()
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-                        <label class="form-check-label" for="defaultCheck3">
-                            Carrinhos com gavetas ()
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-                        <label class="form-check-label" for="defaultCheck4">
-                            Carrinhos com prateleiras ()
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
-                        <label class="form-check-label" for="defaultCheck5">
-                            Carrinhos de transporte geral ()
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
-                        <label class="form-check-label" for="defaultCheck6">
-                            Carrinhos para gaveteiros e bins ()
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
-                        <label class="form-check-label" for="defaultCheck7">
-                            Estantes e armários para gaveteiros ()
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck8">
-                        <label class="form-check-label" for="defaultCheck8">
-                            Estantes e armários abertos ()
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
-                        <label class="form-check-label" for="defaultCheck9">
-                            Estantes e armários com rodas ()
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
-                        <label class="form-check-label" for="defaultCheck10">
-                            Estantes e armários fechados ()
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
-                        <label class="form-check-label" for="defaultCheck11">
-                            Estações de trabalho ()
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
-                        <label class="form-check-label" for="defaultCheck12">
-                            Expositores, gôndolas e displays ()
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck13">
-                        <label class="form-check-label" for="defaultCheck13">
-                            Mesas diversas ()
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck14">
-                        <label class="form-check-label" for="defaultCheck14">
-                            Mesas estofadas ()
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck15">
-                        <label class="form-check-label" for="defaultCheck15">
-                            Sem categoria ()
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck16">
-                        <label class="form-check-label" for="defaultCheck16">
-                            Uso especializado ()
-                        </label>
-                      </div>
-                    </div>
-                    </div>
-                    <h2>Filtro de Preço</h2>
-                    <div class="row">
-                    <div class="col-md-6 col-6">
-                        <div>
-                        <input type="text" id="price-min" readonly>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-6">
-                        <div>
-                        <input type="text" id="price-max" readonly>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="row">
-                    <div class="col-md-12">
-                        <div id="price-slider"></div>
-                    </div>
-                    </div>
-                    <div class="row">
-                    <div class="col-md-12 botaoFiltrar">
-                        <button>Limpar Filtro</button>
-                    </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-8">
-              <section class="secaoLinhasProdutos">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <h2>Conheca nossas linhas de produtos</h2>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="fundoMADU">
-                        <img class="zoomImg" src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
-                        <h3>MADU One</h3>
-                        <p>É a nossa <b>Linha Premium.</b> Nela você encontrará milhares de combinações possíveis com o que há de melhor em tecnologia e soluções de design.</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="fundoMADU">
-                        <img class="zoomImg" src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
-                        <h3>MADU Expand</h3>
-                        <p>Produtos que <b>expandir</b> permitem ainda mais as possibilidades já existentes de uso e dentro das necessidades de cada usuário.</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="fundoMADU">
-                        <img class="zoomImg" src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
-                        <h3>MADU Express</h3>
-                        <p>Conheça uma completa linha de bancadas, estações de trabalho e estantes para as mais <b>diferentes aplicações</b> num conceito de <b>modularidade</b> virtualmente definida.</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="fundoMADU">
-                        <img class="zoomImg" src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
-                        <h3>MADU Extreme</h3>
-                        <p>Nossa linha "heavy duty". Uma linha completa de bancadas, estações de trabalho e estantes para o <b>serviço pesado.</b> Modularidade total para o uso severo.</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="fundoMADU">
-                        <img class="zoomImg" src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
-                        <h3>MADU Expert</h3>
-                        <p>Produtos desenvolvidos especialmente para o <b>uso especializado</b> nos mais diferentes segmentos.</p>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="fundoMADU">
-                        <img class="zoomImg" src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
-                        <h3>MADU Extra</h3>
-                        <p>Essa é a nossa linha <b>básica.</b> Para quem procura uma solução leve, simples e prática. Qualidade e durabilidade numa linha extremamente competitiva.</p>
-                      </div>
-                    </div>
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check7" autocomplete="off">
+                    <label class="btn" for="btn-check7">
+                      Estantes e armários para gaveteiros (0)
+                    </label>
+                  </div>
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check8" autocomplete="off">
+                    <label class="btn" for="btn-check8">
+                      Estantes e armários abertos (0)
+                    </label>
+                  </div>
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check9" autocomplete="off">
+                    <label class="btn" for="btn-check9">
+                      Estantes e armários com rodas (0)
+                    </label>
+                  </div>
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check10 autocomplete="off"">
+                    <label class="btn" for="btn-check10">
+                      Estantes e armários fechados (0)
+                    </label>
+                  </div>
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check11 autocomplete="off"">
+                    <label class="btn" for="btn-check11">
+                      Estações de trabalho (0)
+                    </label>
+                  </div>
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check12 autocomplete="off"">
+                    <label class="btn" for="btn-check12">
+                      Expositores, gôndolas e displays (0)
+                    </label>
+                  </div>
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check13 autocomplete="off"">
+                    <label class="btn" for="btn-check13">
+                      Mesas diversas (0)
+                    </label>
+                  </div>
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check14 autocomplete="off"">
+                    <label class="btn" for="btn-check14">
+                      Mesas estofadas (0)
+                    </label>
+                  </div>
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check15 autocomplete="off"">
+                    <label class="btn" for="btn-check15">
+                      Sem categoria (0)
+                    </label>
+                  </div>
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check16 autocomplete="off"">
+                    <label class="btn" for="btn-check16">
+                      Uso especializado (0)
+                    </label>
+                  </div>
+                  <h2>Filtrar Por Linha</h2>
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check17" autocomplete="off">
+                    <label class="btn" for="btn-check17">
+                      MADU One (0)
+                    </label>
+                  </div>
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check18" autocomplete="off">
+                    <label class="btn" for="btn-check18">
+                      MADU Expand (0)
+                    </label>
+                  </div>
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check19" autocomplete="off">
+                    <label class="btn" for="btn-check19">
+                      MADU Express (0)
+                    </label>
+                  </div>
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check20" autocomplete="off">
+                    <label class="btn" for="btn-check20">
+                      MADU Extreme (0)
+                    </label>
+                  </div>
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check21" autocomplete="off">
+                    <label class="btn" for="btn-check21">
+                      MADU Expert (0)
+                    </label>
+                  </div>
+                  <div class="">
+                    <input class="btn-check" type="checkbox" value="" id="btn-check22" autocomplete="off">
+                    <label class="btn" for="btn-check22">
+                      MADU Extra (0)
+                    </label>
                   </div>
                 </div>
-              </section>
+              </div>
+              <h2>Filtro de Preço</h2>
+              <div class="row">
+                <div class="col-md-6 col-6">
+                  <div>
+                  <input type="text" id="price-min" readonly>
+                  </div>
+                </div>
+                <div class="col-md-6 col-6">
+                  <div>
+                  <input type="text" id="price-max" readonly>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div id="price-slider"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 botaoFiltrar">
+                  <button>Limpar Filtro</button>
+                </div>
+              </div>
             </div>
+          </a>
+
+          <div class="col-md-8 secaoLinhasProdutos">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h2>Conheca nossas linhas de produtos</h2>
+                </div>
+                <div class="col-md-4">
+                  <div class="fundoMADU">
+                    <img class="zoomImg" src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
+                    <h3>MADU One</h3>
+                    <p>É a nossa <b>Linha Premium.</b> Nela você encontrará milhares de combinações possíveis com o que há de melhor em tecnologia e soluções de design.</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="fundoMADU">
+                    <img class="zoomImg" src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
+                    <h3>MADU Expand</h3>
+                    <p>Produtos que <b>expandir</b> permitem ainda mais as possibilidades já existentes de uso e dentro das necessidades de cada usuário.</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="fundoMADU">
+                    <img class="zoomImg" src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
+                    <h3>MADU Express</h3>
+                    <p>Conheça uma completa linha de bancadas, estações de trabalho e estantes para as mais <b>diferentes aplicações</b> num conceito de <b>modularidade</b> virtualmente definida.</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="fundoMADU">
+                    <img class="zoomImg" src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
+                    <h3>MADU Extreme</h3>
+                    <p>Nossa linha "heavy duty". Uma linha completa de bancadas, estações de trabalho e estantes para o <b>serviço pesado.</b> Modularidade total para o uso severo.</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="fundoMADU">
+                    <img class="zoomImg" src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
+                    <h3>MADU Expert</h3>
+                    <p>Produtos desenvolvidos especialmente para o <b>uso especializado</b> nos mais diferentes segmentos.</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="fundoMADU">
+                    <img class="zoomImg" src="img/mesa-de-inox-com-12-gavetas-e-bins-vermelha.jpg" alt="">
+                    <h3>MADU Extra</h3>
+                    <p>Essa é a nossa linha <b>básica.</b> Para quem procura uma solução leve, simples e prática. Qualidade e durabilidade numa linha extremamente competitiva.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
   </section>
 

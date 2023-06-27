@@ -124,17 +124,24 @@ cartButtonResponsivo.addEventListener("click", (event) => {
 //-------------------------------------------Botão mostrar filtro-------------------------------------------------------
 //Mostrar secaoFiltroCategoria
 
-function toggleFiltro() {
-  var secaoFiltro = document.getElementById("secaoFiltroCategoria");
-  var botaoMostrar = document.getElementById("botaoMostrar");
+// function toggleFiltro() {
+//   var secaoFiltro = document.getElementById("secaoFiltroCategoria");
+//   var botaoMostrar = document.getElementById("botaoMostrar");
 
-  if (secaoFiltro.style.display === "none") {
-    secaoFiltro.style.display = "block";
-    botaoMostrar.innerText = "Ocultar filtro";
-  } else {
-    secaoFiltro.style.display = "none";
-    botaoMostrar.innerText = "Mostrar filtro categorias";
-  }
+//   if (secaoFiltro.style.display === "none") {
+//     secaoFiltro.style.display = "block";
+//     botaoMostrar.innerText = "Ocultar filtro";
+//   } else {
+//     secaoFiltro.style.display = "none";
+//     botaoMostrar.innerText = "Mostrar filtro categorias";
+//   }
+// }
+
+function toggleFiltro() {
+  var elemento = document.getElementById("secaoFiltroCategoria");
+  elemento.classList.toggle("d-none");
+  elemento.classList.toggle("d-md-block");
+  elemento.classList.toggle("d-md-none");
 }
 
 //-------------------------------------Botão +1 e -1 da página produto-----------------------------------------------
@@ -144,6 +151,7 @@ const decrementButton = document.getElementById("decrement");
 const incrementButton = document.getElementById("increment");
 const valueInput = document.getElementById("value");
 
+if (valueInput != null ) {
 // Define o valor inicial
 let value = 1;
 valueInput.value = value;
@@ -161,6 +169,7 @@ incrementButton.addEventListener("click", () => {
   value++;
   valueInput.value = value;
 });
+}
 
 
 //-------------------------------zoomm da image------------------------------------------------

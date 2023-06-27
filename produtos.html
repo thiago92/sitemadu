@@ -23,7 +23,7 @@
 </head>
 <body>
   <header>
-    <nav class="navTopo d-none d-xl-block d-xxl-none">
+    <nav class="navTopo d-none d-md-block">
       <div class="container">
         <div class="row">
             <div class="col-md-4 align-self-center">
@@ -40,7 +40,7 @@
         </div>
       </nav>
 
-      <nav class="navPesquisa d-none d-xl-block d-xxl-none wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
+      <nav class="navPesquisa d-none d-md-block wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
         <div class="container">
             <div class="row">
                 <div class="col-md-2">
@@ -79,7 +79,7 @@
         </div>
       </nav>
 
-      <nav class="navMenu navbar navbar-expand-lg d-none d-xl-block d-xxl-none">
+      <nav class="navMenu navbar navbar-expand-lg d-none d-md-block">
         <div class="container">
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
@@ -105,7 +105,7 @@
               <button class="position-relative" id="cart-button">
                 <a href="#">
                   <span>
-                    R$ 0,00<i class="fa-solid fa-cart-shopping"></i>
+                    R$ 0,00 <img class="carrinho" src="img/icon-carrinho.png" alt="">
                   </span>
                   <span class="position-absolute top-0 translate-middle badge rounded-pill bg-danger">
                     1
@@ -150,7 +150,7 @@
       </nav>
 
       <!-- Início da Nav para celular -->
-      <nav class="navResponsive d-block d-sm-none wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
+      <nav class="navResponsive fixed-top d-md-none wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
         <div class="container mb-2">
           <div class="row">
             <div class="col-5">
@@ -182,7 +182,7 @@
                           <button class="position-relative" id="cart-button-responsivo">
                             <a href="#">
                               <span>
-                                R$ 0,00<i class="fa-solid fa-cart-shopping"></i>
+                                R$ 0,00 <img class="carrinho" src="img/icon-carrinho.png" alt="">
                               </span>
                               <span class="position-absolute translate-middle badge rounded-pill">
                                 1
@@ -275,7 +275,16 @@
   <section class="secaoFiltro">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 d-none d-xl-block d-xxl-none">
+          
+          <section class="botaoFiltro container d-md-none">
+            <div class="row">
+              <div class="col-md-12">
+                <button id="botaoMostrar" onclick="toggleFiltro()">Mostrar filtro categorias</button>
+              </div>
+            </div>
+          </section>
+
+          <div class="col-md-4 secaoFiltroCategoria d-none d-md-block" id="secaoFiltroCategoria">
             <h2>Filtrar Por Linha</h2>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -438,179 +447,6 @@
               </div>
             </div>
           </div>
-
-          <section class="botaoFiltro container d-block d-sm-none">
-            <div class="row">
-              <div class="col-md-12">
-                <button id="botaoMostrar" onclick="toggleFiltro()">Mostrar filtro categorias</button>
-              </div>
-            </div>
-          </section>
-
-          <div class="col-md-4 secaoFiltroCategoria" id="secaoFiltroCategoria" style="display: none;">
-            <h2>Filtrar Por Linha</h2>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-              <label class="form-check-label" for="defaultCheck1">
-                MADU One ()
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-              <label class="form-check-label" for="defaultCheck1">
-                MADU Expand ()
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-              <label class="form-check-label" for="defaultCheck1">
-                MADU Express ()
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-              <label class="form-check-label" for="defaultCheck1">
-                MADU Extreme ()
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-              <label class="form-check-label" for="defaultCheck1">
-                MADU Expert ()
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-              <label class="form-check-label" for="defaultCheck1">
-                MADU Extra ()
-              </label>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <h2>Filtrar por Categoria</h2>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                  <label class="form-check-label" for="defaultCheck1">
-                    Bancadas e estantes reforçadas ()
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                  <label class="form-check-label" for="defaultCheck2">
-                    Carrinhos auxiliares ()
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-                  <label class="form-check-label" for="defaultCheck3">
-                    Carrinhos com gavetas ()
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-                  <label class="form-check-label" for="defaultCheck4">
-                    Carrinhos com prateleiras ()
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
-                  <label class="form-check-label" for="defaultCheck5">
-                    Carrinhos de transporte geral ()
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
-                  <label class="form-check-label" for="defaultCheck6">
-                    Carrinhos para gaveteiros e bins ()
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
-                  <label class="form-check-label" for="defaultCheck7">
-                    Estantes e armários para gaveteiros ()
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck8">
-                  <label class="form-check-label" for="defaultCheck8">
-                    Estantes e armários abertos ()
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
-                  <label class="form-check-label" for="defaultCheck9">
-                    Estantes e armários com rodas ()
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
-                  <label class="form-check-label" for="defaultCheck10">
-                    Estantes e armários fechados ()
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
-                  <label class="form-check-label" for="defaultCheck11">
-                    Estações de trabalho ()
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
-                  <label class="form-check-label" for="defaultCheck12">
-                    Expositores, gôndolas e displays ()
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck13">
-                  <label class="form-check-label" for="defaultCheck13">
-                    Mesas diversas ()
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck14">
-                  <label class="form-check-label" for="defaultCheck14">
-                    Mesas estofadas ()
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck15">
-                  <label class="form-check-label" for="defaultCheck15">
-                    Sem categoria ()
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck16">
-                  <label class="form-check-label" for="defaultCheck16">
-                    Uso especializado ()
-                  </label>
-                </div>
-              </div>
-            </div>
-            <h2>Filtro de Preço</h2>
-            <div class="row">
-              <div class="col-md-6 col-6">
-                <div>
-                <input type="text" id="price-min-reponsivo" readonly>
-                </div>
-              </div>
-              <div class="col-md-6 col-6">
-                <div>
-                <input type="text" id="price-max-responsivo" readonly>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div id="price-slider-responsivo"></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 botaoFiltrar">
-                <button>Limpar Filtro</button>
-              </div>
-            </div>
-          </div>
-
 
           <div class="col-md-8">
             <div class="row">
