@@ -174,8 +174,8 @@ Início do NavMenu
 .navMenu {
     background: #F7F7F7 !important;
     padding: 13px;
-    border-top: 1px outset #d3d3d3;
-    border-bottom: 1px inset #d3d3d3;
+    border-top: 1px solid #D5D5D5;
+    border-bottom: 1px solid #D5D5D5;
 }
 
 .navMenu .divisor {
@@ -430,6 +430,10 @@ Início do carrosel
     color: white
 }
 
+.carrossel .carousel-inner {
+    border-radius: 15px;
+}
+
 
 /* --------------------------------
 Fim do carrosel
@@ -575,6 +579,10 @@ Início ->Confira as possibilidades da MAD.U para o seu segmento:
     color: white;
 }
 
+.segmento .modal-body .col-md-3 {
+    padding: 50px 0;
+}
+
 /* -----------------------------------
 Fim ->Confira as possibilidades da MAD.U para o seu segmento:
 -------------------------------------------------- */
@@ -597,7 +605,18 @@ Início da secaoExperimente
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
+
+.secaoExperimente img {
+    width: 60%;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+.secaoExperimente img:hover {
+    transform: scale(1.1);
+}
 
 .secaoExperimente span {
    background: #153B64;
@@ -607,6 +626,7 @@ Início da secaoExperimente
    font-weight: 500;
    border-radius: 50px;
    color: white;
+   margin-top: 20px;
 }
 
 .secaoExperimente span:hover {
@@ -627,6 +647,7 @@ Início da secaoExperimente
 .secaoExperimente P {
     font-size: 16px;
     font-weight: 500;
+    line-height: 1;
 }
 
 .secaoExperimente a {
@@ -861,7 +882,7 @@ Início -> Footer
 }
 
 .primeiraDivFooter .col-md-4 span {
-    font-size: 22px;
+    font-size: 17px;
     text-align: left;
     font-weight: 600;
 }
@@ -912,21 +933,31 @@ Início -> Footer
     border-radius: 50%;
 }
 
-.primeiraDivFooter .logoMFM {
-    padding-top: 20px;
+.primeiraDivFooter .logoMadu img {
+    transition: 0.3s ease;
+    width: 90%;
+    margin: 0 0 0 -15px;
+    padding: 0;
+    margin-top: 30%;
+  }
+  
+.primeiraDivFooter .logoMadu img:hover {
+    transform: scale(1.1);
+  }
+
+.primeiraDivFooter .col-md-2 p {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
 }
 
 .primeiraDivFooter .logoMFM img {
-    width: 100%;
-}
-
-.primeiraDivFooter .zoomImg {
-    transition: transform 0.3s ease;
+    transition: 0.3s ease;
     width: 70%;
-    margin-bottom: 10px;
+    margin-top: 5%;
   }
   
-.primeiraDivFooter .zoomImg:hover {
+.primeiraDivFooter .logoMFM img:hover {
     transform: scale(1.1);
   }
 
@@ -943,8 +974,16 @@ Início -> Footer
 }
 
 .segundaDivFooter span {
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.segundaDivFooter .pagarme {
+    width: 10%;
+}
+
+.segundaDivFooter .pagarme img {
+    width: 100%;
 }
 
 .segundaDivFooter .siteSeguro {
@@ -981,10 +1020,17 @@ Início -> Footer
 }
 
 .segundaDivFooter .cartoes img {
-    margin-left: 20%;
-    width: 100%;
+    width: 90%;
+    margin-left: 20px;
 }
 
+.segundaDivFooter .col-md-3 {
+    width: 28%;
+}
+
+.segundaDivFooter .col-md-4 {
+    width: 36%;
+}
 
 
 /* ------------------------------------
@@ -1505,6 +1551,8 @@ Início -> Responsividade do site
         padding-bottom: 0px;
         margin: 0;
         background: white;
+        border-top: 1px solid #D5D5D5;
+        border-bottom: 1px solid #D5D5D5;
     }
     
     .navResponsive nav {
@@ -1937,13 +1985,23 @@ Início -> Responsividade do site
     .primeiraDivFooter .divResponsiva {
         width: 100%;
     }
+    
+    .primeiraDivFooter .logoMadu img{
+        width: 40% !important;
+        margin-top: 0;
+    }
+
+    .primeiraDivFooter .logoMFM img {
+        width: 30%;
+        margin-bottom: 30px;
+    }
 
     .segundaDivFooter {
         text-align: center;
     }
 
     .segundaDivFooter .copyRight {
-        text-align: left;
+        text-align: center;
         padding-left: 15px;
         padding-bottom: 15px;
     }
@@ -1963,7 +2021,7 @@ Início -> Responsividade do site
     }
 
     .segundaDivFooter h3 {
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 600;
         padding: 0;
         margin: 0;
@@ -1972,10 +2030,23 @@ Início -> Responsividade do site
     }
 
     .segundaDivFooter h4 {
-        font-size: 14px;
+        font-size: 10px;
         padding: 0;
         margin: 0;
         letter-spacing: -1px;
+    }
+
+    .segundaDivFooter .pagarme {
+        vertical-align: middle;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .segundaDivFooter .pagarme img {
+        width: 300%;
+        margin-left: -100%;
+        margin-bottom: 20px;
     }
 
     /* ---------------------------Página Produto------------------------- */
