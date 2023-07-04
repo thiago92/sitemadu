@@ -1,0 +1,51 @@
+.paginaNossasLinhas .secaoFiltro .col-md-4 {
+    padding: 5px !important;
+    margin: 0;
+}
+
+.paginaNossasLinhas .secaoFiltro .col-md-4 h2{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+}
+
+.paginaNossasLinhas .secaoFiltro .col-md-4 label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.paginaNossasLinhas .secaoFiltro .col-md-4 span {
+    color: #ADABAB;
+    font-weight: 600;
+}
+
+.paginaNossasLinhas .fundoMADUFiltro {
+    min-height: 285px;
+    background: white;
+    border-radius: 15px;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.paginaNossasLinhas .fundoMADUFiltro img {
+    width: 70%;
+    transition: 0.3s ease;
+    padding-bottom: 15px;
+}
+
+.paginaNossasLinhas .fundoMADUFiltro img:hover {
+    transform: scale(1.1);
+}
+
+.paginaNossasLinhas .fundoMADUFiltro p {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+@media (max-width: 767.50px) {
+
+}

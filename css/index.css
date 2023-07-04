@@ -1,0 +1,704 @@
+/* -----------------------
+Início do carrosel
+-------------------------- */
+
+.carrossel {
+    padding: 25px 0 0 0;
+}
+
+.carrossel .carousel {
+    margin: 0px 0 25px 0;
+    border-radius: 15px;
+}
+
+.carrossel .carousel img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.carrossel .carousel-item {
+    height: 400px;
+}
+
+.carrossel .carousel p {
+    font-size: 35px;
+    width: 80%;
+}
+
+.carousel i {
+    font-size: 350%;
+    color: #ffffff;
+}
+
+.textoCarrosel {
+    text-align: left;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.carrossel .carousel .btn {
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 20px !important;
+    padding-top: 1%;
+    margin-left: 5%;
+    width: 30%;
+    height: 35%;
+}
+
+.carrossel .carousel .btn:hover {
+    background: #1D1D1D;
+    color: white
+}
+
+.carrossel .carousel-inner {
+    border-radius: 15px;
+}
+
+
+/* --------------------------------
+Fim do carrosel
+-------------------------------- */
+
+/* -----------------------------------
+Início ->Confira as possibilidades da MAD.U para o seu segmento:
+-------------------------------------------------- */
+.segmento {
+    margin: 25px 0 25px 0;
+    text-align: center;
+}
+
+.segmento .col-md-2 {
+    padding: 0 5px;
+}
+
+.segmento .segmentoLink {
+    background: #F7F7F7;
+    margin: 0;
+    padding: 15px 25px;
+    height: 100%;
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.segmento .segmentoLink:hover {
+    border: 2px solid #6182C2;
+    border-radius: 10px;
+}
+
+.segmento h3 {
+    font-weight: 700;
+}
+
+.segmento h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    padding: 0;
+    margin-top: 0;
+}
+
+.segmento h3 {
+    font-size: 20px;
+}
+
+.segmento ul {
+    padding: 0;
+    margin: 0;
+}
+
+.segmento ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #54595F;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.segmento .zoomImg {
+    transition: transform 0.3s ease;
+    width: 40%;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+  }
+  
+.segmento .zoomImg:hover {
+    transform: scale(1.1);
+  }
+
+.segmento .modal .zoomImg {
+    width: 40%;
+  }
+
+.segmento .modal .larguraTextoModal img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+
+.segmento .modal .modal-header {
+    z-index: 1000;
+    position: absolute;
+    padding: 0 0 0 94%;
+    display: flex;
+    margin-top: 3%;
+}
+
+.segmento .modal .modal-header i {
+    font-size: 150%;
+    color: white;
+}
+
+.segmento .modal .modal-header i:hover {
+    color: #C8C8C8;
+    cursor: pointer;
+}
+
+.segmento .modal h4{
+    font-weight: 600;
+    color: #141414;
+    font-size: 32px;
+    line-height: 1;
+    padding-bottom: 10px;
+}
+
+.segmento .modal  ul li {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.7em;
+}
+
+.segmento .modal p {
+    margin-bottom: 0.9rem;
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.segmento .modal .btnModal {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: #153B64;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.segmento .modal .btnModal a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.segmento .modal-body .col-md-3 {
+    padding: 50px 0;
+}
+
+/* -----------------------------------
+Fim ->Confira as possibilidades da MAD.U para o seu segmento:
+-------------------------------------------------- */
+
+/* -------------------------------
+Início da secaoExperimente 
+------------------------------*/
+
+.secaoExperimente {
+    text-align: right;
+}
+
+.secaoExperimente .row {
+    display: flex;
+    align-items: center;
+    text-align: right !important;
+  }
+  
+.secaoExperimente .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+.secaoExperimente img {
+    width: 60%;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+.secaoExperimente img:hover {
+    transform: scale(1.1);
+}
+
+.secaoExperimente span {
+   background: #153B64;
+   cursor: pointer;
+   padding: 10px 15px;
+   font-size: 13px;
+   font-weight: 500;
+   border-radius: 50px;
+   color: white;
+   margin-top: 20px;
+}
+
+.secaoExperimente span:hover {
+    background: black;
+    cursor: pointer;
+ }
+
+.secaoExperimente .col-md-6:nth-child(2) {
+    padding: 0;
+}
+
+.secaoExperimente h2 {
+    font-size: 46px;
+    font-weight: 600;
+    color: #153B64;
+}
+
+.secaoExperimente P {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.secaoExperimente a {
+    text-decoration: none;
+    list-style: none;
+}
+
+/* ---------------------------
+Fim da secaoExperimente
+--------------------------------- */
+
+/* -------------------------------
+Início do secaoLinhasProdutos
+---------------------------- */
+
+.secaoLinhasProdutos {
+    padding: 50px 25px 50px 25px;
+    background: #F7F7F7;
+    text-align: center;
+}
+
+.secaoLinhasProdutos h2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.secaoLinhasProdutos .col-md-4 {
+    padding: 20px;
+}
+
+.secaoLinhasProdutos img {
+    width: 45%;
+    border: 2px solid #E6E6E6;
+    border-radius: 50%;
+    margin: 25px;
+    cursor: pointer;
+}
+
+.secaoLinhasProdutos .zoomImg {
+    transition: transform 0.3s ease;
+  }
+  
+.secaoLinhasProdutos .zoomImg:hover {
+    transform: scale(1.1);
+  }
+
+.secaoLinhasProdutos .fundoMADU {
+    background: #FFFFFF;
+    padding: 15px;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.secaoLinhasProdutos h3 {
+    font-size: 28px;
+    color: #153B64;
+    font-weight: 600;
+}
+
+.secaoLinhasProdutos p {
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+}
+
+.secaoFiltro .secaoLinhasProdutos {
+    text-align: left;
+}
+
+.secaoFiltro .secaoLinhasProdutos h2 {
+    padding: 25px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center  ;
+}
+
+/* ----------------------
+Fim do secaoLinhasProdutos
+---------------------------- */
+
+/* -----------------------------------------
+Início -> Inovaçao, qualidade e tecnologia
+----------------------------------------- */
+
+.inovacao {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.inovacao .col-md-4 {
+    height: 100%;
+}
+
+.inovacao .inovacaoBorda {
+    padding-top: 10px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.inovacao a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.inovacao h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #153B64;
+    padding: 5px;
+}
+
+.inovacao p {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    line-height: 1;
+    padding: 5px;
+}
+
+.inovacao img {
+    padding-top: 10px;
+    width: 70%;
+    padding-bottom: 10px;
+}
+
+.inovacao .zoomImg {
+    transition: transform 0.3s ease;
+  }
+  
+.inovacao .zoomImg:hover {
+    transform: scale(1.1);
+  }
+
+.inovacao span {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 25px;
+    background: #153B64;
+}
+
+.inovacao .btn:hover {
+    background: #153B64 !important;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal h2 {
+    font-size: 41px;
+    font-weight: 600;
+    color: #2C2C2C;
+    padding-bottom: 15px;
+    margin-top: -30px;
+}
+
+.modal h3 {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: #2C2C2C;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+
+.modal p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #2C2C2C;
+    text-align: justify;
+}
+
+.modal span {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    color: #2C2C2C;
+}
+
+/* -----------------------------------------
+Fim -> Inovaçao, qualidade e tecnologia
+----------------------------------------- */
+
+/* ---------------------------
+Início -> Formulário
+-------------------------------- */
+
+.form {
+    background: #D9D8D7;
+    padding: 50px 0 50px 0;
+    text-align: center;
+}
+
+.form h2 {
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form input {
+    border-radius: 20px;
+}
+
+.form .btn {
+    background: black;
+    color: white;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+/* ---------------------------
+Fim -> Formulário
+-------------------------------- */
+
+@media (max-width: 767.50px) {
+    /* -------------------
+     Carrosel
+     ----------------- */
+     .carousel {
+        margin: 110px 0 0 0 !important;
+        padding: 0;
+    }
+
+    .carousel img {
+        width: 120%;
+        zoom: 1;
+        height: 100%;
+        object-fit: cover;
+
+    }
+    .carousel .carousel-item {
+        height: 180px;
+    }
+
+    .carousel .carousel-item p {
+        width: 80%;
+        font-size: 16px;
+    }
+    
+    .carousel i {
+        font-size: 200%;
+        color: #ffffff;
+    }
+
+    
+    .carousel .textoCarrosel {
+        padding: 0;
+        text-align: left;
+        top: 57%;
+        transform: translateY(-50%);
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 1;
+        font-size: 18px;
+    }
+
+    .carousel .textoCarrosel .btn{
+        font-size: 16px !important;
+        height: 50% !important;
+    }
+
+    /* ------------------------
+    Segmento
+    ------------------------ */
+    
+    .segmento {
+        text-align: center !important;
+    }
+
+    .segmento h2 {
+        text-align: center !important;
+        font-size: 19px;
+    }
+
+    .segmento .col-4 {
+        text-align: center !important;
+        padding-bottom: 10px !important;
+    }
+
+    .segmento .col-4 ul li{
+        text-align: center !important;
+    }
+
+    .segmento .col-4 h3 {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .segmento .segmentoLink {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .segmento img {
+        width: 50%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .segmento .modal {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    .segmento .modal-dialog {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    .segmento .modal-body {
+        padding: 10px 0 0 0;
+        margin: 0;
+    }
+
+    .segmento .modal .zoomImg {
+        width: 70%;
+    }
+
+    .segmento .modal h4 {
+        font-size: 16px;
+    }
+
+    .segmento .modal .col-3 {
+        text-align: center !important;
+        padding-right: 5px;
+    }
+
+    .segmento .modal ul li {
+        font-size: 12px;
+        text-align: center !important;
+        line-height: 1.5;
+    }
+
+    .segmento .modal .larguraTextoModal img {
+        margin-bottom: 10px !important;
+        margin-top: 0px;
+    }
+
+    .segmento .modal .larguraTextoModal p {
+        font-size: 14px;
+    }
+
+    .segmento .modal .btnModal {
+        width: 100%;
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    .segmento .modal .modal-header {
+        z-index: 1000;
+        position: absolute;
+        padding: 0 0 0 90%;
+        display: flex;
+        margin-top: 4%;
+    }
+
+    .segmento .modal .modal-header i {
+        font-size: 150%;
+        color: white;
+    }
+
+
+
+    /* ------------------------
+    secaoExperimente
+    --------------------- */
+
+    .secaoExperimente {
+        padding: 0px;
+    }
+
+    .secaoExperimente .col-md-4 h2 {
+        text-align: center !important;
+        font-size: 27px;
+    }
+
+    .secaoExperimente .col-md-4 a {
+        margin-bottom: 10px;
+    }
+
+    .secaoExperimente iframe {
+        height: 200px;
+        width: 100%;
+    }
+
+    /* ------------------
+    secaoLinhasProdutos
+    --------------------- */
+
+    .secaoLinhasProdutos {
+        padding: 50px 0 50px 0;
+        margin: 0;
+    }
+
+    .secaoLinhasProdutos h2 {
+        text-align: center !important;
+        font-size: 27px !important;
+        font-weight: 600 !important;
+    }
+   
+    /* ----------------------
+    Formlulário
+    ----------------------- */
+
+    .form {
+        padding: 25px 0;
+    }
+
+    .form h2 {
+        text-align: center !important;
+    }
+
+    .form .col-md-5 {
+        margin-bottom: 10px;
+    }
+
+    .form .col-12 {
+        width: 3000;
+    }
+}

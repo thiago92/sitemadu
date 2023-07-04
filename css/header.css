@@ -1,0 +1,565 @@
+/*--------------------------------------- 
+Inicio do header 
+---------------------------------------------------*/
+
+.navTopo{
+    background: #153B64;
+    color: #FFFFFF;
+    padding: 0px !important;
+}
+
+.navTopo h2 {
+    font-size: 12px !important;
+    font-weight: bold !important;
+    height: 0% !important;
+    padding-top: 2%;
+}
+
+.navTopo ul {
+    list-style: none;
+    height: 0% !important;
+    padding: 0 !important;
+}
+
+.navTopo ul li {
+    display:inline-flex !important;
+    list-style: none !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+
+}
+
+.navTopo ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: #FFFFFF;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.navTopo ul li a:hover {
+    text-decoration: none;
+    list-style: none;
+    color: #FFFFFF;
+}
+
+.navTopo ul li i {
+    font-size: 150%;
+    padding: 0 5px 0 0 !important;
+    margin: 0 !important;
+}
+
+/* ------------------------------------
+Fim do header
+------------------------------------------ */
+
+/* ------------------------------------------------------
+Inicio -> navPesquisa
+--------------------------------------- */
+
+.navPesquisa {
+    margin: 30px;
+}
+
+.navPesquisa .zoomImg {
+    transition: transform 0.3s ease;
+    width: 70%;
+    padding-top: 5px;
+  }
+  
+.navPesquisa .zoomImg:hover {
+    transform: scale(1.1);
+  }
+
+.navPesquisa form input{
+    border-radius: 15px 0px 0px 15px !important;
+    background: #EEEEEE !important;
+    border: none;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navPesquisa form input:focus {
+    box-shadow: none;
+}
+
+.navPesquisa button {
+    background: #153B64 !important;
+    margin: 0;
+    border-radius: 0px 15px 15px 0px !important;
+    border: none;
+}
+
+.navPesquisa button i {
+    color: white;
+}
+
+.navPesquisa ul li {
+    text-decoration: none;
+    list-style: none;
+    display:inline-flex;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.navPesquisa ul li a {
+    text-decoration: none;
+    list-style: none;
+    display:inline-flex;
+    vertical-align: middle;
+    color: black;
+}
+
+.navPesquisa ul li a:hover {
+    text-decoration: none;
+    list-style: none;
+}
+
+.navPesquisa ul li a i {
+    font-size: 150%;
+    padding: 0 7px 0 7px;
+    color: #153B64;
+}
+
+.navPesquisa .col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*------------------------------------------- 
+Fim -> navPesquisa
+---------------------------------------------------*/
+
+/* ------------------------------------------
+Início do NavMenu
+------------------------------------------ */
+
+.navMenu {
+    background: #F7F7F7 !important;
+    padding: 13px;
+    border-top: 1px solid #D5D5D5;
+    border-bottom: 1px solid #D5D5D5;
+}
+
+.navMenu .divisor {
+	width: 2px;
+	background: #b4b4b4;
+	margin: 10px 5px;
+}
+
+.navMenu ul {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navMenu ul li{
+    border-bottom: 3px solid #f7f7f7;
+
+}
+
+.navMenu ul li a {
+    color: black;  
+    margin: 0 10px 0 12px;
+}
+
+.navMenu span {
+    font-weight: 600;
+    padding-right: 50px;
+}
+
+.navMenu a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.navMenu a:hover {
+    color: #153B64 !important;
+}
+
+.navMenu button {
+    padding: 5px 25px 5px 25px;
+    background: #153B64;
+    border-radius: 50px;
+}
+
+.navMenu button a{
+    text-decoration: none;
+    list-style: none;
+    color: white !important;
+    margin: 0 5px 0 5px;
+    font-size: 13px;
+}
+
+.navMenu button:hover {
+    background: #153B64;
+}
+
+.navMenu button i {
+    font-size: 80%;
+    color: white;
+}
+
+.navMenu ul li ul {
+    margin-top: 3px;
+    padding: 0;
+}
+
+
+.navMenu ul li ul li {
+    padding: 10px 15px 10px 15px;
+    border: none;
+}
+
+.navMenu ul li ul:hover {
+    padding: 0;
+}
+
+.navMenu ul li ul li:hover {
+    padding: 10px 15px 10px 15px;
+    border: none;
+}   
+
+.navMenu ul li ul li a {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navMenu ul li ul li a:hover {
+    padding: 0;
+    background: white;
+    color: #153B64;
+    border: none;
+}
+
+.navMenu .position-relative {
+    background: none;
+    border: none;
+}
+
+.navMenu .position-relative:hover {
+    background: none;
+    border: none;
+}
+
+.navMenu .position-relative span:nth-child(1) {
+    color: #000000;
+    font-size: 14px;
+}
+
+.navMenu .position-relative span:nth-child(2) {
+    color: white;
+    font-size: 10px;
+    background: #153B64 !important;
+    padding: 5px;
+    margin-top: 7%;
+    margin-left: -55px;
+    width: 20px;
+}
+
+.navMenu .cart-container {
+    position: relative;
+    z-index: 1000;
+  }
+
+.navMenu .carrinho {
+    width: 40px;
+    margin-left: -10px;
+}
+
+.navMenu .cart-window {
+    position: absolute;
+    top: 160%;
+    left: 0;
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 50px;
+    display: none;
+    border-radius: 5px;
+  }
+
+.navMenu .cart-window .nomeProduto {
+    font-size: 14px;
+    color: #0A0A0A;
+  }
+
+.navMenu .cart-window .preçoProduto {
+    font-size: 14px;
+    color: #858585;
+    font-weight: 600;
+  }
+
+.navMenu .cart-window .subTotal {
+    text-align: center;
+    font-size: 14px;
+    color: #0A0A0A;
+    padding-bottom: 15px;
+  }
+
+.navMenu .cart-window .verCarrinho {
+    text-align: center;
+}
+
+.navMenu .cart-window .finalizacaoCompra {
+    text-align: center;
+}
+.navMenu .cart-window .verCarrinho button {
+    font-size: 14px;
+    color: white;
+    background: #962222;
+    margin-bottom: 10px;
+    width: 100%;
+    border: none;
+    padding: 13px;
+    font-weight: 600;
+  }
+
+.navMenu .cart-window .finalizacaoCompra button {
+    font-size: 14px;
+    color: white;
+    background: #202020;
+    width: 100%;
+    border: none;
+    padding: 13px;
+    font-weight: 600;
+  }
+
+  @media (max-width: 767.50px) {
+    /* ------------------------------
+    header
+    ----------------------------- */
+
+    /*-----------------------
+     Nav
+     ------------------- */
+
+     .navResponsive {
+        padding-top: 10px;
+        padding-bottom: 0px;
+        margin: 0;
+        background: white;
+        border-top: 1px solid #D5D5D5;
+        border-bottom: 1px solid #D5D5D5;
+    }
+    
+    .navResponsive nav {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .navResponsive form input{
+        border-radius: 15px 0 0 15px !important;
+        background: #EEEEEE !important;
+        border: none;
+        margin: 0;
+        padding: 10px;
+    }
+    
+    .navResponsive form input:focus {
+        box-shadow: none
+    }
+    
+    .navResponsive form button {
+        background: #153B64 !important;
+        margin: 0;
+        border-radius: 0 15px 15px 0 !important;
+        border: none;
+    }
+    
+    .navResponsive .btn i {
+        color: white;
+    }
+    
+    .navResponsive .fundo {
+        background: #f7f7f7;;
+    }
+
+    .navResponsive .navbar-brand span{
+        list-style: none;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        display:inline-flex;
+    }
+
+    .navResponsive .navbar-brand span {
+        padding-left: 7% !important;
+    }
+    
+    .navResponsive .navbar-brand .minhaConta {
+        padding-left: 30% !important;
+    }
+    
+    .navResponsive ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .navResponsive .carrinho {
+        width: 40px;
+        margin-left: -5%;
+        margin-top: -10%;
+    }
+    
+    .navResponsive span a{
+        list-style: none;
+        text-decoration: none;
+        color: black;
+    }
+
+    .navResponsive .nav-item {
+        padding: 7px;
+    }
+
+    .navResponsive .navbar-collapse{
+        z-index: 1000;
+        position: absolute;
+        background: #153B64;
+        top: 120%;
+        width: 110%;
+        color: white;
+        font-weight: 500;
+        margin: 0 0 0 -4% !important;
+        padding-left: 20px;
+    }
+
+    .navResponsive .navbar-collapse a {
+        color: white;
+    }
+    
+    .navResponsive .navbar-brand span i{
+        padding-left: 5px;
+        font-size: 125%;
+    }
+    
+    .navResponsive .botao {
+        background: #e0e0e0;
+        border: none;
+        margin: -5px 0 0 0;
+    }
+    
+    .navResponsive .botao:focus {
+        box-shadow: none;
+    }
+    
+    .navResponsive button i {
+        color: black;
+    }
+
+    .navResponsive .position-relative {
+        background: none;
+        border: none;
+    }
+    
+    .navResponsive .position-relative:hover {
+        background: none;
+        border: none;
+    }
+    
+    .navResponsive .position-relative i {
+        color: black;
+        font-size: 150%;
+    }
+    
+    .navResponsive .position-relative span:nth-child(1) {
+        color: #000000;
+        font-size: 14px;
+    }
+    
+    .navResponsive .position-relative span:nth-child(2) {
+        color: white;
+        font-size: 12px;
+        background: #153B64 !important;
+        padding: 3px; 
+        margin-left: -9%;
+        width: 18%;
+        text-align: left;
+        padding-left: 7% !important;
+    }
+
+    .navResponsive .cart-container {
+        position: relative;
+        z-index: 1000;
+      }
+    
+    .navResponsive .cart-window-responsivo {
+        position: absolute;
+        top: 160%;
+        left: -35%;
+        width: 350px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        display: none;
+        border-radius: 5px;
+        height: 350px;
+      }
+    
+    .navResponsive .cart-window-responsivo .nomeProduto {
+        font-size: 14px;
+        color: #0A0A0A;
+        margin-left: -30%;
+        margin-bottom: 5%;
+      }
+    
+    .navResponsive .cart-window-responsivo .preçoProduto {
+        font-size: 14px;
+        color: #858585;
+        font-weight: 600;
+        margin-left: -30%;
+        margin-right: 40%;
+      }
+    
+    .navResponsive .cart-window-responsivo .subTotal {
+        text-align: center;
+        font-size: 14px;
+        color: #0A0A0A;
+        padding-bottom: 15px;
+      }
+    
+    .navResponsive .cart-window-responsivo .verCarrinho {
+        text-align: center;
+    }
+    
+    .navResponsive .cart-window-responsivo .finalizacaoCompra {
+        text-align: center;
+    }
+    .navResponsive .cart-window-responsivo .verCarrinho button {
+        font-size: 14px;
+        color: white;
+        background: #962222;
+        margin-bottom: 10px;
+        width: 100%;
+        border: none;
+        padding: 13px;
+        font-weight: 600;
+      }
+    
+    .navResponsive .cart-window-responsivo .finalizacaoCompra button {
+        font-size: 14px;
+        color: white;
+        background: #202020;
+        width: 100%;
+        border: none;
+        padding: 13px;
+        font-weight: 600;
+      }
+
+}
+/* -----------------------------------------
+Fim -> NavMenu
+-------------------------------------------- */

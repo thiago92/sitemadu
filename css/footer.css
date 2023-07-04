@@ -1,0 +1,255 @@
+/* ----------------------------------
+Início -> Footer
+------------------------------------ */
+
+.primeiraDivFooter {
+    background: #222222;
+    color: white;
+    padding: 25px 0;
+}
+
+.primeiraDivFooter .col-md-4 p {
+    font-size: 14px;
+    text-align: left;
+    margin-left: 0px;
+}
+
+.primeiraDivFooter .phone {
+    padding-top: 20px;
+}
+
+.primeiraDivFooter .col-md-4 span {
+    font-size: 17px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.primeiraDivFooter h2 {
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.primeiraDivFooter a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.primeiraDivFooter ul {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.primeiraDivFooter ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 0 0 5px 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.primeiraDivFooter i {
+    font-size: 85%;
+    padding-right: 5px;
+}
+
+.primeiraDivFooter .social {
+    display: flex;
+}
+
+.primeiraDivFooter .social i {
+    background: #292828;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 150%;
+    border-radius: 50%;
+}
+
+.primeiraDivFooter .logoMadu img {
+    transition: 0.3s ease;
+    width: 90%;
+    margin: 0 0 0 -15px;
+    padding: 0;
+    margin-top: 30%;
+  }
+  
+.primeiraDivFooter .logoMadu img:hover {
+    transform: scale(1.1);
+  }
+
+.primeiraDivFooter .col-md-2 p {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.primeiraDivFooter .logoMFM img {
+    transition: 0.3s ease;
+    width: 70%;
+    margin-top: 5%;
+  }
+  
+.primeiraDivFooter .logoMFM img:hover {
+    transform: scale(1.1);
+  }
+
+.segundaDivFooter {
+    background: #000000;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.segundaDivFooter {
+    display: flex;
+    justify-content: center;
+}
+
+.segundaDivFooter span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.segundaDivFooter .pagarme {
+    width: 10%;
+}
+
+.segundaDivFooter .pagarme img {
+    width: 100%;
+}
+
+.segundaDivFooter .siteSeguro {
+    padding: 0;
+    margin: 0;
+}
+
+.segundaDivFooter .siteSeguro i {
+    padding: 0 5px 0 0;
+    margin: 0;
+    font-size: 200%;
+    text-align: right;
+    float: right;
+}
+
+.segundaDivFooter .siteSeguro h3 {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 7px 0 0;
+    margin: 0;
+    text-align: left;
+}
+
+.segundaDivFooter .siteSeguro h4 {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.segundaDivFooter .redesSociais ul {
+    padding: 0px;
+    text-align: right;
+}
+
+.segundaDivFooter .cartoes img {
+    width: 90%;
+    margin-left: 20px;
+}
+
+.segundaDivFooter .col-md-3 {
+    width: 28%;
+}
+
+.segundaDivFooter .col-md-4 {
+    width: 36%;
+}
+
+@media (max-width: 767.50px) {
+   /* -----------------
+    Footer
+    ------------------- */
+
+    .primeiraDivFooter {
+        padding-bottom: 25px;
+    }
+
+    .primeiraDivFooter p, h2, ul, ul li, ul li i {
+        text-align: left !important;
+    }
+
+    .primeiraDivFooter .divResponsiva {
+        width: 100%;
+    }
+    
+    .primeiraDivFooter .logoMadu img{
+        width: 40% !important;
+        margin-top: 0;
+    }
+
+    .primeiraDivFooter .logoMFM img {
+        width: 30%;
+        margin-bottom: 30px;
+    }
+
+    .segundaDivFooter {
+        text-align: center;
+    }
+
+    .segundaDivFooter .copyRight {
+        text-align: center;
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+
+    .segundaDivFooter .cartoes img {
+        margin: 0;
+        width: 80%;
+        padding-bottom: 20px;
+    }
+
+    .segundaDivFooter .escudo {
+        padding: 5px;
+    }
+
+    .segundaDivFooter .escudo i {
+        font-size: 165%;
+    }
+
+    .segundaDivFooter h3 {
+        font-size: 13px;
+        font-weight: 600;
+        padding: 0;
+        margin: 0;
+        letter-spacing: -1px;
+        line-height: 10px;
+    }
+
+    .segundaDivFooter h4 {
+        font-size: 10px;
+        padding: 0;
+        margin: 0;
+        letter-spacing: -1px;
+    }
+
+    .segundaDivFooter .pagarme {
+        vertical-align: middle;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .segundaDivFooter .pagarme img {
+        width: 300%;
+        margin-left: -100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* ------------------------------------
+Fim -> Footer
+-------------------------------- */

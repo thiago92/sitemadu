@@ -1,0 +1,148 @@
+
+ /* Estilo personalizado para os seletores de preço */
+
+
+.secaoFiltro {
+    padding: 50px 0;
+    background: #F7F7F7;
+}
+
+.secaoFiltro .secaoFiltroCategoria {
+    padding: 5px 15px 5px 15px !important;
+    margin: 0;
+    background: white;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.secaoFiltro .col-md-4 h2{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+}
+
+.secaoFiltro .col-md-4 label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.secaoFiltro .col-md-4 span {
+    color: #ADABAB;
+    font-weight: 600;
+}
+
+.secaoFiltro .col-md-6 {
+    margin-bottom: 20px;
+}
+
+.secaoFiltro .col-md-6 input{
+    border: none;
+    width: 100%;
+    font-weight: 500;
+}
+
+.secaoFiltro h2 {
+    font-size: 16px;
+    color: #333333;
+    padding: 25px 0 0 10px;
+    font-weight: 600;
+}
+
+.ui-slider-horizontal {
+    border: none !important;
+    background: #C5C5C5 !important;
+}
+
+.ui-slider-handle {
+    border-radius: 50% !important; 
+    background-color: #fff; 
+    cursor: pointer !important; 
+    font-size: 125%;
+    bottom: 50% !important;
+}
+
+
+.ui-slider-horizontal .ui-slider-range {
+    background-color: #0570E2; 
+    border: none !important;
+    height: 100% !important;
+}
+
+.secaoFiltro .form-select {
+    width: 60%;
+    border: none;
+    font-weight: 600;
+}
+
+.secaoFiltro .botaoFiltrar {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.secaoFiltro .botaoFiltrar button {
+    background: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+}
+
+.secaoFiltro .col-md-8 .col-md-4{
+    background: #F7F7F7;;
+    text-align: center;
+    margin: 0 !important;
+    padding: 0 5px 5px 5px !important;
+}
+
+.secaoFiltro .itens {
+    border-radius: 10px !important;
+    background: white;
+}
+
+.secaoFiltro .itens img {
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+
+.secaoFiltro .itens h3 {
+    font-size: 16px;
+    color: #1D1D1D;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.secaoFiltro .itens h4 {
+    font-size: 16px;
+    color: #727272;
+    padding-bottom: 10px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.secaoFiltro .itens a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.secaoFiltro .botaoFiltro button{
+    background: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767.50px) {
+    .secaoFiltro .col-md-8 .col-md-4 {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
