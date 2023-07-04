@@ -458,37 +458,6 @@ Início -> Inovaçao, qualidade e tecnologia
 Fim -> Inovaçao, qualidade e tecnologia
 ----------------------------------------- */
 
-/* ---------------------------
-Início -> Formulário
--------------------------------- */
-
-.form {
-    background: #D9D8D7;
-    padding: 50px 0 50px 0;
-    text-align: center;
-}
-
-.form h2 {
-    padding-bottom: 15px;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.form input {
-    border-radius: 20px;
-}
-
-.form .btn {
-    background: black;
-    color: white;
-    padding-left: 75px;
-    padding-right: 75px;
-}
-
-/* ---------------------------
-Fim -> Formulário
--------------------------------- */
-
 @media (max-width: 767.50px) {
     /* -------------------
      Carrosel
@@ -681,24 +650,5 @@ Fim -> Formulário
         font-size: 27px !important;
         font-weight: 600 !important;
     }
-   
-    /* ----------------------
-    Formlulário
-    ----------------------- */
-
-    .form {
-        padding: 25px 0;
-    }
-
-    .form h2 {
-        text-align: center !important;
-    }
-
-    .form .col-md-5 {
-        margin-bottom: 10px;
-    }
-
-    .form .col-12 {
-        width: 3000;
-    }
+    
 }

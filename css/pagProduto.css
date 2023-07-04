@@ -13,6 +13,7 @@ Início da secaoProduto
     font-size: 11px;
     font-weight: 600;
     text-align: left;
+    line-height: 1;
 }
 
 .secaoProduto h2 {
@@ -25,6 +26,7 @@ Início da secaoProduto
     font-size: 12px;
     font-weight: 600;
     color: black;
+    line-height: 1;
 }
 
 .secaoProduto h3 {
@@ -67,80 +69,71 @@ Início da secaoProduto
     border: 2px solid white;
 }
 
+.secaoProduto .col {
+    margin-bottom: 5px;
+}
+
 .secaoProduto .col span {
     border: 1px solid #727272;
     border-radius: 5px;
     cursor: pointer;
+    padding: 25% 75%;
 }
 
 .secaoProduto .col .amarelo{
     background: #F5C500;
-    padding: 50% 100%;
 }
 
 .secaoProduto .col .amareloClaro{
     background: #FBECA6;
-    padding: 50% 100%;
 }
 
 .secaoProduto .col .azulClaro{
     background: #A2C7E2;
-    padding: 50% 100%;
 }
 
 .secaoProduto .col .azulMarinho{
     background: #202945;
-    padding: 50% 100%;
 }
 
 .secaoProduto .col .branco{
     background: #ECECEC;
-    padding: 50% 100%;
 }
 
 .secaoProduto .col .cinzaClaro{
     background: #C8C8C8;
-    padding: 50% 100%;
 }
 
 .secaoProduto .col .cinzaEscuro{
     background: #6F7271;
-    padding: 50% 100%;
 }
 
 .secaoProduto .col .laranja{
     background: #F68B2A;
-    padding: 50% 100%;
 }
 
 .secaoProduto .col .lilas{
     background: #AA91E0;
-    padding: 50% 100%;
 }
 
 .secaoProduto .col .pink{
     background: #CB007B;
-    padding: 50% 100%;
 }
 
 .secaoProduto .col .rosa{
     background: #DCA6BC;
-    padding: 50% 100%;
 }
 
 .secaoProduto .col .turquesa{
     background: #97E3D5;
-    padding: 50% 100%;
 }
 
 .secaoProduto .col .verde{
     background: #00AD42;
-    padding: 50% 100%;
 }
 
 .secaoProduto .col .vermelho{
     background: #D73131;
-    padding: 50% 100%;
 }
 
 .secaoProduto .col span:hover{
@@ -401,12 +394,74 @@ Início da secaoProduto
     }
 
     .secaoProduto .cores .col-1 {
-        padding-bottom: 15px;
-        margin-right: 5px;
+        margin-right: 1%;
+    }
+
+    .secaoProduto .cores .col-1 span {
+        padding: 25% 125%;
     }
 
     .secaoProduto .botaoLimpar span {
         font-size: 15px;
+    }
+
+    .secaoProduto .botaoSoma {
+        margin-left: -8%;
+    }
+
+    .secaoProduto .botaoSoma button {
+        border: 1px solid #d4d4d4;
+        padding: 6px 15px;
+        background: #EDEDED;
+        border-radius: 5px;
+    }
+
+    .secaoProduto .botaoSoma input {
+        padding: 6px 30px;
+    }
+
+    .secaoProduto .botaoComprar button {
+        background: #303030 !important;
+        padding: 8px 20px;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        margin-left: -22%;
+        margin-top: 1%;
+    }
+
+    .secaoProduto .consultarCEP {
+        margin-left: -4%;
+    }
+
+    .secaoProduto .consultarCEP input {
+        background: #F7F7F7;
+        padding: 15px 10px;
+    }
+
+    .secaoProduto .consultarCEP button {
+        background: white;
+        padding: 15px 10px;
+        color: black;
+        font-weight: 600;
+        border: 1px solid #c7c7c7;
+        margin-left: -20px; 
+    }
+
+    .secaoProduto .lojaParceira img {
+        margin-left: 33%;
+        margin-right: 33%;
+    }
+
+    .secaoProduto .lojaParceira span {
+        margin-left: 20%;
+    }
+
+    .secaoSobreProduto .nav-link{
+        padding: 19.9px;
+        font-size: 13px;
     }
 
     /* -------------
