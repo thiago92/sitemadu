@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#153B64">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#153B64">
+    <meta name="msapplication-navbutton-color" content="#153B64">
     <title>MAD.U Experience</title>
     <link rel="icon" href="img/icon-logo.png">
     <!-- Bootstrap CSS -->
@@ -262,365 +265,59 @@
       <!-- Fim da Nav para celular -->
   </header>
 
-  <section class="secaoRotas p-1">
-    <div class="backgroundColor">
-      <div class="container">
+  <section class="fale-conosco">
+    <div class="container">
         <div class="row">
-          <div class="col-md-12">
-              <p><a href="index.html">Início</a> / Estantes e Armários Abertos</p>
-              <span>Estantes e Armários Abertos</span>
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <section class="secaoFiltro">
-      <div class="container">
-        <div class="row">
-          
-          <section class="botaoFiltro container d-md-none">
-            <div class="row">
-              <div class="col-md-12">
-                <button id="botaoMostrar" onclick="toggleFiltro()">Mostrar filtro categorias</button>
-              </div>
+            <div class="col-md-6 wow fadeInLeftBig" data-wow-duration="0.8s" data-wow-delay="0.6s">
+                <h2>Quer saber mais? Entre em contato com a gente!</h2>
+                <p>A <strong>MAD.U</strong> inova com <strong>a maior linha de mobiliário técnico do mundo.</strong> São milhões de possibilidades de configurações, através de módulos, acessórios e cores, criando o mobiliário perfeito para as mais diversas necessidades.</p>
+                <ul>
+                    <li><i class="fa-regular fa-envelope"></i> contato@madumfm.com.br</li>
+                    <li><i class="fa-brands fa-whatsapp"></i> (55) 41 99687-8783</li>
+                    <li><i class="fa-solid fa-phone-volume"></i> 0800 721 8533</li>
+                </ul>
             </div>
-          </section>
-
-          <div class="col-md-4 d-none d-md-block" id="secaoFiltroCategoria">
-            <div class="secaoFiltroCategoria">
-              <h2>Filtrar por Categoria</h2>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check1" autocomplete="off">
-                    <label class="btn" for="btn-check1">
-                      Bancadas e estantes reforçadas <span>(0)</span>
-                    </label>
+            <div class="col-md-6">
+                <div class="wow fadeInRightBig" data-wow-duration="0.8s" data-wow-delay="0.6s">
+                    <div class="formulario">
+                      <div class="bordaForm">
+                        <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome" minlength="10" required>
+                      </div>
+                    </div>
+                    <div class="formulario">
+                      <div class="bordaForm">
+                        <input type="email" name="email" class="form-control" id="email" placeholder="E-mail" required>
+                      </div>
+                    </div>
+                    <div class="formulario">
+                      <div class="bordaForm">
+                        <input type="tel" name="tel" class="form-control" id="tel" placeholder="Telefone" required>
+                      </div>            
+                    </div>
+                    <div class="formulario mensagem">
+                      <div class="bordaForm">
+                        <input type="text" name="mensagem" class="form-control" id="mensagem" placeholder="Mensagem" required>
+                      </div>
+                    </div>
+                    <div class="formulario">
+                      <div class="bordaForm">
+                        <button id="enviarBtn" class="btn">Enviar</button>
+                      </div>
+                    </div>
                   </div>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check2" autocomplete="off">
-                    <label class="btn" for="btn-check2">
-                      Carrinhos auxiliares <span>(0)</span>
-                    </label>
-                  </div>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check3" autocomplete="off">
-                    <label class="btn" for="btn-check3">
-                      Carrinhos com gavetas <span>(0)</span>
-                    </label>
-                  </div>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check4" autocomplete="off">
-                    <label class="btn" for="btn-check4">
-                      Carrinhos com prateleiras <span>(0)</span>
-                    </label>
-                  </div>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check5" autocomplete="off">
-                    <label class="btn" for="btn-check5">
-                      Carrinhos de transporte geral <span>(0)</span>
-                    </label>
-                  </div>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check6" autocomplete="off">
-                    <label class="btn" for="btn-check6">
-                      Carrinhos para gaveteiros e bins <span>(0)</span>
-                    </label>
-                  </div>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check7" autocomplete="off">
-                    <label class="btn" for="btn-check7">
-                      Estantes e armários para gaveteiros <span>(0)</span>
-                    </label>
-                  </div>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check8" autocomplete="off">
-                    <label class="btn" for="btn-check8">
-                      Estantes e armários abertos <span>(0)</span>
-                    </label>
-                  </div>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check9" autocomplete="off">
-                    <label class="btn" for="btn-check9">
-                      Estantes e armários com rodas <span>(0)</span>
-                    </label>
-                  </div>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check10 autocomplete="off"">
-                    <label class="btn" for="btn-check10">
-                      Estantes e armários fechados <span>(0)</span>
-                    </label>
-                  </div>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check11 autocomplete="off"">
-                    <label class="btn" for="btn-check11">
-                      Estações de trabalho <span>(0)</span>
-                    </label>
-                  </div>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check12 autocomplete="off"">
-                    <label class="btn" for="btn-check12">
-                      Expositores, gôndolas e displays <span>(0)</span>
-                    </label>
-                  </div>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check13 autocomplete="off"">
-                    <label class="btn" for="btn-check13">
-                      Mesas diversas <span>(0)</span>
-                    </label>
-                  </div>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check14 autocomplete="off"">
-                    <label class="btn" for="btn-check14">
-                      Mesas estofadas <span>(0)</span>
-                    </label>
-                  </div>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check15 autocomplete="off"">
-                    <label class="btn" for="btn-check15">
-                      Sem categoria <span>(0)</span>
-                    </label>
-                  </div>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check16 autocomplete="off"">
-                    <label class="btn" for="btn-check16">
-                      Uso especializado <span>(0)</span>
-                    </label>
-                  </div>
-                  <h2>Filtrar Por Linha</h2>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check17" autocomplete="off">
-                    <label class="btn" for="btn-check17">
-                      MADU One <span>(0)</span>
-                    </label>
-                  </div>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check18" autocomplete="off">
-                    <label class="btn" for="btn-check18">
-                      MADU Expand <span>(0)</span>
-                    </label>
-                  </div>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check19" autocomplete="off">
-                    <label class="btn" for="btn-check19">
-                      MADU Express <span>(0)</span>
-                    </label>
-                  </div>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check20" autocomplete="off">
-                    <label class="btn" for="btn-check20">
-                      MADU Extreme <span>(0)</span>
-                    </label>
-                  </div>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check21" autocomplete="off">
-                    <label class="btn" for="btn-check21">
-                      MADU Expert <span>(0)</span>
-                    </label>
-                  </div>
-                  <div class="">
-                    <input class="btn-check" type="checkbox" value="" id="btn-check22" autocomplete="off">
-                    <label class="btn" for="btn-check22">
-                      MADU Extra <span>(0)</span>
-                    </label>
-                  </div>
-            <h2>Filtro de Preço</h2>
-            <div class="row">
-              <div class="col-md-6 col-6">
-                <div>
-                <input type="text" id="price-min" readonly>
-                </div>
-              </div>
-              <div class="col-md-6 col-6">
-                <div>
-                <input type="text" id="price-max" readonly>
-                </div>
-              </div>
             </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div id="price-slider"></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 botaoFiltrar">
-                <button>Limpar Filtro</button>
-              </div>
-            </div>
-          </div>
-          </div>
-
-          <div class="col-md-8">
-            <div class="row">
-              <div class="col-md-6 col-12">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Ordenação padrão</option>
-                  <option value="alfabetica">Por ordem alfabética</option>
-                  <option value="mais-antigo">Mais antigos</option>
-                  <option value="mais-novos">Mais novos</option>
-                  <option value="menor-preco">Menor preço</option>
-                  <option value="maior-preco">Maior Preço</option>
-                </select>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="itens">
-                  <a href="produto.html">
-                    <img src="img/armario-com-36-cases-verde.jpg" alt="">
-                    <h3>Armário com 36 cases</h3>
-                    <h4>R$ 1500,00</h4>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="itens">
-                  <a href="">
-                    <img src="img/armario-com-36-cases-verde.jpg" alt="">
-                    <h3>Armário com 36 cases</h3>
-                    <h4>R$ 1500,00</h4>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="itens">
-                  <a href="">
-                    <img src="img/armario-com-36-cases-verde.jpg" alt="">
-                    <h3>Armário com 36 cases</h3>
-                    <h4>R$ 1500,00</h4>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="itens">
-                  <a href="">
-                    <img src="img/armario-com-36-cases-verde.jpg" alt="">
-                    <h3>Armário com 36 cases</h3>
-                    <h4>R$ 1500,00</h4>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="itens">
-                  <a href="">
-                    <img src="img/armario-com-36-cases-verde.jpg" alt="">
-                    <h3>Armário com 36 cases</h3>
-                    <h4>R$ 1500,00</h4>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="itens">
-                  <a href="">
-                    <img src="img/armario-com-36-cases-verde.jpg" alt="">
-                    <h3>Armário com 36 cases</h3>
-                    <h4>R$ 1500,00</h4>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="itens">
-                  <a href="">
-                    <img src="img/armario-com-36-cases-verde.jpg" alt="">
-                    <h3>Armário com 36 cases</h3>
-                    <h4>R$ 1500,00</h4>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="itens">
-                  <a href="">
-                    <img src="img/armario-com-36-cases-verde.jpg" alt="">
-                    <h3>Armário com 36 cases</h3>
-                    <h4>R$ 1500,00</h4>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="itens">
-                  <a href="">
-                    <img src="img/armario-com-36-cases-verde.jpg" alt="">
-                    <h3>Armário com 36 cases</h3>
-                    <h4>R$ 1500,00</h4>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="itens">
-                  <a href="">
-                    <img src="img/armario-com-36-cases-verde.jpg" alt="">
-                    <h3>Armário com 36 cases</h3>
-                    <h4>R$ 1500,00</h4>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="itens">
-                  <a href="">
-                    <img src="img/armario-com-36-cases-verde.jpg" alt="">
-                    <h3>Armário com 36 cases</h3>
-                    <h4>R$ 1500,00</h4>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="itens">
-                  <a href="">
-                    <img src="img/armario-com-36-cases-verde.jpg" alt="">
-                    <h3>Armário com 36 cases</h3>
-                    <h4>R$ 1500,00</h4>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="itens">
-                  <a href="">
-                    <img src="img/armario-com-36-cases-verde.jpg" alt="">
-                    <h3>Armário com 36 cases</h3>
-                    <h4>R$ 1500,00</h4>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-  </section>
-
-  <section class="form">
-    <div class="container d-none d-xl-block d-xxl-none">
-      <div>
-        <h2>RECEBA NOVIDADES E PROMOÇÕES DA MAD.U</h2>
-      </div>
-      <form class="row">
-        <div class="col-md-5 col-12">
-          <input type="text" class="form-control" id="name" name="name" placeholder="Nome">
-        </div>
-        <div class="col-md-5 col-12">
-          <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="E-mail">
-        </div>
-        <div class="col-md-2 col-12">
-          <button type="submit" class="btn">Enviar</button>
-        </div>
-      </form>
-    </div>
-    <!-- Responsivo -->
-    <div class="container d-block d-sm-none">
-      <div>
-        <h2>RECEBA NOVIDADES E PROMOÇÕES DA MAD.U</h2>
-      </div>
-      <form class="">
-        <div class="mb-2">
-          <input type="text" class="form-control" id="name" name="name" placeholder="Nome">
-        </div>
-        <div class="mb-2">
-          <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="E-mail">
-        </div>
-        <div class="">
-          <button type="submit" class="btn w-100">Enviar</button>
-        </div>
-      </form>
     </div>
   </section>
-  
+
+  <section class="avaliacao">
+    <div class="container">
+        <div class="row">
+            
+        </div>
+    </div>
+  </section>
+
   <footer>
     <div class="primeiraDivFooter">
       <div class="container">
@@ -723,13 +420,13 @@
     </a>
     </div>
   </footer>
-
       
     
 </body>
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
 <!-- meu script -->
 <script src="js/meu-script.js"></script>
 <!-- ScriptBootstrap -->

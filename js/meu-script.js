@@ -345,6 +345,25 @@ $(document).ready(function() {
   });
 });
 
+//-------------------------------efeto da imagem 3d-------------------------------------------------
+document.addEventListener("mousemove", parallax);
+
+function parallax(event) {
+  const mouseX = event.clientX;
+  const mouseY = event.clientY;
+  const image = document.querySelector(".image-3d");
+  const imageWidth = image.offsetWidth;
+  const imageHeight = image.offsetHeight;
+  const rotateX = (imageHeight / 2 - mouseX) / -30;
+  const rotateY = (imageWidth / 2 - mouseY) / 5;
+
+  image.style.transform = `perspective(1000px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale(1.0)`;
+}
+
+//Form do telefone
+let tel = $("input[name=tel]");
+    tel.mask('(00) 0 0000-0000', {reverse: false});
+
 
 
 

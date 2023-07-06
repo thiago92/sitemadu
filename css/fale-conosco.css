@@ -1,0 +1,75 @@
+.fale-conosco {
+    margin: 50px 0;
+}
+
+.fale-conosco h2 {
+    color: #000000;
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.fale-conosco p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.fale-conosco ul {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.fale-conosco ul li {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.7em;
+}
+
+.fale-conosco ul li i {
+    color: #000000;
+}
+
+.fale-conosco .formulario {
+    padding: 0 20px;
+}
+
+.fale-conosco input, .fale-conosco select, .fale-conosco button {
+    border-radius: 20px !important;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.fale-conosco input, select {
+    background: #F7F7F7;
+}
+
+.fale-conosco .mensagem input{
+    padding-bottom: 80px;
+}
+
+.fale-conosco button {
+    background-color: #000000;
+    color: white;
+}
+
+.fale-conosco button:hover {
+    background: #000000;
+    color: white;
+}
+
+@media (max-width: 767.50px) {
+    .fale-conosco {
+        margin-top: 45%;
+    }
+
+    .fale-conosco .col-md-6:nth-child(2) {
+        margin: 25px 0;
+    }
+}

@@ -1,0 +1,44 @@
+.made-for-you {
+    margin: 50px 0;
+}
+
+.made-for-you .col-md-6:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+.made-for-you .image-3d {
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.made-for-you .image-3d:hover {
+    transform: rotateX(0) rotateY(0) scale(1.1);
+}
+
+.made-for-you .col-md-6:nth-child(2) {
+    text-align: justify;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+}
+.made-for-you button {
+    border: none;
+    background: #153B64;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: 0.5s ease;
+}
+
+.made-for-you button:hover {
+    background: #000000;
+}
+
+.made-for-you button a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+}
